@@ -9,7 +9,7 @@ All Rich Address Wallet Cryptocurrency
  Dogecoin 8000 Rich Address [View List](https://github.com/Pymmdrza/Rich-Address-Wallet/blob/main/8K_RichAddressDoge.md)
 
 ----
-| No |:heavy_check_mark: Doge Address |:moneybag: Balance |  |
+| No | Doge Address | Balance |  |
 | ----: | :----------- | :------- | ----------- |
 | 1 | `DBs4WcRE7eysKwRxHNX88XZVCQ9M6QSUSz` | 30184599327.84819804 DOGE | [Explorer](https://dogechain.info/address/DBs4WcRE7eysKwRxHNX88XZVCQ9M6QSUSz) |
 | 2 | `DE5opaXjFgDhFBqL6tBDxTAQ56zkX6EToX` | 9752668033.04121222 DOGE | [Explorer](https://dogechain.info/address/DE5opaXjFgDhFBqL6tBDxTAQ56zkX6EToX) |
@@ -1013,7 +1013,7 @@ All Rich Address Wallet Cryptocurrency
 
 ### 7999 Rich Wallet Address Dogecoin
 
-| ⚠️ | 🔐 **7999** Address Rich Wallet Dogecoin | [Visit List](https://github.com/Pymmdrza/Rich-Address-Wallet/blob/main/8K_RichAddressDoge.md) | [DOWNLOAD](https://github.com/Pymmdrza/Rich-Address-Wallet/blob/main/7999_RichAddressDoge.txt) (Text File)|
+| 7999 |  **7999** Address Rich Wallet Dogecoin | [Visit List](https://github.com/Pymmdrza/Rich-Address-Wallet/blob/main/8K_RichAddressDoge.md) | [DOWNLOAD](https://github.com/Pymmdrza/Rich-Address-Wallet/blob/main/7999_RichAddressDoge.txt) (Text File)|
 | ----- | ------ | -------- | ----------------------------- |
 
 ----
