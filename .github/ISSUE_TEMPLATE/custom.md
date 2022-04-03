@@ -1,8 +1,8 @@
 ---
-name: Custom issue template
-about: Describe this issue template's purpose here.
-title: ''
-labels: ''
+name: RichWallet
+about: List Rich wallet address BTC TRX DOGE ETH LTC ZCASH DASH BTG 
+title: 'RICHWALLETLIST'
+labels: 'MMDRZA.COM'
 assignees: ''
 
 ---
