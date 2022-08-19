@@ -214,7 +214,7 @@ All Rich Address Wallet Cryptocurrency
 
 ### 💎 8K Rich Wallet Address Dogecoin
 
-| ⚠️ | 🔐 **8000** Address Rich Wallet Dogecoin | [Visit List](https://github.com/Pymmdrza/Rich-Address-Wallet/blob/main/8K_RichAddressDoge.md) | [DOWNLOAD](https://github.com/Pymmdrza/Rich-Address-Wallet/blob/main/7999_RichAddressDoge.txt) (Text File)|
+| ⚠️ | 🔐 **8000** Address Rich Wallet Dogecoin | [Visit List](https://github.com//Rich-Address-Wallet/blob/main/8K_RichAddressDoge.md) | [DOWNLOAD](https://github.com/Pymmdrza/Rich-Address-Wallet/blob/main/7999_RichAddressDoge.txt) (Text File)|
 | ----- | ------ | -------- | ----------------------------- |
 
 ----
