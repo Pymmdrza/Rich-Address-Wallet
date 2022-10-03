@@ -5,7 +5,8 @@ All Rich Address Wallet Cryptocurrency
 | Bitcoin Rich Wallet List | [Link](https://github.com/Pymmdrza/Rich-Address-Wallet/edit/main/README.md#bitcoin-rich-address-wallet-waith-balance) |
 | ------------------------ | ---- |
 | Ethereum Rich Wallet List | [Link](https://github.com/Pymmdrza/Rich-Address-Wallet/edit/main/README.md#ethereum-rich-address-wallet-waith-balance) |
-| Dogecoin Rich Wallet List | [Link](https://github.com/Pymmdrza/Rich-Address-Wallet/edit/main/README.md#dogecoin-rich-address-wallet-waith-balance)
+| Dogecoin Rich Wallet List | [Link](https://github.com/Pymmdrza/Rich-Address-Wallet/edit/main/README.md#dogecoin-rich-address-wallet-waith-balance) |
+| ZCASH Rich Wallet List | [Link](https://github.com/Pymmdrza/Rich-Address-Wallet/tree/main/ZCASH) |
 ----
 ## Bitcoin Rich Address wallet Waith Balance
 ----
