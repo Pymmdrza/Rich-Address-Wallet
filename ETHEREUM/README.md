@@ -1,10 +1,10 @@
 # 100000 ETHEREUM Rich Wallet Address With Balance 
 ---
 
-100,000 Ethereum Rich Wallet Address On Text File : [](https://)
+100,000 Ethereum Rich Wallet Address On Text File : [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/blob/main/ETHEREUM/EthRich.txt)
 
 
-100,000 Ethereum Rich Wallet Address With Balance Format On Text File : [](https://)
+100,000 Ethereum Rich Wallet Address With Balance Format On Text File : [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/blob/main/ETHEREUM/EthRich.txt)
 
 
 ---
