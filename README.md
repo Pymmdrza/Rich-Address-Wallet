@@ -2,11 +2,12 @@
 
 # Rich Address Wallet
 All Rich Address Wallet Cryptocurrency
-| Bitcoin Rich Wallet List | [Link](https://github.com/Pymmdrza/Rich-Address-Wallet/edit/main/README.md#bitcoin-rich-address-wallet-waith-balance) |
+| Bitcoin Rich Wallet List | [Link](https://github.com/Pymmdrza/Rich-Address-Wallet/tree/main/Bitcoin) |
 | ------------------------ | ---- |
-| Ethereum Rich Wallet List | [Link](https://github.com/Pymmdrza/Rich-Address-Wallet/edit/main/README.md#ethereum-rich-address-wallet-waith-balance) |
-| Dogecoin Rich Wallet List | [Link](https://github.com/Pymmdrza/Rich-Address-Wallet/edit/main/README.md#dogecoin-rich-address-wallet-waith-balance) |
-| ZCASH Rich Wallet List | [Link](https://github.com/Pymmdrza/Rich-Address-Wallet/tree/main/ZCASH) |
+| Ethereum Rich Wallet List | [Link](https://github.com/Pymmdrza/Rich-Address-Wallet/tree/main/ETHEREUM 'Ethereum (ETH) Rich Wallet List Address') |
+| Polkadot Rich Wallet List | [Link](https://github.com/Pymmdrza/Rich-Address-Wallet/tree/main/DOT 'Polkadot (DOT) Rich Wallet List Address') |
+| Dogecoin Rich Wallet List | [Link](https://github.com/Pymmdrza/Rich-Address-Wallet/blob/main/7999_RichAddressDoge.txt 'Dogecoin Rich Wallet List Address') |
+| ZCASH Rich Wallet List | [Link](https://github.com/Pymmdrza/Rich-Address-Wallet/tree/main/ZCASH 'ZCASH Rich Wallet List Address') |
 | TRON (TRX) Rich Wallet List | [Link](https://github.com/Pymmdrza/Rich-Address-Wallet/tree/main/TRON 'Tron (trx) Rich Wallet List Address') |
 ----
 ## Bitcoin Rich Address wallet Waith Balance
