@@ -9,8 +9,15 @@ All Rich Address Wallet Cryptocurrency
 | Dogecoin Rich Wallet List | [Link](https://github.com/Pymmdrza/Rich-Address-Wallet/blob/main/7999_RichAddressDoge.txt 'Dogecoin Rich Wallet List Address') |
 | ZCASH Rich Wallet List | [Link](https://github.com/Pymmdrza/Rich-Address-Wallet/tree/main/ZCASH 'ZCASH Rich Wallet List Address') |
 | TRON (TRX) Rich Wallet List | [Link](https://github.com/Pymmdrza/Rich-Address-Wallet/tree/main/TRON 'Tron (trx) Rich Wallet List Address') |
+
+---
+## Ethereum Rich Address Wallet (UPDATE)
+- 100,000 Ethereum Rich Wallet Address List Import Balance On text file : [Link](https://github.com/Pymmdrza/Rich-Address-Wallet/blob/main/ETHEREUM/EthRich_Bal.txt)
+
+- 100,000 Ethereum Rich Wallet Address List On text file : [Link](https://github.com/Pymmdrza/Rich-Address-Wallet/blob/main/ETHEREUM/EthRich.txt)
+
 ----
-## Bitcoin Rich Address wallet Waith Balance
+## Bitcoin Rich Address wallet With Balance
 ----
 
 ### 30,000 Address Rich Wallet Bitcoin
