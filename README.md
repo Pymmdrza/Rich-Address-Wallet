@@ -2,6 +2,11 @@
 
 # Rich Address Wallet
 All Rich Address Wallet Cryptocurrency
+
+#### All Bitcoin Address Wallet List Text Format (`Compressed .rar`) With Balance and Without Balance , Just Address , P2PKH Address , can download now Here . [ [`Download`] ](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Bitcoin-Addr_Jun-2023 'bitcoin wallet list address')  (* Update: Jun 2023)
+
+---
+
 | Bitcoin Rich Wallet List | [Link](https://github.com/Pymmdrza/Rich-Address-Wallet/tree/main/Bitcoin) |
 | ------------------------ | ---- |
 | Ethereum Rich Wallet List | [Link](https://github.com/Pymmdrza/Rich-Address-Wallet/tree/main/ETHEREUM 'Ethereum (ETH) Rich Wallet List Address') |
