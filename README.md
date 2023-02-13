@@ -7,6 +7,14 @@ All Rich Address Wallet Cryptocurrency
 
 ---
 
+*[New Update]* Bitcoin P2PKH Rich Address List [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/BTC.RiCH.2023)
+
+
+*[New Update]* Ethereum Rich Address List [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/ETH.RiCH.2023)
+
+
+---
+
 | Bitcoin Rich Wallet List | [Link](https://github.com/Pymmdrza/Rich-Address-Wallet/tree/main/Bitcoin) |
 | ------------------------ | ---- |
 | Ethereum Rich Wallet List | [Link](https://github.com/Pymmdrza/Rich-Address-Wallet/tree/main/ETHEREUM 'Ethereum (ETH) Rich Wallet List Address') |
