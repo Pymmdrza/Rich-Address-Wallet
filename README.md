@@ -24,6 +24,117 @@ All Rich Address Wallet Cryptocurrency
 | TRON (TRX) Rich Wallet List | [Link](https://github.com/Pymmdrza/Rich-Address-Wallet/tree/main/TRON 'Tron (trx) Rich Wallet List Address') |
 
 ---
+
+### Bitcoin Sort Address Latest (05-2023)
+All in One Zip File With Tsv Format [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/BTC_Sort 'Sort Bitcoin All Address Wallet 2023') 
+[Password File: [`Here`](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/BTC_Sort) ]
+
+| Address | Balance (`BTC`)| Explorer |
+| --- | --- | --- |
+| `34xp4vRoCGJym3xR7yCVPFHoCNxv4Twseo` | `248,597.38632561` | [Check](https://blockchair.com/bitcoin/address/34xp4vRoCGJym3xR7yCVPFHoCNxv4Twseo) |
+| `bc1qgdjqv0av3q56jvd82tkdjpy7gdp9ut8tlqmgrpmv24sq90ecnvqqjwvw97` | `178,010.0882228` | [Check](https://blockchair.com/bitcoin/address/bc1qgdjqv0av3q56jvd82tkdjpy7gdp9ut8tlqmgrpmv24sq90ecnvqqjwvw97) |
+| `1LQoWist8KkaUXSPKZHNvEyfrEkPHzSsCd` | `119,347.40521397` | [Check](https://blockchair.com/bitcoin/address/1LQoWist8KkaUXSPKZHNvEyfrEkPHzSsCd) |
+| `38Xnrq8MZiKmYmwobbYdZQ5nnCbX1qvQfE` | `117,351.05645141` | [Check](https://blockchair.com/bitcoin/address/38Xnrq8MZiKmYmwobbYdZQ5nnCbX1qvQfE) |
+| `bc1qazcm763858nkj2dj986etajv6wquslv8uxwczt` | `94,643.30613354` | [Check](https://blockchair.com/bitcoin/address/bc1qazcm763858nkj2dj986etajv6wquslv8uxwczt) |
+| `37XuVSEpWW4trkfmvWzegTHQt7BdktSKUs` | `94,505.3435766` | [Check](https://blockchair.com/bitcoin/address/37XuVSEpWW4trkfmvWzegTHQt7BdktSKUs) |
+| `1FeexV6bAHb8ybZjqQMjJrcCrHGW9sb6uF` | `79,957.25311101` | [Check](https://blockchair.com/bitcoin/address/1FeexV6bAHb8ybZjqQMjJrcCrHGW9sb6uF) |
+| `bc1qa5wkgaew2dkv56kfvj49j0av5nml45x9ek9hz6` | `69,370.17883259` | [Check](https://blockchair.com/bitcoin/address/bc1qa5wkgaew2dkv56kfvj49j0av5nml45x9ek9hz6) |
+| `3LYJfcfHPXYJreMsASk2jkn69LWEYKzexb` | `68,200.00432924` | [Check](https://blockchair.com/bitcoin/address/3LYJfcfHPXYJreMsASk2jkn69LWEYKzexb) |
+| `bc1qd4ysezhmypwty5dnw7c8nqy5h5nxg0xqsvaefd0qn5kq32vwnwqqgv4rzr` | `59,300.08307523` | [Check](https://blockchair.com/bitcoin/address/bc1qd4ysezhmypwty5dnw7c8nqy5h5nxg0xqsvaefd0qn5kq32vwnwqqgv4rzr) |
+| `1LdRcdxfbSnmCYYNdeYpUnztiYzVfBEQeC` | `53,880.06275164` | [Check](https://blockchair.com/bitcoin/address/1LdRcdxfbSnmCYYNdeYpUnztiYzVfBEQeC) |
+| `bc1qjasf9z3h7w3jspkhtgatgpyvvzgpa2wwd2lr0eh5tx44reyn2k7sfc27a4` | `53,492.39615503` | [Check](https://blockchair.com/bitcoin/address/bc1qjasf9z3h7w3jspkhtgatgpyvvzgpa2wwd2lr0eh5tx44reyn2k7sfc27a4) |
+| `1AC4fMwgY8j9onSbXEWeH6Zan8QGMSdmtA` | `51,830.4004163` | [Check](https://blockchair.com/bitcoin/address/1AC4fMwgY8j9onSbXEWeH6Zan8QGMSdmtA) |
+| `1LruNZjwamWJXThX2Y8C2d47QqhAkkc5os` | `44,000.08675574` | [Check](https://blockchair.com/bitcoin/address/1LruNZjwamWJXThX2Y8C2d47QqhAkkc5os) |
+| `38DN2uFMZPiHLHJigfv4kWC9JWJrNnhLcn` | `40,041.05259302` | [Check](https://blockchair.com/bitcoin/address/38DN2uFMZPiHLHJigfv4kWC9JWJrNnhLcn) |
+| `3LCGsSmfr24demGvriN4e3ft8wEcDuHFqh` | `39,953.51795716` | [Check](https://blockchair.com/bitcoin/address/3LCGsSmfr24demGvriN4e3ft8wEcDuHFqh) |
+| `3LQUu4v9z6KNch71j7kbj8GPeAGUo1FW6a` | `37,926.97771319` | [Check](https://blockchair.com/bitcoin/address/3LQUu4v9z6KNch71j7kbj8GPeAGUo1FW6a) |
+| `3M219KR5vEneNb47ewrPfWyb5jQ2DjxRP6` | `37,326.42365118` | [Check](https://blockchair.com/bitcoin/address/3M219KR5vEneNb47ewrPfWyb5jQ2DjxRP6) |
+| `bc1q7ydrtdn8z62xhslqyqtyt38mm4e2c4h3mxjkug` | `36,000.42223604` | [Check](https://blockchair.com/bitcoin/address/bc1q7ydrtdn8z62xhslqyqtyt38mm4e2c4h3mxjkug) |
+| `bc1qjh0akslml59uuczddqu0y4p3vj64hg5mc94c40` | `33,217.70284909` | [Check](https://blockchair.com/bitcoin/address/bc1qjh0akslml59uuczddqu0y4p3vj64hg5mc94c40) |
+| `12XqeqZRVkBDgmPLVY4ZC6Y4ruUUEug8Fx` | `32,321.00051856` | [Check](https://blockchair.com/bitcoin/address/12XqeqZRVkBDgmPLVY4ZC6Y4ruUUEug8Fx) |
+| `bc1qx9t2l3pyny2spqpqlye8svce70nppwtaxwdrp4` | `31,643.38388706` | [Check](https://blockchair.com/bitcoin/address/bc1qx9t2l3pyny2spqpqlye8svce70nppwtaxwdrp4) |
+| `3FHNBLobJnbCTFTVakh5TXmEneyf5PT61B` | `31,275.3505938` | [Check](https://blockchair.com/bitcoin/address/3FHNBLobJnbCTFTVakh5TXmEneyf5PT61B) |
+| `12ib7dApVFvg82TXKycWBNpN8kFyiAN1dr` | `31,000.0732843` | [Check](https://blockchair.com/bitcoin/address/12ib7dApVFvg82TXKycWBNpN8kFyiAN1dr) |
+| `bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h` | `30,383.03843011` | [Check](https://blockchair.com/bitcoin/address/bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h) |
+| `bc1qf2yvj48mzkj7uf8lc2a9sa7w983qe256l5c8fs` | `30,174.70360176` | [Check](https://blockchair.com/bitcoin/address/bc1qf2yvj48mzkj7uf8lc2a9sa7w983qe256l5c8fs) |
+| `12tkqA9xSoowkzoERHMWNKsTey55YEBqkv` | `28,151.05862779` | [Check](https://blockchair.com/bitcoin/address/12tkqA9xSoowkzoERHMWNKsTey55YEBqkv) |
+| `38UmuUqPCrFmQo4khkomQwZ4VbY2nZMJ67` | `27,066.97292147` | [Check](https://blockchair.com/bitcoin/address/38UmuUqPCrFmQo4khkomQwZ4VbY2nZMJ67) |
+| `3MgEAFWu1HKSnZ5ZsC8qf61ZW18xrP5pgd` | `26,841.3` | [Check](https://blockchair.com/bitcoin/address/3MgEAFWu1HKSnZ5ZsC8qf61ZW18xrP5pgd) |
+| `1aXzEKiDJKzkPxTZy9zGc3y1nCDwDPub2` | `25,640.38996033` | [Check](https://blockchair.com/bitcoin/address/1aXzEKiDJKzkPxTZy9zGc3y1nCDwDPub2) |
+| `bc1qjysjfd9t9aspttpjqzv68k0ydpe7pvyd5vlyn37868473lell5tqkz456m` | `25,085.7648675` | [Check](https://blockchair.com/bitcoin/address/bc1qjysjfd9t9aspttpjqzv68k0ydpe7pvyd5vlyn37868473lell5tqkz456m) |
+| `17MWdxfjPYP2PYhdy885QtihfbW181r1rn` | `24,495.35054524` | [Check](https://blockchair.com/bitcoin/address/17MWdxfjPYP2PYhdy885QtihfbW181r1rn) |
+| `19D5J8c59P2bAkWKvxSYw8scD3KUNWoZ1C` | `23,969.00183656` | [Check](https://blockchair.com/bitcoin/address/19D5J8c59P2bAkWKvxSYw8scD3KUNWoZ1C) |
+| `19N9sDbJ7MDQcPFSjPNqjNDzyRNbNsQ6Zv` | `22,933.58424112` | [Check](https://blockchair.com/bitcoin/address/19N9sDbJ7MDQcPFSjPNqjNDzyRNbNsQ6Zv) |
+| `1932eKraQ3Ad9MeNBHb14WFQbNrLaKeEpT` | `22,899.99045107` | [Check](https://blockchair.com/bitcoin/address/1932eKraQ3Ad9MeNBHb14WFQbNrLaKeEpT) |
+| `3FupZp77ySr7jwoLYEJ9mwzJpvoNBXsBnE` | `22,865.35419702` | [Check](https://blockchair.com/bitcoin/address/3FupZp77ySr7jwoLYEJ9mwzJpvoNBXsBnE) |
+| `1m5SViB9XNwsusvnnUqpfL9Q1E5EZxPHs` | `20,479.71524275` | [Check](https://blockchair.com/bitcoin/address/1m5SViB9XNwsusvnnUqpfL9Q1E5EZxPHs) |
+| `3LoAAJN3tbMCEXWjGNeiyG2TtzLJYXcG5R` | `20,054.5309902` | [Check](https://blockchair.com/bitcoin/address/3LoAAJN3tbMCEXWjGNeiyG2TtzLJYXcG5R) |
+| `17rm2dvb439dZqyMe2d4D6AQJSgg6yeNRn` | `20,008.00224402` | [Check](https://blockchair.com/bitcoin/address/17rm2dvb439dZqyMe2d4D6AQJSgg6yeNRn) |
+| `15cHRgVrGKz7qp2JL2N5mkB2MCFGLcnHxv` | `19,950.00545903` | [Check](https://blockchair.com/bitcoin/address/15cHRgVrGKz7qp2JL2N5mkB2MCFGLcnHxv) |
+| `1PeizMg76Cf96nUQrYg8xuoZWLQozU5zGW` | `19,414.4307644` | [Check](https://blockchair.com/bitcoin/address/1PeizMg76Cf96nUQrYg8xuoZWLQozU5zGW) |
+| `bc1qyg4z96sy84594r4a28mc8esdkkuj4dq08jmtt5` | `19,035.04304837` | [Check](https://blockchair.com/bitcoin/address/bc1qyg4z96sy84594r4a28mc8esdkkuj4dq08jmtt5) |
+| `bc1qkz55x35wlnrkrn5n0nq4wwsme9vszrwavu5qf4` | `18,500.04673594` | [Check](https://blockchair.com/bitcoin/address/bc1qkz55x35wlnrkrn5n0nq4wwsme9vszrwavu5qf4) |
+| `39gUvGynQ7Re3i15G3J2gp9DEB9LnLFPMN` | `18,315.24912295` | [Check](https://blockchair.com/bitcoin/address/39gUvGynQ7Re3i15G3J2gp9DEB9LnLFPMN) |
+| `1Ay8vMC7R1UbyCCZRVULMV7iQpHSAbguJP` | `18,126.0672345` | [Check](https://blockchair.com/bitcoin/address/1Ay8vMC7R1UbyCCZRVULMV7iQpHSAbguJP) |
+| `3Qxak1CZhLyZ7GVckKphLURdLBCjMfz9bA` | `17,669.22657787` | [Check](https://blockchair.com/bitcoin/address/3Qxak1CZhLyZ7GVckKphLURdLBCjMfz9bA) |
+| `bc1q5vwscmf85w2vlq0qvr33dgpvu5rlrd42cqw6qn` | `17,572.977` | [Check](https://blockchair.com/bitcoin/address/bc1q5vwscmf85w2vlq0qvr33dgpvu5rlrd42cqw6qn) |
+| `bc1qtrxc0use4hlm7fl0j6t37z7qlwl5eppj8lywz6` | `17,360.48161304` | [Check](https://blockchair.com/bitcoin/address/bc1qtrxc0use4hlm7fl0j6t37z7qlwl5eppj8lywz6) |
+| `3JZq4atUahhuA9rLhXLMhhTo133J9rF97j` | `17,263.09274` | [Check](https://blockchair.com/bitcoin/address/3JZq4atUahhuA9rLhXLMhhTo133J9rF97j) |
+| `3H5JTt42K7RmZtromfTSefcMEFMMe18pMD` | `16,785.95137944` | [Check](https://blockchair.com/bitcoin/address/3H5JTt42K7RmZtromfTSefcMEFMMe18pMD) |
+| `34HpHYiyQwg69gFmCq2BGHjF1DZnZnBeBP` | `16,306.62924746` | [Check](https://blockchair.com/bitcoin/address/34HpHYiyQwg69gFmCq2BGHjF1DZnZnBeBP) |
+| `1BAuq7Vho2CEkVkUxbfU26LhwQjbCmWQkD` | `16,277.00011212` | [Check](https://blockchair.com/bitcoin/address/1BAuq7Vho2CEkVkUxbfU26LhwQjbCmWQkD) |
+| `1GR9qNz7zgtaW5HwwVpEJWMnGWhsbsieCG` | `15,745.55601902` | [Check](https://blockchair.com/bitcoin/address/1GR9qNz7zgtaW5HwwVpEJWMnGWhsbsieCG) |
+| `bc1qx2x5cqhymfcnjtg902ky6u5t5htmt7fvqztdsm028hkrvxcl4t2sjtpd9l` | `15,010.19638151` | [Check](https://blockchair.com/bitcoin/address/bc1qx2x5cqhymfcnjtg902ky6u5t5htmt7fvqztdsm028hkrvxcl4t2sjtpd9l) |
+| `3EMVdMehEq5SFipQ5UfbsfMsH223sSz9A9` | `14,510.29092562` | [Check](https://blockchair.com/bitcoin/address/3EMVdMehEq5SFipQ5UfbsfMsH223sSz9A9) |
+| `1KVpuCfhftkzJ67ZUegaMuaYey7qni7pPj` | `14,040.60800188` | [Check](https://blockchair.com/bitcoin/address/1KVpuCfhftkzJ67ZUegaMuaYey7qni7pPj) |
+| `1BZaYtmXka1y3Byi2yvXCDG92Tjz7ecwYj` | `14,000.0007704` | [Check](https://blockchair.com/bitcoin/address/1BZaYtmXka1y3Byi2yvXCDG92Tjz7ecwYj) |
+| `bc1q4c8n5t00jmj8temxdgcc3t32nkg2wjwz24lywv` | `13,871.66598598` | [Check](https://blockchair.com/bitcoin/address/bc1q4c8n5t00jmj8temxdgcc3t32nkg2wjwz24lywv) |
+| `3BMEXqGpG4FxBA1KWhRFufXfSTRgzfDBhJ` | `13,343.12022465` | [Check](https://blockchair.com/bitcoin/address/3BMEXqGpG4FxBA1KWhRFufXfSTRgzfDBhJ) |
+| `bc1q4vxn43l44h30nkluqfxd9eckf45vr2awz38lwa` | `13,003.02067014` | [Check](https://blockchair.com/bitcoin/address/bc1q4vxn43l44h30nkluqfxd9eckf45vr2awz38lwa) |
+| `bc1qy84w3ph80m0wzjpec9zd0689vdc3m8tcc573ck` | `12,593.20648772` | [Check](https://blockchair.com/bitcoin/address/bc1qy84w3ph80m0wzjpec9zd0689vdc3m8tcc573ck) |
+| `35pgGeez3ou6ofrpjt8T7bvC9t6RrUK4p6` | `12,520.62548663` | [Check](https://blockchair.com/bitcoin/address/35pgGeez3ou6ofrpjt8T7bvC9t6RrUK4p6) |
+| `bc1q080rkmk3kj86pxvf5nkxecdrw6nrx3zzy9xl7q` | `12,380.00025994` | [Check](https://blockchair.com/bitcoin/address/bc1q080rkmk3kj86pxvf5nkxecdrw6nrx3zzy9xl7q) |
+| `1DNUjpHPNKMoKYBHxJz2Sh1uQQdJkGsXj5` | `12,267.02528242` | [Check](https://blockchair.com/bitcoin/address/1DNUjpHPNKMoKYBHxJz2Sh1uQQdJkGsXj5) |
+| `1FZy7CPFA2UqqQJYUA1cG9KvdDFbSMBJYG` | `12,239.54373387` | [Check](https://blockchair.com/bitcoin/address/1FZy7CPFA2UqqQJYUA1cG9KvdDFbSMBJYG) |
+| `31oxjGsmepoq2cipeGQ2zKZRRBCf1m3kAC` | `11,858.48650682` | [Check](https://blockchair.com/bitcoin/address/31oxjGsmepoq2cipeGQ2zKZRRBCf1m3kAC) |
+| `bc1qzk2pyxtahg64cx6gyq02vrw65fdxtpr253r4ygww9n2w2zjyy8wsnyc666` | `11,563.07250054` | [Check](https://blockchair.com/bitcoin/address/bc1qzk2pyxtahg64cx6gyq02vrw65fdxtpr253r4ygww9n2w2zjyy8wsnyc666) |
+| `1Cr7EjvS8C7gfarREHCvFhd9gT3r46pfLb` | `11,399.83296031` | [Check](https://blockchair.com/bitcoin/address/1Cr7EjvS8C7gfarREHCvFhd9gT3r46pfLb) |
+| `18oRfGoPpb6bkQdACnD6dVYWceeWURK5R6` | `11,344.84877059` | [Check](https://blockchair.com/bitcoin/address/18oRfGoPpb6bkQdACnD6dVYWceeWURK5R6) |
+| `3Qrx7c1f2SmubFMJvKJnFW37YwacQmxDqq` | `11,261.9559179` | [Check](https://blockchair.com/bitcoin/address/3Qrx7c1f2SmubFMJvKJnFW37YwacQmxDqq) |
+| `3A9qNS69dngSU2ak8BwZKEExeVnL2RqpYJ` | `11,025.01000547` | [Check](https://blockchair.com/bitcoin/address/3A9qNS69dngSU2ak8BwZKEExeVnL2RqpYJ) |
+| `bc1quhruqrghgcca950rvhtrg7cpd7u8k6svpzgzmrjy8xyukacl5lkq0r8l2d` | `10,934.70509951` | [Check](https://blockchair.com/bitcoin/address/bc1quhruqrghgcca950rvhtrg7cpd7u8k6svpzgzmrjy8xyukacl5lkq0r8l2d) |
+| `1F34duy2eeMz5mSrvFepVzy7Y1rBsnAyWC` | `10,770.53470305` | [Check](https://blockchair.com/bitcoin/address/1F34duy2eeMz5mSrvFepVzy7Y1rBsnAyWC) |
+| `bc1qcdqj2smprre85c78d942wx5tauw5n7uw92r7wr` | `10,616.48447156` | [Check](https://blockchair.com/bitcoin/address/bc1qcdqj2smprre85c78d942wx5tauw5n7uw92r7wr) |
+| `1JHceFenZHACSRPD6tE4bfU6yJ83wTG6kH` | `10,598.76308363` | [Check](https://blockchair.com/bitcoin/address/1JHceFenZHACSRPD6tE4bfU6yJ83wTG6kH) |
+| `bc1qhd0r5kh3u9mhac7de58qd2rdfx4kkv84kpx302` | `10,500.00169552` | [Check](https://blockchair.com/bitcoin/address/bc1qhd0r5kh3u9mhac7de58qd2rdfx4kkv84kpx302) |
+| `1PshhqS9J4SXBJEmCPrsJ9FLiuYMnvzXK5` | `10,363.23213873` | [Check](https://blockchair.com/bitcoin/address/1PshhqS9J4SXBJEmCPrsJ9FLiuYMnvzXK5) |
+| `13pTeUzSU4nwkM72hM6e8AcP2d8LudZBjc` | `10,339.90754474` | [Check](https://blockchair.com/bitcoin/address/13pTeUzSU4nwkM72hM6e8AcP2d8LudZBjc) |
+| `385cR5DM96n1HvBDMzLHPYcw89fZAXULJP` | `10,301.84748793` | [Check](https://blockchair.com/bitcoin/address/385cR5DM96n1HvBDMzLHPYcw89fZAXULJP) |
+| `bc1qcdeadk07jkthules0yw9u9ue9pklvr608ez94jgwcf7h2ldzcg6qwxp9er` | `10,042.426859` | [Check](https://blockchair.com/bitcoin/address/bc1qcdeadk07jkthules0yw9u9ue9pklvr608ez94jgwcf7h2ldzcg6qwxp9er) |
+| `36zSLdRv1jyewjaC12fqK5fptn7PqewunL` | `10,031.96484597` | [Check](https://blockchair.com/bitcoin/address/36zSLdRv1jyewjaC12fqK5fptn7PqewunL) |
+| `bc1qrj8jwwea530rx00ldc22w8mnaclae4m54e6tgy` | `10,009.76353136` | [Check](https://blockchair.com/bitcoin/address/bc1qrj8jwwea530rx00ldc22w8mnaclae4m54e6tgy) |
+| `1f1miYFQWTzdLiCBxtHHnNiW7WAWPUccr` | `10,009.26307138` | [Check](https://blockchair.com/bitcoin/address/1f1miYFQWTzdLiCBxtHHnNiW7WAWPUccr) |
+| `bc1qsxdxm0exqdsmnl9ejrz250xqxrxpxkgf5nhhtq` | `10,001.7407537` | [Check](https://blockchair.com/bitcoin/address/bc1qsxdxm0exqdsmnl9ejrz250xqxrxpxkgf5nhhtq) |
+| `bc1qtef0p08lputg4qazhx2md43ynhc9kp20pn297qnz68068d9z48asmemanj` | `10,000.80233877` | [Check](https://blockchair.com/bitcoin/address/bc1qtef0p08lputg4qazhx2md43ynhc9kp20pn297qnz68068d9z48asmemanj) |
+| `1BAFWQhH9pNkz3mZDQ1tWrtKkSHVCkc3fV` | `10,000.07829836` | [Check](https://blockchair.com/bitcoin/address/1BAFWQhH9pNkz3mZDQ1tWrtKkSHVCkc3fV) |
+| `bc1qe75775tzuvspl59cw77ycc472jl0sgue69x3up` | `10,000.04355857` | [Check](https://blockchair.com/bitcoin/address/bc1qe75775tzuvspl59cw77ycc472jl0sgue69x3up) |
+| `14YK4mzJGo5NKkNnmVJeuEAQftLt795Gec` | `10,000.03456676` | [Check](https://blockchair.com/bitcoin/address/14YK4mzJGo5NKkNnmVJeuEAQftLt795Gec) |
+| `1Ki3WTEEqTLPNsN5cGTsMkL2sJ4m5mdCXT` | `10,000.02521437` | [Check](https://blockchair.com/bitcoin/address/1Ki3WTEEqTLPNsN5cGTsMkL2sJ4m5mdCXT) |
+| `1KbrSKrT3GeEruTuuYYUSQ35JwKbrAWJYm` | `10,000.01672481` | [Check](https://blockchair.com/bitcoin/address/1KbrSKrT3GeEruTuuYYUSQ35JwKbrAWJYm) |
+| `1P1iThxBH542Gmk1kZNXyji4E4iwpvSbrt` | `10,000.01279339` | [Check](https://blockchair.com/bitcoin/address/1P1iThxBH542Gmk1kZNXyji4E4iwpvSbrt) |
+| `12tLs9c9RsALt4ockxa1hB4iTCTSmxj2me` | `10,000.01134115` | [Check](https://blockchair.com/bitcoin/address/12tLs9c9RsALt4ockxa1hB4iTCTSmxj2me) |
+| `1ucXXZQSEf4zny2HRwAQKtVpkLPTUKRtt` | `10,000.01039895` | [Check](https://blockchair.com/bitcoin/address/1ucXXZQSEf4zny2HRwAQKtVpkLPTUKRtt) |
+| `1CPaziTqeEixPoSFtJxu74uDGbpEAotZom` | `10,000.01029819` | [Check](https://blockchair.com/bitcoin/address/1CPaziTqeEixPoSFtJxu74uDGbpEAotZom) |
+| `1GUfWdZQoo2pQ4BKHsiegxuZPnheY5ueTm` | `10,000.0081734` | [Check](https://blockchair.com/bitcoin/address/1GUfWdZQoo2pQ4BKHsiegxuZPnheY5ueTm) |
+| `12HnxiXEeKUVjQRbMVTytsGWnzHd5LdGCt` | `10,000.00755979` | [Check](https://blockchair.com/bitcoin/address/12HnxiXEeKUVjQRbMVTytsGWnzHd5LdGCt) |
+| `17uULjz9moeLyjXHoKNwDRgKzf8ahY3Jia` | `10,000.00749219` | [Check](https://blockchair.com/bitcoin/address/17uULjz9moeLyjXHoKNwDRgKzf8ahY3Jia) |
+| `18qNs1yBGGKR8RyErnEF5kegbNUgPfixhS` | `10,000.0070157` | [Check](https://blockchair.com/bitcoin/address/18qNs1yBGGKR8RyErnEF5kegbNUgPfixhS) |
+| `1MewpRkpcbFdqamPPYc1bXa9AJ189Succy` | `10,000.00573704` | [Check](https://blockchair.com/bitcoin/address/1MewpRkpcbFdqamPPYc1bXa9AJ189Succy) |
+| `1DzsfLRDfbmQM99xm59au2SrTY3YmciBSB` | `10,000.00572704` | [Check](https://blockchair.com/bitcoin/address/1DzsfLRDfbmQM99xm59au2SrTY3YmciBSB) |
+
+
+
+---
 ## Ethereum Rich Address Wallet (UPDATE)
 - 100,000 Ethereum Rich Wallet Address List Import Balance On text file : [Link](https://github.com/Pymmdrza/Rich-Address-Wallet/blob/main/ETHEREUM/EthRich_Bal.txt)
 
