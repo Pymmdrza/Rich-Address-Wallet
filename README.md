@@ -3,6 +3,8 @@
 # Rich Address Wallet
 All Rich Address Wallet Cryptocurrency
 
+#### All Rich Bitcoin Address List in text File For Jun 2023 `06/2023` With `P2PKH` type : [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/BTC.Rich_06.2023 'Bitcoin Rich Wallet List 06 2023 June')
+
 #### All Bitcoin Address Wallet List Text Format (`Compressed .rar`) With Balance and Without Balance , Just Address , P2PKH Address , can download now Here . [ [`Download`] ](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Bitcoin-Addr_Jun-2023 'bitcoin wallet list address')  (* Update: Jun 2023)
 
 ---
