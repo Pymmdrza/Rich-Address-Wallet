@@ -8,9 +8,9 @@ Here you can get the collection of existing and active addresses of Ethereum use
 The files are compressed and fragmented, and the size of each file is _**1 GB**_ according to the size limitations in the upload, which results in` 2` files of `1 GB` and `1` file of `343.64 MB`, which are ready for you with the`BZ2` extension. I did .
 
 ### File's Details : 
-- **Part 1** : _Ethereum_Addresses_Latest.tsv.bz2.00_ [size: `1024 MB`]
-- **Part 2** : _Ethereum_Addresses_Latest.tsv.bz2.01_ [size: `1024 MB`]
-- **Part 3** : _Ethereum_Addresses_Latest.tsv.bz2.02_ [size: `343 MB`]
+- **Part 1** : [_Ethereum_Addresses_Latest.tsv.bz2.00_](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/download/Ethereum/Ethereum_Addresses_Latest.tsv.bz2.00 'Part 1 | download') [size: `1024 MB`]
+- **Part 2** : [_Ethereum_Addresses_Latest.tsv.bz2.01_](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/download/Ethereum/Ethereum_Addresses_Latest.tsv.bz2.01 'Part 2 | download') [size: `1024 MB`]
+- **Part 3** : [_Ethereum_Addresses_Latest.tsv.bz2.02_](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/download/Ethereum/Ethereum_Addresses_Latest.tsv.bz2.02 'Part 3 | download') [size: `343 MB`]
 
 ---
 
