@@ -1,0 +1,1 @@
+## Latest Litecoin Address (LTC)
