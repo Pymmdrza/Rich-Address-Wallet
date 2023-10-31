@@ -1028,7 +1028,7 @@ Bitcoin Rich Address File and Latest Bitcoin Addresses , Latest Bitcoin Addresse
 
 ```
 # =====================================================
-# DONATE (BTC) : 16p9y6EstGYcnofGNvUJMEGKiAWhAr1uR8
+# DONATE (BTC) : 1MMDRZA12xdBLD1P5AfEfvEMErp588vmF9
 # Website : Mmdrza.Com
 # Email : X4@mmdrza.Com
 # Dev.to/Mmdrza
