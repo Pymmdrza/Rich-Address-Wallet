@@ -21,13 +21,13 @@ All Rich Address Wallet Cryptocurrency
 
 ## Latest Bitcoin Address Wallet with Balance (*Update*)
 
-*(New Update `29/12/2023` )* All Bitcoin Address and Balance List (format: `.tsv`) [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Latest.Bitcoin)
+[`New Update 29/12/2023` ] *All Bitcoin Address and Balance List* (format: `.tsv`) [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Latest.Bitcoin)
 
-*[New Update `29/12/2023` ]* All Bitcoin Rich Address and Balance List (format: `.tsv`) [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Latest.Bitcoin)
+[`New Update 29/12/2023` ] *All Bitcoin Rich Address and Balance List (format: `.tsv`)* [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Latest.Bitcoin)
 
-*[New Update `29/12/2023` ]* All Bitcoin Rich P2PKH(`start with 1`) Rich Address and Balance List (format: `.tsv`) [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Latest.Bitcoin)
+[`New Update 29/12/2023` ] *All Bitcoin Rich P2PKH(`start with 1`) Rich Address and Balance List (format: `.tsv`)* [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Latest.Bitcoin)
 
-*[New Update `29/12/2023` ]* All Bitcoin Rich P2PKH Address List (format: `.txt`) [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Latest.Bitcoin)
+[`New Update 29/12/2023` ] *All Bitcoin Rich P2PKH Address List* (format: `.txt`) [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Latest.Bitcoin)
 
 
 *[New Update]* Ethereum Rich Address List [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/ETH.RiCH.2023)
