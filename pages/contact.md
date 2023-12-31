@@ -1,5 +1,14 @@
+---
+layout: page
+title: "Contact Us"
+description: "Get in touch with us for any queries or support requests. We're here to help!"
+keywords: "contact, support, help, query"
+author: "Pymmdrza"
+date: 2023-01-01
+permalink: /pages/contact_page/
+lang: en
+---
 
-### Contact Page
 
 >[!NOTE]
 > owner and programmer contact & detail , just follow blow
