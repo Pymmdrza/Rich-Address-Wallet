@@ -1,2 +1,14 @@
 theme: jekyll-theme-modernist
 page_excerpts: true
+title: Latest All Address Wallet
+description: Latest Wallet Address and Balance with sorrted Rich Address Bitcoin Wallet and ethereum , litecoin, dogecoin , tron wallet and ...
+baseurl: "/Rich-Address-Wallet"
+url: "https://pymmdrza.github.io"
+
+# url create page from title
+permalink: /:categories/:title/
+
+# content section [pages / posts / products]
+include:
+  - pages
+
