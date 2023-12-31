@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: "Contact Us"
 description: "Get in touch with us for any queries or support requests. We're here to help!"
 keywords: "contact, support, help, query"
