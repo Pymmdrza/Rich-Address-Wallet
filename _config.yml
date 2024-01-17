@@ -20,6 +20,6 @@ navigation:
   - title: "Latest Bitcoin Address"
     url: "https://github.com/Pymmdrza/Rich-Address-Wallet/releases/Latest.Bitcoin"
   - title: "Contact"
-    url: "/contact.html"
+    url: "/pages/contact_page/"
 
 
