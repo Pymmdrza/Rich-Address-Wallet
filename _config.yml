@@ -11,6 +11,8 @@ permalink: /:categories/:title/
 # content section [pages / posts / products]
 include:
   - pages
+  - _includes
+  - _layouts
 
 navigation:
   - title: "Home"
