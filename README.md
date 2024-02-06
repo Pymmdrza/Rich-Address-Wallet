@@ -4,7 +4,7 @@
 All Rich Address Wallet Cryptocurrency
 
 >[!TIP]
-> Latest Bitcoin Address Update 01/2024 : [Releases/Latest.Bitcoin](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Latest.Bitcoin)
+> Latest Bitcoin Address Update 02/2024 : [![Download](https://img.shields.io/badge/Release_Bitcoin-2024_02-blue?style=plastic)](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Latest_Bitcoin_2024_02 'Release Bitcoin 2024/02')  [![Bitcoin 2024/02](https://img.shields.io/badge/Bitcoin-2024_02-83B81A?style=plastic)](https://github.com/Pymmdrza/Rich-Address-Wallet/tree/main/Bitcoin/2024/02)
 > - `All Bitcoin Address And Balance`
 > - `All Rich Bitcoin Address and Balance`
 > - `All Bitcoin P2PKH Address And Balance`
@@ -18,20 +18,6 @@ All Rich Address Wallet Cryptocurrency
 > Column Type in `tsv` file : `address,balance`
 > - `address` : `string`
 > - `balance`: `integer`
-
-## Latest Bitcoin Address Wallet with Balance (*Update*)
-
-[`New Update 01/2024` ] *All Bitcoin Address and Balance List* (format: `.tsv`) [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Latest.Bitcoin)
-
-[`New Update 01/2024` ] *All Bitcoin Rich Address and Balance List (format: `.tsv`)* [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Latest.Bitcoin)
-
-[`New Update 01/2024` ] *All Bitcoin Rich P2PKH(`start with 1`) Rich Address and Balance List (format: `.tsv`)* [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Latest.Bitcoin)
-
-[`New Update 01/2024` ] *All Bitcoin Rich P2PKH Address List* (format: `.txt`) [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Latest.Bitcoin)
-
-
-*[New Update]* Ethereum Rich Address List [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/ETH.RiCH.2023)
-
 
 ---
 
