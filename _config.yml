@@ -4,7 +4,9 @@ title: Latest All Address Wallet
 description: Latest Wallet Address and Balance with sorrted Rich Address Bitcoin Wallet and ethereum , litecoin, dogecoin , tron wallet and ...
 # baseurl: "/Rich-Address-Wallet"
 url: "https://pymmdrza.github.io/Rich-Address-Wallet"
-
+remote_theme: pages-themes/hacker@v0.2.0
+plugins:
+- jekyll-remote-theme
 # url create page from title
 permalink: /:categories/:title/
 
