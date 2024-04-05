@@ -4,6 +4,10 @@
 ## All Bitcoin Address Wallet and Rich Address Wallet (UPDATE 2024/04)
 ---
 
+
+>[!NOTE]
+>Password File: `Mmdrza.Com`
+
 - Latest Bitcoin **Address And Balance (All)**[tsv / zip] : 
 
     `Latest_Bitcoin.zip`  |  [![Download](https://img.shields.io/badge/Mirror_Link-Download_(1.40GB)-4BB011?style=plastic)](https://cdn3.mmdrza.com/file/bitcoin/2024-04/Latest_Bitcoin.tsv.zip 'Download Latest Bitcoin')
