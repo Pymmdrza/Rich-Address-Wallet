@@ -7,7 +7,7 @@ All Rich Address Wallet Cryptocurrency
 ## Latest Bitcoin Address Wallet and Rich Bitcoin Address Wallet
 
 
-### Latest Rich Bitcoin Address Wallet (UPDATE 2024/06)
+### Latest Rich Bitcoin Address Wallet (UPDATE 2024/07)
 
 ---
 
@@ -18,25 +18,25 @@ All Rich Address Wallet Cryptocurrency
 - Latest Bitcoin **Rich Address and Balance** (All)[txt / zip]:
 
 
-    `Latest_Rich_Bitcoin_20240609.zip`  |  [![Download](https://img.shields.io/badge/Mirror_Link-Download_(681.64MB)-FF8800?style=plastic)](https://object.mmdrza.com/Latest_Rich_Bitcoin_20240609.zip 'Download Latest Rich Bitcoin')
+    `Latest_Bitcoin_Address_Balance.txt.zip`  |  [![Download](https://img.shields.io/badge/Mirror_Link-Download-FF8800?style=plastic)](https://object.mmdrza.com/Latest_Bitcoin_Address_Balance.txt.zip 'Download Latest Rich Bitcoin')
 
 
 - Latest Bitcoin **Rich Address P2PKH (Start With 1)**[txt / zip]:
 
 
-   `Latest_Rich_Bitcoin_P2PKH_20240609.zip`  |  [![Download](https://img.shields.io/badge/Mirror_Link-Download_(594MB)-37A5CC?style=plastic)](https://object.mmdrza.com/Latest_Rich_Bitcoin_P2PKH_20240609.zip 'Download Latest Rich Bitcoin P2PKH')
+   `Latest_P2PKH_Bitcoin_Addresses.txt.zip`  |  [![Download](https://img.shields.io/badge/Mirror_Link-Download-37A5CC?style=plastic)](https://object.mmdrza.com/Latest_P2PKH_Bitcoin_Addresses.txt.zip 'Download Latest Rich Bitcoin P2PKH')
 
 
 - Latest Bitcoin **Rich Address P2SH (Start With 3)**[txt / zip]:
 
 
-   `Latest_Rich_Bitcoin_P2SH_20240609.zip`  |  [![Download](https://img.shields.io/badge/Mirror_Link-Download_(225.15MB)-37A5CC?style=plastic)](https://object.mmdrza.com/Latest_Rich_Bitcoin_P2SH_20240609.zip 'Download Latest Rich Bitcoin P2SH')
+   `Latest_P2SH_Bitcoin_Addresses.txt.zip`  |  [![Download](https://img.shields.io/badge/Mirror_Link-Download-37A5CC?style=plastic)](https://object.mmdrza.com/Latest_P2SH_Bitcoin_Addresses.txt.zip 'Download Latest Rich Bitcoin P2SH')
 
   
 - Latest Bitcoin **Rich Address BECH32 (Start With bcq1)**[txt / zip]:
 
 
-   `Latest_Rich_Bitcoin_BECH32_20240609.zip`  |  [![Download](https://img.shields.io/badge/Mirror_Link-Download_(605.83MB)-37A5CC?style=plastic)](https://object.mmdrza.com/Latest_Rich_Bitcoin_BECH32_20240609.zip 'Download Latest Rich Bitcoin BECH32')
+   `Latest_BECH32_Bitcoin_Addresses.txt.zip`  |  [![Download](https://img.shields.io/badge/Mirror_Link-Download-37A5CC?style=plastic)](https://object.mmdrza.com/Latest_BECH32_Bitcoin_Addresses.txt.zip 'Download Latest Rich Bitcoin BECH32')
 
 ---
 
