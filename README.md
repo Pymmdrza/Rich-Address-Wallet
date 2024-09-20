@@ -14,35 +14,24 @@ All Rich Address Wallet Cryptocurrency
 >[!NOTE]
 >Password File: `Mmdrza.Com`
 
-
-- Latest Bitcoin **Rich Address and Balance** (All)[txt / zip]:
-
-
-    `Latest_Bitcoin_Address_Balance.txt.zip`  |  [![Download](https://img.shields.io/badge/Mirror_Link-Download-FF8800?style=plastic)](https://object.mmdrza.com/Latest_Bitcoin_Address_Balance.txt.zip 'Download Latest Rich Bitcoin')
-
-
-- Latest Bitcoin **Rich Address P2PKH (Start With 1)**[txt / zip]:
-
-
-   `Latest_P2PKH_Bitcoin_Addresses.txt.zip`  |  [![Download](https://img.shields.io/badge/Mirror_Link-Download-37A5CC?style=plastic)](https://object.mmdrza.com/Latest_P2PKH_Bitcoin_Addresses.txt.zip 'Download Latest Rich Bitcoin P2PKH')
+| File | Link / Type / Size | Update at | 
+| --------- | ----------- | ------ |
+|:file_folder: Latest Rich Bitcoin Address Wallet and Balance (All Address Type) | :floppy_disk: [![Download](https://img.shields.io/badge/Download_.tsv.gz-685MB-37A5CC?style=plastic)](https://mega.nz/file/7dE32ZiJ#cmjTVUMSD9MDdTQAYuZcumm7Uv_yoDV2QAopXYjxqmw 'Latest All Rich Bitcoin Address Wallet and Balance') | :hourglass_flowing_sand: 2024-09-20 |
+|:file_folder: Latest Rich Bitcoin Only Address Wallet (All Address Type) | :floppy_disk: [![Download](https://img.shields.io/badge/Download_.txt.gz-646MB-37A5CC?style=plastic)](https://mega.nz/file/WUEXXCqZ#pwmGr4-Zn77bS2epQef59SVplta8LFChkOeIIvGN4oI 'Latest All Rich Bitcoin Address Wallet and Balance') | :hourglass_flowing_sand: 2024-09-20 |
+|:file_folder: Latest Rich Bitcoin `P2PKH` Address Wallet (start with `1`) | :floppy_disk: [![Download](https://img.shields.io/badge/Download_.txt.gz-556MB-37A5CC?style=plastic)](https://mega.nz/file/TJcWHagI#LM45d_VQnTdsiEGGvtPOk94hSvTx1ku44qXQ0Z-jyXI 'Latest Rich Bitcoin P2PKH Address Wallet') | :hourglass_flowing_sand: 2024-09-20 |
+|:file_folder: Latest Rich Bitcoin `P2SH` Address Wallet (start with `3`) | :floppy_disk: [![Download](https://img.shields.io/badge/Download_.txt.gz-191MB-37A5CC?style=plastic)](https://mega.nz/file/Ld8m3Iqa#qXst2SB3ieBBTVjroD1JaTtAp4xSDgRp9RRP7nDG3S8 'Latest Rich Bitcoin P2SH Address Wallet') | :hourglass_flowing_sand: 2024-09-20 |
+|:file_folder: Latest Rich Bitcoin `BECH32` Address Wallet (start with `bc1`) | :floppy_disk: [![Download](https://img.shields.io/badge/Download_.txt.gz-620MB-37A5CC?style=plastic)](https://mega.nz/file/HNUU1JKS#kO86w5e1cNAefo52qM5vW_hE2GMYz7lx9TDUY8-OYec 'Latest Rich Bitcoin BECH32 Address Wallet') | :hourglass_flowing_sand: 2024-09-20 |
 
 
-- Latest Bitcoin **Rich Address P2SH (Start With 3)**[txt / zip]:
 
-
-   `Latest_P2SH_Bitcoin_Addresses.txt.zip`  |  [![Download](https://img.shields.io/badge/Mirror_Link-Download-37A5CC?style=plastic)](https://object.mmdrza.com/Latest_P2SH_Bitcoin_Addresses.txt.zip 'Download Latest Rich Bitcoin P2SH')
-
-  
-- Latest Bitcoin **Rich Address BECH32 (Start With bcq1)**[txt / zip]:
-
-
-   `Latest_BECH32_Bitcoin_Addresses.txt.zip`  |  [![Download](https://img.shields.io/badge/Mirror_Link-Download-37A5CC?style=plastic)](https://object.mmdrza.com/Latest_BECH32_Bitcoin_Addresses.txt.zip 'Download Latest Rich Bitcoin BECH32')
 
 ---
 
 ## Rich Address Downloader
 
-Rich Cryptocurrency Wallet Address Downloader (Auto Update) v1.0.3 [ [Download](https://github.com/Pymmdrza/RichAddressDownloader 'rich address downloader software for download automatic update rich wallet cryptocurrency') ]
+Rich Cryptocurrency Wallet Address Downloader (Auto Update) v1.0.3 [Fast Download]
+
+[ [Download (from github)](https://github.com/Pymmdrza/RichAddressDownloader 'rich address downloader software for download automatic update rich wallet cryptocurrency') ] [ [Download (from sourceforge)](https://sourceforge.net/projects/rich-address-downloader/files/ 'Download Rich Address Downloader from sourceforge') ]
 
 
 ![Main screenshot from rich address downloader v1.0.3](https://raw.githubusercontent.com/Pymmdrza/RichAddressDownloader/main/img/Screenshot-main.webp 'Main screenshot from rich address downloader v1.0.3')
