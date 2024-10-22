@@ -16,13 +16,24 @@ All Rich Address Wallet Cryptocurrency
 
 | File | Link / Type / Size | Update at | 
 | --------- | ----------- | ------ |
-|:file_folder: Latest Rich Bitcoin Address Wallet and Balance (All Address Type) | :floppy_disk: [![Download](https://img.shields.io/badge/Download_.tsv.gz-685MB-37A5CC?style=plastic)](https://mega.nz/file/7dE32ZiJ#cmjTVUMSD9MDdTQAYuZcumm7Uv_yoDV2QAopXYjxqmw 'Latest All Rich Bitcoin Address Wallet and Balance') | :hourglass_flowing_sand: 2024-09-20 |
-|:file_folder: Latest Rich Bitcoin Only Address Wallet (All Address Type) | :floppy_disk: [![Download](https://img.shields.io/badge/Download_.txt.gz-646MB-37A5CC?style=plastic)](https://mega.nz/file/WUEXXCqZ#pwmGr4-Zn77bS2epQef59SVplta8LFChkOeIIvGN4oI 'Latest All Rich Bitcoin Address Wallet and Balance') | :hourglass_flowing_sand: 2024-09-20 |
-|:file_folder: Latest Rich Bitcoin `P2PKH` Address Wallet (start with `1`) | :floppy_disk: [![Download](https://img.shields.io/badge/Download_.txt.gz-556MB-37A5CC?style=plastic)](https://mega.nz/file/TJcWHagI#LM45d_VQnTdsiEGGvtPOk94hSvTx1ku44qXQ0Z-jyXI 'Latest Rich Bitcoin P2PKH Address Wallet') | :hourglass_flowing_sand: 2024-09-20 |
-|:file_folder: Latest Rich Bitcoin `P2SH` Address Wallet (start with `3`) | :floppy_disk: [![Download](https://img.shields.io/badge/Download_.txt.gz-191MB-37A5CC?style=plastic)](https://mega.nz/file/Ld8m3Iqa#qXst2SB3ieBBTVjroD1JaTtAp4xSDgRp9RRP7nDG3S8 'Latest Rich Bitcoin P2SH Address Wallet') | :hourglass_flowing_sand: 2024-09-20 |
-|:file_folder: Latest Rich Bitcoin `BECH32` Address Wallet (start with `bc1`) | :floppy_disk: [![Download](https://img.shields.io/badge/Download_.txt.gz-620MB-37A5CC?style=plastic)](https://mega.nz/file/HNUU1JKS#kO86w5e1cNAefo52qM5vW_hE2GMYz7lx9TDUY8-OYec 'Latest Rich Bitcoin BECH32 Address Wallet') | :hourglass_flowing_sand: 2024-09-20 |
+|:file_folder: Latest Rich Bitcoin Address Wallet and Balance (All Address Type) | [![Download](https://img.shields.io/badge/Download_.tsv.gz-685MB-37A5CC?style=plastic)](https://mega.nz/file/7dE32ZiJ#cmjTVUMSD9MDdTQAYuZcumm7Uv_yoDV2QAopXYjxqmw 'Latest All Rich Bitcoin Address Wallet and Balance') | :hourglass_flowing_sand: 2024-10-22 |
+|:file_folder: Latest Rich Bitcoin Only Address Wallet (All Address Type) | [![Download](https://img.shields.io/badge/Download_.zip-343MB-37A5CC?style=plastic)](https://mega.nz/file/vcNVWTrY#tN46VCqekvfDrkhohw0FOlj-aIuXsgEc6STHJzzEHms 'Latest All Rich Bitcoin Address Wallet and Balance') | :hourglass_flowing_sand: 2024-10-22 |
+|:file_folder: Latest Rich Bitcoin `P2PKH` Address Wallet (start with `1`) | [![Download](https://img.shields.io/badge/Download_.zip-91MB-37A5CC?style=plastic)](https://mega.nz/file/KFtlhAjZ#hBqXf32krexEWiTExuKikvfKAyKwfbhLqeARMopfbkw 'Latest Rich Bitcoin P2PKH Address Wallet') | :hourglass_flowing_sand: 2024-10-22 |
+|:file_folder: Latest Rich Bitcoin `P2SH` Address Wallet (start with `3`) | [![Download](https://img.shields.io/badge/Download_.zip-59MB-37A5CC?style=plastic)](https://mega.nz/file/WUtQwLwC#zYL3ujY4M3VGMvdr2jAnhICeCW6DpQ45T_gPsXg4qLw 'Latest Rich Bitcoin P2SH Address Wallet') | :hourglass_flowing_sand: 2024-10-22 |
+|:file_folder: Latest Rich Bitcoin `BECH32` Address Wallet (start with `bc1`) | [![Download](https://img.shields.io/badge/Download_.zip-181MB-37A5CC?style=plastic)](https://mega.nz/file/2JMGVTLQ#HiOwCI_Ci18-akhIrSkrB60sIsxGXKF3Dpc5EdvvbPs 'Latest Rich Bitcoin BECH32 Address Wallet') | :hourglass_flowing_sand: 2024-10-22 |
 
+---
 
+>[!NOTE]
+>Password File: `Mmdrza.Com`
+
+| File | Link / Type | Update at |
+| --------- | ----------- | ------ |
+| :file_folder: All Rich Litecoin Address Wallet `LTC` | [![Download](https://img.shields.io/badge/Download_.zip-79MB-37A5CC?style=plastic)](https://mega.nz/file/7dE32ZiJ#cmjTVUMSD9MDdTQAYuZcumm7Uv_yoDV2QAopXYjxqmw 'Latest Rich Litecoin Address Wallet') | :hourglass_flowing_sand: 2024-10-22 |
+| :file_folder: All Rich Dogecoin Address Wallet `DOGE` | [![Download](https://img.shields.io/badge/Download_.zip-54MB-37A5CC?style=plastic)](https://mega.nz/file/PU0RkQxZ#F8b9o5RW1a2OQhrF9ws5jjCBuKsnfJYHhDwU9b2wkSc 'Latest Rich Dogecoin Address Wallet') | :hourglass_flowing_sand: 2024-10-22 |
+| :file_folder: All Rich Dash Address Wallet `DASH` | [![Download](https://img.shields.io/badge/Download_.zip-118KB-37A5CC?style=plastic)](https://mega.nz/file/fQsBTbYI#NB-ZWGVWZnHenuxRPvTzmpkBb15nSziITq2OnCKcViw 'Latest Rich Dash Address Wallet') | :hourglass_flowing_sand: 2024-10-22 |
+| :file_folder: All Rich Bitcoin Cash Address Wallet `BCH` | [![Download](https://img.shields.io/badge/Download_.zip-99MB-37A5CC?style=plastic)](https://mega.nz/file/TFdghRxJ#S_mK0q0F1cvaYIWF67VwA1X94-h-qx7o4VncNL__658 'Latest Rich Bitcoin Cash Address Wallet') | :hourglass_flowing_sand: 2024-10-22 |
+| :file_folder: All Rich zCash Address Wallet `ZEC` | [![Download](https://img.shields.io/badge/Download_.zip-36KB-37A5CC?style=plastic)](https://mega.nz/file/vBU1gAZS#opY3SDmp506H3Ef06oWPkhesvILZamdyo4LGMgE7dv4 'Latest Rich ZCASH Address Wallet') | :hourglass_flowing_sand: 2024-10-22 |
 
 
 ---
