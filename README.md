@@ -13,6 +13,8 @@ If you want to download the latest and most recent files related to cryptocurren
 
 ---
 
+### Latest Ethereum Rich Address Wallet
+
 >[!NOTE]
 >🔐 Password File : `Mmdrza.Com`
 
