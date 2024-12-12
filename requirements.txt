@@ -1,0 +1,2 @@
+colorthon
+xterm
