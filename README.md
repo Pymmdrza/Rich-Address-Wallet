@@ -13,6 +13,22 @@ If you want to download the latest and most recent files related to cryptocurren
 
 ---
 
+>[!NOTE]
+>🔐 Password File : `Mmdrza.Com`
+
+| File | Link | Update at | 
+| --------- | ----------- | ------ |
+| :file_folder: Ethereum Latest Rich Addresses | [Latest_Rich_Ethereum.zip](https://mega.nz/file/uFMzEJjb#OHThDrc3HAKkJxudPDpmNbPsYZE8wMp5e44sCxbyveo)  | :hourglass_flowing_sand: 2024.12.12 |
+| :file_folder: Ethereum Address `0.01 ETH` to `1 ETH` | [Ethereum_0.01-1.zip](https://mega.nz/file/PdVBVboL#i5vS6aGKep46haXsFu-b1WpeX0t0W2MJdu0_Rk4tdPE) | :hourglass_flowing_sand: 2024.12.12 |
+| :file_folder: Ethereum Address `1 ETH` to `10 ETH` | [Ethereum_1-10.zip](https://mega.nz/file/zVFxGBZR#uctmb6M6eW5j0iiFk9qPkyYpcUX5H9urbUBVV4Y3e4A) | :hourglass_flowing_sand: 2024.12.12 |
+| :file_folder: Ethereum Address `10 ETH` to `100 ETH` | [Ethereum_10-100.zip](https://mega.nz/file/XJExjJSR#kFYQc5ZNyUtKMZuyKYw4kzhR_XAC_edoZowoKWwCWhQ) | :hourglass_flowing_sand: 2024.12.12 |
+| :file_folder: Ethereum Address `100 ETH` to `1000 ETH` | [Ethereum_100-1000.zip](https://mega.nz/file/TYkG3BwR#eBxBc-AhPmo7cAnj8LYBeIdrS_Hh6U021V-_AAddFyI) | :hourglass_flowing_sand: 2024.12.12 |
+| :file_folder: Ethereum Address `1000 ETH` to More Than | [Ethereum_1000-More.zip](https://mega.nz/file/mIE0VZzC#H0633-2GlqiZAY0hbm0AMuIQBuU22UTmNHkipnIaWsM) | :hourglass_flowing_sand: 2024.12.12 |
+
+✅ The total number of files sorted by wallet balance in text format, compressed as a zip, you can go to [this page](https://github.com/Pymmdrza/Rich-Address-Wallet/tree/main/ETHEREUM/2024 'Ethereum Rich Addresses Files') to view them or download them from the following links:
+
+---
+
 ### Bitcoin All Address Wallet
 
 >[!NOTE]
