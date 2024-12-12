@@ -1,0 +1,30 @@
+site_name: RichAddressWallet
+site_author: 'Pymmdrza@gmail.com'
+repo_url: 'https://github.com/Pymmdrza/Rich-Address-Wallet'
+site_description: 'All Latest Rich Bitcoin Ethereum Tron , Dogecoin , Litecoin, Dash, Bitcoin cash Address Wallet '
+site_url: 'https://pymmdrza.github.io/Rich-Address-Wallet'
+copyright: 'Copyright © 2023, Pymmdrza'
+
+nav:
+  - Home: index.md
+  - Owner: 'https://mmdrza.com'
+
+theme:
+  name: readthedocs
+  locale: en
+  collapse_by_default: false
+  include_homepage_in_sidebar: true
+  features:
+    - navigation.tabs
+    - navigation.instant
+
+plugins:
+  - search:
+      indexing: 'full'
+
+markdown_extensions:
+  - smarty
+  - toc:
+      permalink: true
+      separator: "-"
+  - sane_lists
