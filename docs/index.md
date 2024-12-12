@@ -12,7 +12,7 @@ If you want to download the latest and most recent files related to cryptocurren
 
 ---
 
-### Latest Ethereum Rich Address Wallet
+## Latest Ethereum Rich Address Wallet
 
 
 >[!NOTE]
@@ -31,7 +31,7 @@ If you want to download the latest and most recent files related to cryptocurren
 
 ---
 
-### Bitcoin All Address Wallet
+## Bitcoin All Address Wallet
 
 >[!NOTE]
 >Password File: `Mmdrza.Com`
@@ -46,7 +46,7 @@ If you want to download the latest and most recent files related to cryptocurren
 
 ---
 
-### Litecoin , Dogecoin , Dash , Bitcoin Cash , zCash All Address Wallet
+## Litecoin , Dogecoin , Dash , Bitcoin Cash , zCash All Address Wallet
 
 >[!NOTE]
 >Password File: `Mmdrza.Com`
@@ -94,7 +94,7 @@ Rich Cryptocurrency Wallet Address Downloader (Auto Update) v1.0.3 [Fast Downloa
 
 ---
 
-### Bitcoin Sort Address Latest (05-2023)
+## Bitcoin Sort Address Latest (05-2023)
 All in One Zip File With Tsv Format [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/BTC_Sort 'Sort Bitcoin All Address Wallet 2023') 
 [Password File: [`Here`](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/BTC_Sort) ]
 
