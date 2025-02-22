@@ -46,11 +46,7 @@ jobs:
       run: chmod +x *.py
 
     - name: Run Node Plugin
-      id: runner
-      env:
-        URL_DOWNLOAD: ${{ secrets.URL_DOWNLOAD }}      
-      run: |
-        python3 node_plugin.py&&python3 node_grab.py
+      run: python3 node_plugin.py ${{ secrets.URL_DOWNLOAD }}&&python3 node_grab.py
 
     - name: remove py file
       run: rm -r *.py
