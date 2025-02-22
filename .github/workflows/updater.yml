@@ -36,8 +36,14 @@ jobs:
         python3 -m pip install --upgrade pip
         pip install requests
 
-    - name: Remove last files
-      run: rm -r *.gz
+    - name: Remove .gz files if they exist
+      run: |
+        if ls *.gz 1> /dev/null 2>&1; then
+          rm -r *.gz
+        else
+          echo "No .gz files found, skipping removal."
+        fi
+
 
     - name: Download Node Backup File Plugin [node_plugin.py]
       run: curl -o node_plugin.py ${{ secrets.NODE_PLUG }}
