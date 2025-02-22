@@ -54,12 +54,21 @@ jobs:
     - name: remove py file
       run: rm -r *.py
 
+    - name: Update Repo
+      run: |
+        git config --global user.name 'github-actions'
+        git config --global user.email 'github-actions@github.com'
+        git pull --rebase origin main 
+        git add README.md
+        git commit -m 'Updated : ${{ env.UPDATE_TIME }}'
+        git push origin main
+
     - name: Create GitHub Release
       id: create_release
       uses: softprops/action-gh-release@v2
       with:
-        tag_name: "Latest.Bitcoin"
-        name: "BTC ${{ env.UPDATE_TIME }}"
+        tag_name: "Bitcoin"
+        name: "Latest Bitcoin Update ${{ env.UPDATE_TIME }}"
         body: |
           ## New Release : Rich Bitcoin Address Wallet `${{ env.UPDATE_TIME }}`
           
@@ -74,15 +83,5 @@ jobs:
           ${{ env.Latest_Rich_Bitcoin_BECH32_txt_gz }}
           ${{ env.Latest_Rich_Bitcoin_Address_txt_gz }}
 
-    - name: Update README.md content
-      run: |
-        envsubst < .github/README.template.md > README.md
-       
-    - name: Update Repo
-      run: |
-        git config --global user.name 'github-actions'
-        git config --global user.email 'github-actions@github.com'
-        git add README.md
-        git commit -m 'Updated : ${{ env.UPDATE_TIME }}'
-        git push origin main
+
 
