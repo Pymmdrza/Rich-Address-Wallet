@@ -1,4 +1,4 @@
-name: Agent Updater
+name: Bitcoin Updater
 
 on:
   schedule:
