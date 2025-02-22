@@ -15,15 +15,15 @@
 
 All files are automatically prepared for you in several different and regular types according to defined algorithms, and you can download the latest and most up-to-date collection, updated and ready to download, from the links below.
 
-### Latest Updated `${{  env.UPDATE_TIME }}`
+### Latest Updated `$UPDATE_TIME`
 
-| File Name                                               | File Size                                          | File Type |                                                                              |
-|---------------------------------------------------------|----------------------------------------------------|-----------|------------------------------------------------------------------------------|
-| Latest Bitcoin Addresses (Any Type)                     | ${{ env.Latest_Bitcoin_Addresses_tsv_gz_size }}    | `.tsv.gz` | [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/latest/) |
-| Rich Bitcoin Address Type : **P2PKH** (Start with 1)    | ${{ env.Latest_Rich_Bitcoin_P2PKH_txt_gz_size }}   | `.txt.gz` | [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/latest/) |
-| Rich Bitcoin Address Type : **P2SH** (Start with 3)     | ${{ env.Latest_Rich_Bitcoin_P2SH_txt_gz_size }}    | `.txt.gz` | [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/latest/) |
-| Rich Bitcoin Address Type : **BECH32** (Start with bc1) | ${{ env.Latest_Rich_Bitcoin_BECH32_txt_gz_size }}  | `.txt.gz` | [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/latest/) |
-| Rich Bitcoin (Type : **P2PKH** & **P2SH** & **BECH32**) | ${{ env.Latest_Rich_Bitcoin_Address_txt_gz_size }} | `.txt.gz` | [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/latest/) |
+| File Name                                               | File Size                                | File Type |                                                                              |
+|---------------------------------------------------------|------------------------------------------|-----------|------------------------------------------------------------------------------|
+| Latest Bitcoin Addresses (Any Type)                     | $Latest_Bitcoin_Addresses_tsv_gz_size    | `.tsv.gz` | [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/latest/) |
+| Rich Bitcoin Address Type : **P2PKH** (Start with 1)    | $Latest_Rich_Bitcoin_P2PKH_txt_gz_size   | `.txt.gz` | [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/latest/) |
+| Rich Bitcoin Address Type : **P2SH** (Start with 3)     | $Latest_Rich_Bitcoin_P2SH_txt_gz_size    | `.txt.gz` | [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/latest/) |
+| Rich Bitcoin Address Type : **BECH32** (Start with bc1) | $Latest_Rich_Bitcoin_BECH32_txt_gz_size  | `.txt.gz` | [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/latest/) |
+| Rich Bitcoin (Type : **P2PKH** & **P2SH** & **BECH32**) | $Latest_Rich_Bitcoin_Address_txt_gz_size | `.txt.gz` | [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/latest/) |
 
 
 ---
