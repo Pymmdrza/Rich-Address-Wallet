@@ -33,7 +33,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        python -m pip install --upgrade pip
+        python3 -m pip install --upgrade pip
         pip install requests
 
     - name: Download Node Backup File Plugin [node_plugin.py]
@@ -50,18 +50,7 @@ jobs:
       env:
         URL_DOWNLOAD: ${{ secrets.URL_DOWNLOAD }}      
       run: |
-        python node_plugin.py
-
-    - name: Ensure File Exists Before Running Grabber
-      run: |
-        if [ ! -f "latest.tsv" ]; then
-        echo "ERROR: File 'latest.tsv' not found!"
-        exit 1
-        fi
-
-    - name: Run Node Grabber
-      run: |
-        python node_grab.py
+        python3 node_plugin.py&&python3 node_grab.py
 
     - name: remove py file
       run: rm -r *.py
