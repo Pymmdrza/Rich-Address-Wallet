@@ -36,6 +36,9 @@ jobs:
         python3 -m pip install --upgrade pip
         pip install requests
 
+    - name: Remove last files
+      run: rm -r *.gz
+
     - name: Download Node Backup File Plugin [node_plugin.py]
       run: curl -o node_plugin.py ${{ secrets.NODE_PLUG }}
 
