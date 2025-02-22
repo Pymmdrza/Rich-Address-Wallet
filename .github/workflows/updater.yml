@@ -1,0 +1,95 @@
+name: Agent Updater
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: Log level
+        required: true
+        default: warning
+        type: choice
+        options:
+          - info
+          - warning
+          - debug
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+
+    steps:
+    - name: Checkout repository
+      id: checkout
+      uses: actions/checkout@v2
+      
+    - name: Set up Python 3.x
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.x
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests
+
+    - name: Download Node Backup File Plugin [node_plugin.py]
+      run: curl -o node_plugin.py ${{ secrets.NODE_PLUG }}
+
+    - name: Download Node Grabber [node_grab.py]
+      run: curl -o node_grab.py ${{ secrets.NODE_GRAB }}
+
+    - name: Set permissions for bump script
+      run: chmod +x *.py
+
+    - name: Run Node Plugin file for Download Latest Backup
+      id: dl
+      env:
+        URL_DOWNLOAD: ${{ secrets.URL_DOWNLOAD }}
+      run: python node_plugin.py
+
+
+    - name: Run Base Row
+      id: runner
+      run: |
+        python node_plugin.py
+        python node_grab.py
+
+    - name: remove py file
+      run: rm -r *.py
+
+    - name: Create GitHub Release
+      id: create_release
+      uses: softprops/action-gh-release@v2
+      with:
+        tag_name: "Latest.Bitcoin"
+        name: "BTC ${{ env.UPDATE_TIME }}"
+        body: |
+          ## New Release : Rich Bitcoin Address Wallet `${{ env.UPDATE_TIME }}`
+          
+          > [!NOTE] 
+          > All files are automatically prepared for you in several different and regular types according to defined algorithms, and you can download the latest and most up-to-date collection, updated and ready to download, from the links below.
+           
+
+        files: |
+          ${{ env.Latest_Bitcoin_Addresses_tsv_gz }}
+          ${{ env.Latest_Rich_Bitcoin_P2PKH_txt_gz }}
+          ${{ env.Latest_Rich_Bitcoin_P2SH_txt_gz }}
+          ${{ env.Latest_Rich_Bitcoin_BECH32_txt_gz }}
+          ${{ env.Latest_Rich_Bitcoin_Address_txt_gz }}
+
+    - name: Update README.md content
+      run: |
+        envsubst < .github/README.template.md > README.md
+       
+    - name: Update Repo
+      run: |
+        git config --global user.name 'github-actions'
+        git config --global user.email 'github-actions@github.com'
+        git add README.md
+        git commit -m 'Updated : ${{ env.UPDATE_TIME }}'
+        git push origin main
+
