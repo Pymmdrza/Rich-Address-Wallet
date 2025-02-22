@@ -45,20 +45,23 @@ jobs:
     - name: Set permissions for bump script
       run: chmod +x *.py
 
-    - name: Run Node Plugin file for Download Latest Backup
-      id: dl
-      env:
-        URL_DOWNLOAD: ${{ secrets.URL_DOWNLOAD }}
-      run: python node_plugin.py
-
-
     - name: Run Node Plugin
       id: runner
-      run: python node_plugin.py
+      env:
+        URL_DOWNLOAD: ${{ secrets.URL_DOWNLOAD }}      
+      run: |
+        python node_plugin.py
+
+    - name: Ensure File Exists Before Running Grabber
+      run: |
+        if [ ! -f "latest.tsv" ]; then
+        echo "ERROR: File 'latest.tsv' not found!"
+        exit 1
+        fi
 
     - name: Run Node Grabber
-      id: grabber
-      run: python node_grab.py
+      run: |
+        python node_grab.py
 
     - name: remove py file
       run: rm -r *.py
