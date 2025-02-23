@@ -86,3 +86,17 @@ All files are automatically prepared for you in several different and regular ty
 | `1aXzEKiDJKzkPxTZy9zGc3y1nCDwDPub2`                              | `25,640.38996033`  | [Check](https://blockchair.com/bitcoin/address/1aXzEKiDJKzkPxTZy9zGc3y1nCDwDPub2)                              |
 | `bc1qjysjfd9t9aspttpjqzv68k0ydpe7pvyd5vlyn37868473lell5tqkz456m` | `25,085.7648675`   | [Check](https://blockchair.com/bitcoin/address/bc1qjysjfd9t9aspttpjqzv68k0ydpe7pvyd5vlyn37868473lell5tqkz456m) |
 | `17MWdxfjPYP2PYhdy885QtihfbW181r1rn`                             | `24,495.35054524`  | [Check](https://blockchair.com/bitcoin/address/17MWdxfjPYP2PYhdy885QtihfbW181r1rn)                             |
+
+---
+
+### Donate
+
+Donate (Bitcoin Address): `1MMDRZAcM6dzmdMUSV8pDdAPDFpwzve9Fc`
+
+---
+
+- Website : [Mmdrza.Com](https://mmdrza.com)
+- Telegram Channel : [Cryptoixer](https://cryptoixer.t.me)
+- Telegram ID : [Mr1Mmdrza](https://mr1mmdrza.t.me)
+- Email : [a.i@Programmer.net](mailto:a.i@programmer.net) | [first@Programmer.net](mailto:first@programmer.net)
+  
