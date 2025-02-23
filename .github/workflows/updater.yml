@@ -76,7 +76,7 @@ jobs:
       uses: softprops/action-gh-release@v2
       with:
         tag_name: "Bitcoin"
-        name: "Latest Bitcoin Update ${{ env.UPDATE_TIME }}"
+        name: "Latest Bitcoin ${{ env.UPDATE_TIME }}"
         body: |
           ## New Release : Rich Bitcoin Address Wallet `${{ env.UPDATE_TIME }}`
           
