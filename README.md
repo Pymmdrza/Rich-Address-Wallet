@@ -15,15 +15,15 @@
 
 All files are automatically prepared for you in several different and regular types according to defined algorithms, and you can download the latest and most up-to-date collection, updated and ready to download, from the links below.
 
-### Latest Updated `2025-02-25 00:25:41`
+### Latest Updated `2025-02-26 00:26:32`
 
 | File Name                                               | File Size                                | File Type |                                                                              |
 |---------------------------------------------------------|------------------------------------------|-----------|------------------------------------------------------------------------------|
 | Latest Bitcoin Addresses (Any Type)                     | 1.5 GB    | `.tsv.gz` | [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/latest/) |
 | Rich Bitcoin Address Type : **P2PKH** (Start with 1)    | 345.0 MB   | `.txt.gz` | [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/latest/) |
-| Rich Bitcoin Address Type : **P2SH** (Start with 3)     | 132.4 MB    | `.txt.gz` | [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/latest/) |
-| Rich Bitcoin Address Type : **BECH32** (Start with bc1) | 464.0 MB  | `.txt.gz` | [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/latest/) |
-| Rich Bitcoin (Type : **P2PKH** & **P2SH** & **BECH32**) | 994.4 MB | `.txt.gz` | [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/latest/) |
+| Rich Bitcoin Address Type : **P2SH** (Start with 3)     | 132.5 MB    | `.txt.gz` | [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/latest/) |
+| Rich Bitcoin Address Type : **BECH32** (Start with bc1) | 463.6 MB  | `.txt.gz` | [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/latest/) |
+| Rich Bitcoin (Type : **P2PKH** & **P2SH** & **BECH32**) | 993.8 MB | `.txt.gz` | [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/latest/) |
 
 
 ---
