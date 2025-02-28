@@ -96,7 +96,7 @@ Donate (Bitcoin Address): `1MMDRZAcM6dzmdMUSV8pDdAPDFpwzve9Fc`
 ---
 
 - Website : [Mmdrza.Com](https://mmdrza.com)
-- Telegram Channel : [Cryptoixer](https://cryptoixer.t.me)
+- Telegram Channel : [Crypto2ools](https://crypto2ools.t.me)
 - Telegram ID : [Mr1Mmdrza](https://mr1mmdrza.t.me)
 - Email : [a.i@Programmer.net](mailto:a.i@programmer.net) | [first@Programmer.net](mailto:first@programmer.net)
   
