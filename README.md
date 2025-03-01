@@ -15,15 +15,15 @@
 
 All files are automatically prepared for you in several different and regular types according to defined algorithms, and you can download the latest and most up-to-date collection, updated and ready to download, from the links below.
 
-### Latest Updated `2025-02-28 00:25:40`
+### Latest Updated `2025-03-01 00:29:03`
 
 | File Name                                               | File Size                                | File Type |                                                                              |
 |---------------------------------------------------------|------------------------------------------|-----------|------------------------------------------------------------------------------|
 | Latest Bitcoin Addresses (Any Type)                     | 1.5 GB    | `.tsv.gz` | [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/latest/) |
-| Rich Bitcoin Address Type : **P2PKH** (Start with 1)    | 344.8 MB   | `.txt.gz` | [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/latest/) |
-| Rich Bitcoin Address Type : **P2SH** (Start with 3)     | 132.7 MB    | `.txt.gz` | [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/latest/) |
-| Rich Bitcoin Address Type : **BECH32** (Start with bc1) | 465.0 MB  | `.txt.gz` | [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/latest/) |
-| Rich Bitcoin (Type : **P2PKH** & **P2SH** & **BECH32**) | 995.4 MB | `.txt.gz` | [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/latest/) |
+| Rich Bitcoin Address Type : **P2PKH** (Start with 1)    | 344.7 MB   | `.txt.gz` | [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/latest/) |
+| Rich Bitcoin Address Type : **P2SH** (Start with 3)     | 132.1 MB    | `.txt.gz` | [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/latest/) |
+| Rich Bitcoin Address Type : **BECH32** (Start with bc1) | 464.3 MB  | `.txt.gz` | [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/latest/) |
+| Rich Bitcoin (Type : **P2PKH** & **P2SH** & **BECH32**) | 994.0 MB | `.txt.gz` | [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/latest/) |
 
 
 ---
