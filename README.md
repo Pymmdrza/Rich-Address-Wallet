@@ -12,7 +12,13 @@
 - Latest Rich Bitcoin Address Type : **BECH32** (Start with bc1)
 - Latest Rich Bitcoin (Type : **P2PKH** & **P2SH** & **BECH32**)
 - Latest Litecoin Addresses Type : **All**
-- Latest Rich Litecoin Addresses Type : **Minimum 0.1 LTC**
+- Latest Rich Litecoin Addresses Type : **Minimum `0.1 LTC`**
+- Latest Dogecoin Addresses Type : **All**
+- Latest Rich Dogecoin Addresses Type : **Minimum `0.1 DOGE`**
+- Latest DASH Addresses Type : **All**
+- Latest Rich DASH Addresses Type : **Minimum `0.1 DASH`**
+- Latest Bitcoin Cash Addresses Type : **All**
+- Latest Rich Bitcoin Cash Addresses Type : **Minimum `0.1 BCH`**
 
 >[!NOTE]
 > Auto Update Every 24 hours.
@@ -20,7 +26,7 @@
 All files are received with high accuracy from active nodes in parallel, and some of them are created by public nodes as a dataset from Google Cloud Big Query and then in a storage space, and then in another server (specific for this task), the stored information is checked and analyzed, and the validity of each wallet address is checked and if it meets the conditions, it is placed on the list, and then this file is uploaded to a special support host, and then by automation, the action section is created, then they are placed on the repository space for you, dear friends, to download. This process is being updated and repeated every 24 hours.
 
 
-### Latest Updated `2025-03-03 20:10:52`
+### Latest Updated ``
 
 | File Name                                               | File Size                                | File Type |                                                                              |
 |---------------------------------------------------------|------------------------------------------|-----------|------------------------------------------------------------------------------|
@@ -33,12 +39,12 @@ All files are received with high accuracy from active nodes in parallel, and som
 
 ---
 
-### Latest Litecoin `2025-03-03 20:12:02`
+### Latest Litecoin ``
 
 | File Name                       | File Size                                   | File Type |                                                                                   |
 |---------------------------------|---------------------------------------------|-----------|-----------------------------------------------------------------------------------|
-| :open_file_folder: Latest Litecoin Addresses (All) | :bar_chart: 225.6 MB      | :pencil2: `.tsv.gz` | :link: [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Litecoin) |
-| :open_file_folder: Latest Rich Litecoin Addresses  | :bar_chart: 58.1 MB | :pencil2: `.txt.gz` | :link: [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Litecoin) |
+| :open_file_folder: Latest Litecoin Addresses (All) | :bar_chart:       | :pencil2: `.tsv.gz` | :link: [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Litecoin) |
+| :open_file_folder: Latest Rich Litecoin Addresses  | :bar_chart:  | :pencil2: `.txt.gz` | :link: [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Litecoin) |
 
 
 ---
@@ -50,6 +56,25 @@ All files are received with high accuracy from active nodes in parallel, and som
 | :open_file_folder: Latest Dogecoin Addresses (All) | :bar_chart:       | :pencil2: `.tsv.gz` | :link: [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Dogecoin) |
 | :open_file_folder: Latest Rich Dogecoin Addresses  | :bar_chart:  | :pencil2: `.txt.gz` | :link: [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Dogecoin) |
 
+
+---
+
+### Latest Dash ``
+
+| File Name                       | File Size                                   | File Type |                                                                                   |
+|---------------------------------|---------------------------------------------|-----------|-----------------------------------------------------------------------------------|
+| :open_file_folder: Latest Dash Addresses (All) | :bar_chart:       | :pencil2: `.tsv.gz` | :link: [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Dash) |
+| :open_file_folder: Latest Rich Dash Addresses  | :bar_chart:  | :pencil2: `.txt.gz` | :link: [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Dash) |
+
+
+---
+
+### Latest Bitcoin Cash ``
+
+| File Name                       | File Size                                   | File Type |                                                                                   |
+|---------------------------------|---------------------------------------------|-----------|-----------------------------------------------------------------------------------|
+| :open_file_folder: Latest Bitcoin Cash Addresses (All) | :bar_chart:       | :pencil2: `.tsv.gz` | :link: [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/BitcoinCash) |
+| :open_file_folder: Latest Rich Bitcoin Cash Addresses  | :bar_chart:  | :pencil2: `.txt.gz` | :link: [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/BitcoinCash) |
 
 ---
 
