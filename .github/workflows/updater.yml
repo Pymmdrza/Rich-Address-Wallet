@@ -10,17 +10,29 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Trigger Litecoin Updater
-        uses: actions/github-script@v6
-        with:
-          script: |
-            github.rest.actions.createWorkflowDispatch({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              workflow_id: 'litecoin_updater.yml',
-              ref: context.ref
-            });
+        id: start_litecoin
+        run: |
+          response=$(curl -s -X POST -H "Accept: application/vnd.github.v3+json" \
+          -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+          https://api.github.com/repos/${{ github.repository }}/actions/workflows/litecoin_updater.yml/dispatches \
+          -d '{"ref": "main"}')
 
-      - name: Save Update Time
+          echo "Litecoin workflow triggered, waiting for completion..."
+          
+          while true; do
+            status=$(curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            "https://api.github.com/repos/${{ github.repository }}/actions/runs" | jq -r '.workflow_runs[] | select(.name=="Litecoin Updater") | .status' | head -n 1)
+
+            if [[ "$status" == "completed" ]]; then
+              echo "Litecoin update completed."
+              break
+            else
+              echo "Waiting for Litecoin updater to finish..."
+              sleep 30
+            fi
+          done
+
+      - name: Save Litecoin Update Time
         run: echo "LITECOIN=$(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_ENV
 
   dogecoin_updater:
@@ -28,17 +40,28 @@ jobs:
     needs: litecoin_updater
     steps:
       - name: Trigger Dogecoin Updater
-        uses: actions/github-script@v6
-        with:
-          script: |
-            github.rest.actions.createWorkflowDispatch({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              workflow_id: 'dogecoin_updater.yml',
-              ref: context.ref
-            });
+        run: |
+          response=$(curl -s -X POST -H "Accept: application/vnd.github.v3+json" \
+          -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+          https://api.github.com/repos/${{ github.repository }}/actions/workflows/dogecoin_updater.yml/dispatches \
+          -d '{"ref": "main"}')
 
-      - name: Save Update Time
+          echo "Dogecoin workflow triggered, waiting for completion..."
+          
+          while true; do
+            status=$(curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            "https://api.github.com/repos/${{ github.repository }}/actions/runs" | jq -r '.workflow_runs[] | select(.name=="Dogecoin Updater") | .status' | head -n 1)
+
+            if [[ "$status" == "completed" ]]; then
+              echo "Dogecoin update completed."
+              break
+            else
+              echo "Waiting for Dogecoin updater to finish..."
+              sleep 30
+            fi
+          done
+
+      - name: Save Dogecoin Update Time
         run: echo "DOGECOIN=$(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_ENV
 
   bitcoincash_updater:
@@ -46,17 +69,28 @@ jobs:
     needs: dogecoin_updater
     steps:
       - name: Trigger Bitcoin Cash Updater
-        uses: actions/github-script@v6
-        with:
-          script: |
-            github.rest.actions.createWorkflowDispatch({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              workflow_id: 'bitcoincash_updater.yml',
-              ref: context.ref
-            });
+        run: |
+          response=$(curl -s -X POST -H "Accept: application/vnd.github.v3+json" \
+          -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+          https://api.github.com/repos/${{ github.repository }}/actions/workflows/bitcoincash_updater.yml/dispatches \
+          -d '{"ref": "main"}')
 
-      - name: Save Update Time
+          echo "Bitcoin Cash workflow triggered, waiting for completion..."
+          
+          while true; do
+            status=$(curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            "https://api.github.com/repos/${{ github.repository }}/actions/runs" | jq -r '.workflow_runs[] | select(.name=="Bitcoin Cash Updater") | .status' | head -n 1)
+
+            if [[ "$status" == "completed" ]]; then
+              echo "Bitcoin Cash update completed."
+              break
+            else
+              echo "Waiting for Bitcoin Cash updater to finish..."
+              sleep 30
+            fi
+          done
+
+      - name: Save Bitcoin Cash Update Time
         run: echo "BITCOINCASH=$(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_ENV
 
   bitcoin_updater:
@@ -64,17 +98,28 @@ jobs:
     needs: bitcoincash_updater
     steps:
       - name: Trigger Bitcoin Updater
-        uses: actions/github-script@v6
-        with:
-          script: |
-            github.rest.actions.createWorkflowDispatch({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              workflow_id: 'bitcoin_updater.yml',
-              ref: context.ref
-            });
+        run: |
+          response=$(curl -s -X POST -H "Accept: application/vnd.github.v3+json" \
+          -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+          https://api.github.com/repos/${{ github.repository }}/actions/workflows/bitcoin_updater.yml/dispatches \
+          -d '{"ref": "main"}')
 
-      - name: Save Update Time
+          echo "Bitcoin workflow triggered, waiting for completion..."
+          
+          while true; do
+            status=$(curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            "https://api.github.com/repos/${{ github.repository }}/actions/runs" | jq -r '.workflow_runs[] | select(.name=="Bitcoin Updater") | .status' | head -n 1)
+
+            if [[ "$status" == "completed" ]]; then
+              echo "Bitcoin update completed."
+              break
+            else
+              echo "Waiting for Bitcoin updater to finish..."
+              sleep 30
+            fi
+          done
+
+      - name: Save Bitcoin Update Time
         run: echo "BITCOIN=$(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_ENV
 
   update_readme:
@@ -84,7 +129,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Replace Variables in README
+      - name: Load Update Times
         run: |
           export UPDATE_TIME_LITECOIN=${LITECOIN}
           export UPDATE_TIME_DOGECOIN=${DOGECOIN}
