@@ -2,28 +2,43 @@
 
 ![Rich Address Wallet](https://raw.githubusercontent.com/Pymmdrza/Rich-Address-Wallet/refs/heads/main/.github/RICH_ADDRESS_WALLET_v2.png)
 
-## Update Auto Every 24 hours (UTC) for Bitcoin Address
+## Update Every 24 hours
+
+### Latest Update
 
 - Latest Bitcoin Addresses __(Any Type)__
 - Latest Rich Bitcoin Address Type : **P2PKH** (Start with 1)
 - Latest Rich Bitcoin Address Type : **P2SH** (Start with 3)
 - Latest Rich Bitcoin Address Type : **BECH32** (Start with bc1)
 - Latest Rich Bitcoin (Type : **P2PKH** & **P2SH** & **BECH32**)
+- Latest Litecoin Addresses Type : **All**
+- Latest Rich Litecoin Addresses Type : **Minimum 0.1 LTC**
 
 >[!NOTE]
 > Auto Update Every 24 hours.
 
-All files are automatically prepared for you in several different and regular types according to defined algorithms, and you can download the latest and most up-to-date collection, updated and ready to download, from the links below.
+All files are received with high accuracy from active nodes in parallel, and some of them are created by public nodes as a dataset from Google Cloud Big Query and then in a storage space, and then in another server (specific for this task), the stored information is checked and analyzed, and the validity of each wallet address is checked and if it meets the conditions, it is placed on the list, and then this file is uploaded to a special support host, and then by automation, the action section is created, then they are placed on the repository space for you, dear friends, to download. This process is being updated and repeated every 24 hours.
+
 
 ### Latest Updated `$UPDATE_TIME`
 
 | File Name                                               | File Size                                | File Type |                                                                              |
 |---------------------------------------------------------|------------------------------------------|-----------|------------------------------------------------------------------------------|
-| Latest Bitcoin Addresses (Any Type)                     | $Latest_Bitcoin_Addresses_tsv_gz_size    | `.tsv.gz` | [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/latest/) |
-| Rich Bitcoin Address Type : **P2PKH** (Start with 1)    | $Latest_Rich_Bitcoin_P2PKH_txt_gz_size   | `.txt.gz` | [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/latest/) |
-| Rich Bitcoin Address Type : **P2SH** (Start with 3)     | $Latest_Rich_Bitcoin_P2SH_txt_gz_size    | `.txt.gz` | [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/latest/) |
-| Rich Bitcoin Address Type : **BECH32** (Start with bc1) | $Latest_Rich_Bitcoin_BECH32_txt_gz_size  | `.txt.gz` | [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/latest/) |
-| Rich Bitcoin (Type : **P2PKH** & **P2SH** & **BECH32**) | $Latest_Rich_Bitcoin_Address_txt_gz_size | `.txt.gz` | [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/latest/) |
+| :open_file_folder: Latest Bitcoin Addresses (Any Type)                     | :bar_chart: $Latest_Bitcoin_Addresses_tsv_gz_size    | :pencil2: `.tsv.gz` | :link: [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Bitcoin) |
+| :open_file_folder: Rich Bitcoin Address Type : **P2PKH** (Start with 1)    | :bar_chart: $Latest_Rich_Bitcoin_P2PKH_txt_gz_size   | :pencil2: `.txt.gz` | :link: [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Bitcoin) |
+| :open_file_folder: Rich Bitcoin Address Type : **P2SH** (Start with 3)     | :bar_chart: $Latest_Rich_Bitcoin_P2SH_txt_gz_size    | :pencil2: `.txt.gz` | :link: [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Bitcoin) |
+| :open_file_folder: Rich Bitcoin Address Type : **BECH32** (Start with bc1) | :bar_chart: $Latest_Rich_Bitcoin_BECH32_txt_gz_size  | :pencil2: `.txt.gz` | :link: [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Bitcoin) |
+| :open_file_folder: Rich Bitcoin (Type : **P2PKH** & **P2SH** & **BECH32**) | :bar_chart: $Latest_Rich_Bitcoin_Address_txt_gz_size | :pencil2: `.txt.gz` | :link: [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Bitcoin) |
+
+
+---
+
+### Latest Litecoin `$UPDATE_TIME`
+
+| File Name                       | File Size                                   | File Type |                                                                                   |
+|---------------------------------|---------------------------------------------|-----------|-----------------------------------------------------------------------------------|
+| :open_file_folder: Latest Litecoin Addresses (All) | :bar_chart: $Latest_Litecoin_Addresses_tsv_gz_size      | :pencil2: `.tsv.gz` | :link: [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Litecoin) |
+| :open_file_folder: Latest Rich Litecoin Addresses  | :bar_chart: $Latest_Rich_Litecoin_Addresses_txt_gz_size | :pencil2: `.txt.gz` | :link: [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Litecoin) |
 
 
 ---
@@ -31,9 +46,9 @@ All files are automatically prepared for you in several different and regular ty
 ### Cryptocurrencies Rich Address Wallet
 |          | Symbol                                                                     | Latest                                                                      |
 |----------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-| Bitcoin  | [BTC](https://github.com/Pymmdrza/Rich-Address-Wallet/tree/main/Bitcoin)   | [Release](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/latest/) |
+| Bitcoin  | [BTC](https://github.com/Pymmdrza/Rich-Address-Wallet/tree/main/Bitcoin)   | [Release](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Bitcoin) |
 | Ethereum | [ETH](https://github.com/Pymmdrza/Rich-Address-Wallet/tree/main/ETHEREUM)  | [Release](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/latest/) |
-| Litecoin | [LTC](https://github.com/Pymmdrza/Rich-Address-Wallet/tree/main/LITECOIN)  | [Release](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/latest/) |
+| Litecoin | [LTC](https://github.com/Pymmdrza/Rich-Address-Wallet/tree/main/LITECOIN)  | [Release](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Litecoin) |
 | Dogecoin | [DOGE](https://github.com/Pymmdrza/Rich-Address-Wallet/tree/main/Dogecoin) | [Release](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/latest/) |
 | Tron     | [TRX](https://github.com/Pymmdrza/Rich-Address-Wallet/tree/main/TRON)      | [Release](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/latest/) |
 | Solana   | -                                                                          | -                                                                           |
