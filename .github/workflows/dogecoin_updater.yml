@@ -1,8 +1,8 @@
-name: Dogecoin Updater
+name: Litecoin Updater
 
 on:
   schedule:
-    - cron: '0 4 * * *'
+    - cron: '0 5 * * *'
   workflow_dispatch:
     inputs:
       logLevel:
@@ -60,14 +60,24 @@ jobs:
     - name: remove py file
       run: rm -r *.py
 
+    - name: readme update
+      run: |
+        export COIN="Dogecoin"
+        export UPDATE_TIME="${{ env.UPDATE_TIME }}"
+        export FILE_ALL_NAME="Latest_Dogecoin_Addresses.tsv.gz"
+        export FILE_ALL_SIZE="${{ env.Latest_Dogecoin_Addresses_tsv_gz_size }}"      
+        export FILE_RICH_NAME="Latest_Rich_Dogecoin_Addresses_txt_gz"
+        export FILE_RICH_SIZE="${{ env.Latest_Rich_Dogecoin_Addresses_txt_gz_size }}"
+        envsubst < .github/README.alt.template.md > DOGECOIN/README.md
+
     - name: Create GitHub Release
       id: create_release
       uses: softprops/action-gh-release@v2
       with:
         tag_name: "Dogecoin"
-        name: "Latest Dogecoin ${{ env.UPDATE_TIME_DOGECOIN }}"
+        name: "Latest Dogecoin ${{ env.UPDATE_TIME }}"
         body: |
-          ## New Release : Dogecoin Address Wallet `${{ env.UPDATE_TIME_DOGECOIN }}`
+          ## New Release : Dogecoin Address Wallet `${{ env.UPDATE_TIME }}`
 
           Latest All Dogecoin Address Wallets with Balance and Latest Rich Dogecoin Addresses .
 
@@ -76,7 +86,7 @@ jobs:
           - Filter Minimum Balance for Rich File : `0.1 DOGE`
           
           > [!NOTE] 
-          > Latest Update : `${{ env.UPDATE_TIME_DOGECOIN }}`
+          > Latest Update : `${{ env.UPDATE_TIME }}`
 
           
            ### Donate
@@ -89,3 +99,10 @@ jobs:
           ${{ env.Latest_Dogecoin_Addresses_tsv_gz }}
           ${{ env.Latest_Rich_Dogecoin_Addresses_txt_gz }}
 
+    - name: Update Repo
+      run: |
+        git config --global user.name 'github-actions'
+        git config --global user.email 'github-actions@github.com'
+        git add DOGECOIN/README.md
+        git commit -m 'DOGECOIN Updated : ${{ env.UPDATE_TIME }}'
+        git push origin main
