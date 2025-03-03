@@ -1,4 +1,4 @@
-name: Litecoin Updater
+name: Dogecoin Updater
 
 on:
   schedule:
