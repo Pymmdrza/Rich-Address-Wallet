@@ -20,7 +20,7 @@
 All files are received with high accuracy from active nodes in parallel, and some of them are created by public nodes as a dataset from Google Cloud Big Query and then in a storage space, and then in another server (specific for this task), the stored information is checked and analyzed, and the validity of each wallet address is checked and if it meets the conditions, it is placed on the list, and then this file is uploaded to a special support host, and then by automation, the action section is created, then they are placed on the repository space for you, dear friends, to download. This process is being updated and repeated every 24 hours.
 
 
-### Latest Updated `2025-03-03 19:30:51`
+### Latest Updated `2025-03-03 20:08:42`
 
 | File Name                                               | File Size                                | File Type |                                                                              |
 |---------------------------------------------------------|------------------------------------------|-----------|------------------------------------------------------------------------------|
@@ -33,12 +33,22 @@ All files are received with high accuracy from active nodes in parallel, and som
 
 ---
 
-### Latest Litecoin `2025-03-03 19:30:51`
+### Latest Litecoin ``
 
 | File Name                       | File Size                                   | File Type |                                                                                   |
 |---------------------------------|---------------------------------------------|-----------|-----------------------------------------------------------------------------------|
-| :open_file_folder: Latest Litecoin Addresses (All) | :bar_chart: 225.6 MB      | :pencil2: `.tsv.gz` | :link: [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Litecoin) |
-| :open_file_folder: Latest Rich Litecoin Addresses  | :bar_chart: 58.1 MB | :pencil2: `.txt.gz` | :link: [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Litecoin) |
+| :open_file_folder: Latest Litecoin Addresses (All) | :bar_chart:       | :pencil2: `.tsv.gz` | :link: [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Litecoin) |
+| :open_file_folder: Latest Rich Litecoin Addresses  | :bar_chart:  | :pencil2: `.txt.gz` | :link: [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Litecoin) |
+
+
+---
+
+### Latest Dogecoin `2025-03-03 20:08:57`
+
+| File Name                       | File Size                                   | File Type |                                                                                   |
+|---------------------------------|---------------------------------------------|-----------|-----------------------------------------------------------------------------------|
+| :open_file_folder: Latest Dogecoin Addresses (All) | :bar_chart: 67.0 bytes      | :pencil2: `.tsv.gz` | :link: [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Dogecoin) |
+| :open_file_folder: Latest Rich Dogecoin Addresses  | :bar_chart: 55.0 bytes | :pencil2: `.txt.gz` | :link: [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Dogecoin) |
 
 
 ---
