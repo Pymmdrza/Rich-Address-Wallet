@@ -65,11 +65,9 @@ jobs:
         export COIN="Litecoin"
         export UPDATE_TIME="${{ env.UPDATE_TIME }}"
         export FILE_ALL_NAME="Latest_Litecoin_Addresses.tsv.gz"
-        export FILE_ALL_SIZE="${{ env.Latest_Litecoin_Addresses_tsv_gz_size }}"
-        export FILE_ALL_URL=${{ env.Latest_Litecoin_Addresses_tsv_gz_url }}
+        export FILE_ALL_SIZE="${{ env.Latest_Litecoin_Addresses_tsv_gz_size }}"      
         export FILE_RICH_NAME="Latest_Rich_Litecoin_Addresses_txt_gz"
         export FILE_RICH_SIZE="${{ env.Latest_Rich_Litecoin_Addresses_txt_gz_size }}"
-        export FILE_RICH_URL=${{ env.Latest_Rich_Litecoin_Addresses_txt_gz_url }}
         envsubst < .github/README.alt.template.md > LITECOIN/README.md
 
     - name: Create GitHub Release
