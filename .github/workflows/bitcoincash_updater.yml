@@ -1,8 +1,8 @@
-name: Bitcoin Cash Updater
+name: BitcoinCash Updater
 
 on:
   schedule:
-    - cron: '0 2 * * *'
+    - cron: '0 5 * * *'
   workflow_dispatch:
     inputs:
       logLevel:
@@ -60,23 +60,33 @@ jobs:
     - name: remove py file
       run: rm -r *.py
 
+    - name: readme update
+      run: |
+        export COIN="Bitcoin Cash"
+        export UPDATE_TIME="${{ env.UPDATE_TIME }}"
+        export FILE_ALL_NAME="Latest_BitcoinCash_Addresses.tsv.gz"
+        export FILE_ALL_SIZE="${{ env.Latest_BitcoinCash_Addresses_tsv_gz_size }}"      
+        export FILE_RICH_NAME="Latest_Rich_BitcoinCash_Addresses_txt_gz"
+        export FILE_RICH_SIZE="${{ env.Latest_Rich_BitcoinCash_Addresses_txt_gz_size }}"
+        envsubst < .github/README.alt.template.md > BITCOIN-CASH/README.md
+
     - name: Create GitHub Release
       id: create_release
       uses: softprops/action-gh-release@v2
       with:
         tag_name: "BitcoinCash"
-        name: "Latest BitcoinCash ${{ env.UPDATE_TIME_BITCOINCASH }}"
+        name: "Latest Bitcoin Cash ${{ env.UPDATE_TIME }}"
         body: |
-          ## New Release : BitcoinCash Address Wallet `${{ env.UPDATE_TIME_BITCOINCASH }}`
+          ## New Release : Bitcoin Cash Address Wallet `${{ env.UPDATE_TIME }}`
 
-          Latest All BitcoinCash Address Wallets with Balance and Latest Rich Bitcoin Cash Addresses .
+          Latest All Bitcoin Cash Address Wallets with Balance and Latest Rich Bitcoin Cash Addresses .
 
           - Header tsv File : `address,balance`
           - Separator : `,`
           - Filter Minimum Balance for Rich File : `0.1 BCH`
           
           > [!NOTE] 
-          > Latest Update : `${{ env.UPDATE_TIME_BITCOINCASH }}`
+          > Latest Update : `${{ env.UPDATE_TIME }}`
 
           
            ### Donate
@@ -88,3 +98,11 @@ jobs:
         files: |
           ${{ env.Latest_BitcoinCash_Addresses_tsv_gz }}
           ${{ env.Latest_Rich_BitcoinCash_Addresses_txt_gz }}
+
+    - name: Update Repo
+      run: |
+        git config --global user.name 'github-actions'
+        git config --global user.email 'github-actions@github.com'
+        git add BITCOIN-CASH/README.md
+        git commit -m 'BITCOIN CASH Updated : ${{ env.UPDATE_TIME }}'
+        git push origin main
