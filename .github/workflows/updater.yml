@@ -1,0 +1,96 @@
+name: Main Updater
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 1 * * *'
+
+jobs:
+  trigger_workflows:
+    runs-on: ubuntu-latest
+    steps:
+
+    # Run Dash Workflow
+      - name: Trigger Litecoin
+        uses: actions/github-script@v6
+        with:
+          script: |
+            github.rest.actions.createWorkflowDispatch({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: 'dash_updater.yml',
+              ref: context.ref,
+              inputs: {
+                logLevel: 'info'
+              }
+            });
+    # Run Litecoin Workflow
+      - name: Trigger Litecoin
+        uses: actions/github-script@v6
+        with:
+          script: |
+            github.rest.actions.createWorkflowDispatch({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: 'litecoin_updater.yml',
+              ref: context.ref,
+              inputs: {
+                logLevel: 'info'
+              }
+            });
+
+      # Run Dogecoin Workflow
+      - name: Trigger Dogecoin
+        uses: actions/github-script@v6
+        with:
+          script: |
+            github.rest.actions.createWorkflowDispatch({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: 'dogecoin_updater.yml',
+              ref: context.ref,
+              inputs: {
+                logLevel: 'info'
+              }
+            });
+            
+      # Run Bitcoin Cash Workflow
+      - name: Trigger Bitcoin
+        uses: actions/github-script@v6
+        with:
+          script: |
+            github.rest.actions.createWorkflowDispatch({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: 'bitcoincash_updater.yml',
+              ref: context.ref,
+              inputs: {
+                logLevel: 'info'
+              }
+            });
+            
+      # Run Bitcoin Workflow
+      - name: Trigger Bitcoin
+        uses: actions/github-script@v6
+        with:
+          script: |
+            github.rest.actions.createWorkflowDispatch({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: 'bitcoin_updater.yml',
+              ref: context.ref,
+              inputs: {
+                logLevel: 'info'
+              }
+            });
+            
+      - name: Update Readme Index File
+        run: envsubst < .github/README.template.md > README.md
+
+      - name: Update Repo
+        run: |
+         git config --global user.name 'github-actions'
+         git config --global user.email 'github-actions@github.com'
+         git add README.md
+         git commit -m 'Updated : ${{ env.UPDATE_TIME }}'
+         git push origin main
