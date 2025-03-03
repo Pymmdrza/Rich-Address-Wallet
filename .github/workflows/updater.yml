@@ -6,26 +6,10 @@ on:
     - cron: '0 1 * * *'
 
 jobs:
-  trigger_workflows:
+  litecoin_updater:
     runs-on: ubuntu-latest
     steps:
-
-    # Run Dash Workflow
-      - name: Trigger Litecoin
-        uses: actions/github-script@v6
-        with:
-          script: |
-            github.rest.actions.createWorkflowDispatch({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              workflow_id: 'dash_updater.yml',
-              ref: context.ref,
-              inputs: {
-                logLevel: 'info'
-              }
-            });
-    # Run Litecoin Workflow
-      - name: Trigger Litecoin
+      - name: Trigger Litecoin Updater
         uses: actions/github-script@v6
         with:
           script: |
@@ -33,14 +17,17 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               workflow_id: 'litecoin_updater.yml',
-              ref: context.ref,
-              inputs: {
-                logLevel: 'info'
-              }
+              ref: context.ref
             });
 
-      # Run Dogecoin Workflow
-      - name: Trigger Dogecoin
+      - name: Save Update Time
+        run: echo "LITECOIN=$(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_ENV
+
+  dogecoin_updater:
+    runs-on: ubuntu-latest
+    needs: litecoin_updater
+    steps:
+      - name: Trigger Dogecoin Updater
         uses: actions/github-script@v6
         with:
           script: |
@@ -48,14 +35,17 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               workflow_id: 'dogecoin_updater.yml',
-              ref: context.ref,
-              inputs: {
-                logLevel: 'info'
-              }
+              ref: context.ref
             });
-            
-      # Run Bitcoin Cash Workflow
-      - name: Trigger Bitcoin
+
+      - name: Save Update Time
+        run: echo "DOGECOIN=$(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_ENV
+
+  bitcoincash_updater:
+    runs-on: ubuntu-latest
+    needs: dogecoin_updater
+    steps:
+      - name: Trigger Bitcoin Cash Updater
         uses: actions/github-script@v6
         with:
           script: |
@@ -63,14 +53,17 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               workflow_id: 'bitcoincash_updater.yml',
-              ref: context.ref,
-              inputs: {
-                logLevel: 'info'
-              }
+              ref: context.ref
             });
-            
-      # Run Bitcoin Workflow
-      - name: Trigger Bitcoin
+
+      - name: Save Update Time
+        run: echo "BITCOINCASH=$(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_ENV
+
+  bitcoin_updater:
+    runs-on: ubuntu-latest
+    needs: bitcoincash_updater
+    steps:
+      - name: Trigger Bitcoin Updater
         uses: actions/github-script@v6
         with:
           script: |
@@ -78,19 +71,31 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               workflow_id: 'bitcoin_updater.yml',
-              ref: context.ref,
-              inputs: {
-                logLevel: 'info'
-              }
+              ref: context.ref
             });
-            
-      - name: Update Readme Index File
-        run: envsubst < .github/README.template.md > README.md
 
-      - name: Update Repo
+      - name: Save Update Time
+        run: echo "BITCOIN=$(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_ENV
+
+  update_readme:
+    runs-on: ubuntu-latest
+    needs: bitcoin_updater
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Replace Variables in README
         run: |
-         git config --global user.name 'github-actions'
-         git config --global user.email 'github-actions@github.com'
-         git add README.md
-         git commit -m 'Updated : ${{ env.UPDATE_TIME }}'
-         git push origin main
+          export UPDATE_TIME_LITECOIN=${LITECOIN}
+          export UPDATE_TIME_DOGECOIN=${DOGECOIN}
+          export UPDATE_TIME_BITCOINCASH=${BITCOINCASH}
+          export UPDATE_TIME=${BITCOIN}
+          envsubst < .github/README.template.md > README.md
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@github.com'
+          git add README.md
+          git commit -m "Updated README with latest coin update times"
+          git push origin main
