@@ -1,8 +1,8 @@
 name: Dash Updater
 
 on:
-#  schedule:
-#    - cron: '0 0 * * *'
+  schedule:
+    - cron: '0 3 * * *'
   workflow_dispatch:
     inputs:
       logLevel:
