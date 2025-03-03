@@ -26,7 +26,7 @@
 All files are received with high accuracy from active nodes in parallel, and some of them are created by public nodes as a dataset from Google Cloud Big Query and then in a storage space, and then in another server (specific for this task), the stored information is checked and analyzed, and the validity of each wallet address is checked and if it meets the conditions, it is placed on the list, and then this file is uploaded to a special support host, and then by automation, the action section is created, then they are placed on the repository space for you, dear friends, to download. This process is being updated and repeated every 24 hours.
 
 
-### Latest Updated ``
+### Latest Updated `2025.03.04 00:00:01`
 
 | File Name                                               | File Size                                | File Type |                                                                              |
 |---------------------------------------------------------|------------------------------------------|-----------|------------------------------------------------------------------------------|
@@ -39,7 +39,7 @@ All files are received with high accuracy from active nodes in parallel, and som
 
 ---
 
-### Latest Litecoin ``
+### Latest Litecoin `2025.03.04 00:00:01`
 
 | File Name                       | File Size                                   | File Type |                                                                                   |
 |---------------------------------|---------------------------------------------|-----------|-----------------------------------------------------------------------------------|
@@ -49,7 +49,7 @@ All files are received with high accuracy from active nodes in parallel, and som
 
 ---
 
-### Latest Dogecoin ``
+### Latest Dogecoin `2025.03.04 00:00:01`
 
 | File Name                       | File Size                                   | File Type |                                                                                   |
 |---------------------------------|---------------------------------------------|-----------|-----------------------------------------------------------------------------------|
@@ -59,7 +59,7 @@ All files are received with high accuracy from active nodes in parallel, and som
 
 ---
 
-### Latest Dash ``
+### Latest Dash `2025.03.04 00:00:01`
 
 | File Name                       | File Size                                   | File Type |                                                                                   |
 |---------------------------------|---------------------------------------------|-----------|-----------------------------------------------------------------------------------|
@@ -69,7 +69,7 @@ All files are received with high accuracy from active nodes in parallel, and som
 
 ---
 
-### Latest Bitcoin Cash ``
+### Latest Bitcoin Cash `2025.03.04 00:00:01`
 
 | File Name                       | File Size                                   | File Type |                                                                                   |
 |---------------------------------|---------------------------------------------|-----------|-----------------------------------------------------------------------------------|
