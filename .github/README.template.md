@@ -33,12 +33,22 @@ All files are received with high accuracy from active nodes in parallel, and som
 
 ---
 
-### Latest Litecoin `$UPDATE_TIME`
+### Latest Litecoin `$UPDATE_TIME_LITECOIN`
 
 | File Name                       | File Size                                   | File Type |                                                                                   |
 |---------------------------------|---------------------------------------------|-----------|-----------------------------------------------------------------------------------|
 | :open_file_folder: Latest Litecoin Addresses (All) | :bar_chart: $Latest_Litecoin_Addresses_tsv_gz_size      | :pencil2: `.tsv.gz` | :link: [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Litecoin) |
 | :open_file_folder: Latest Rich Litecoin Addresses  | :bar_chart: $Latest_Rich_Litecoin_Addresses_txt_gz_size | :pencil2: `.txt.gz` | :link: [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Litecoin) |
+
+
+---
+
+### Latest Dogecoin `$UPDATE_TIME_DOGECOIN`
+
+| File Name                       | File Size                                   | File Type |                                                                                   |
+|---------------------------------|---------------------------------------------|-----------|-----------------------------------------------------------------------------------|
+| :open_file_folder: Latest Dogecoin Addresses (All) | :bar_chart: $Latest_Dogecoin_Addresses_tsv_gz_size      | :pencil2: `.tsv.gz` | :link: [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Dogecoin) |
+| :open_file_folder: Latest Rich Dogecoin Addresses  | :bar_chart: $Latest_Rich_Dogecoin_Addresses_txt_gz_size | :pencil2: `.txt.gz` | :link: [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Dogecoin) |
 
 
 ---
