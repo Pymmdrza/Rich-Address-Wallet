@@ -2,7 +2,7 @@ name: Dash Updater
 
 on:
   schedule:
-    - cron: '0 3 * * *'
+    - cron: '0 5 * * *'
   workflow_dispatch:
     inputs:
       logLevel:
@@ -55,19 +55,29 @@ jobs:
       run: chmod +x *.py
 
     - name: Run Node Plugin
-      run: python3 node_plugin.py ${{ secrets.URL_Dash }}&&python3 node_grab.py Dash
+      run: python3 node_plugin.py ${{ secrets.URL_DASH }}&&python3 node_grab.py Dash
 
     - name: remove py file
       run: rm -r *.py
+
+    - name: readme update
+      run: |
+        export COIN="Dash"
+        export UPDATE_TIME="${{ env.UPDATE_TIME }}"
+        export FILE_ALL_NAME="Latest_Dash_Addresses.tsv.gz"
+        export FILE_ALL_SIZE="${{ env.Latest_Dash_Addresses_tsv_gz_size }}"      
+        export FILE_RICH_NAME="Latest_Rich_Dash_Addresses_txt_gz"
+        export FILE_RICH_SIZE="${{ env.Latest_Rich_Dash_Addresses_txt_gz_size }}"
+        envsubst < .github/README.alt.template.md > DASH/README.md
 
     - name: Create GitHub Release
       id: create_release
       uses: softprops/action-gh-release@v2
       with:
         tag_name: "Dash"
-        name: "Latest Dash ${{ env.UPDATE_TIME_DASH }}"
+        name: "Latest Dash ${{ env.UPDATE_TIME }}"
         body: |
-          ## New Release : Dash Address Wallet `${{ env.UPDATE_TIME_DASH }}`
+          ## New Release : Dash Address Wallet `${{ env.UPDATE_TIME }}`
 
           Latest All Dash Address Wallets with Balance and Latest Rich Dash Addresses .
 
@@ -76,7 +86,7 @@ jobs:
           - Filter Minimum Balance for Rich File : `0.1 DASH`
           
           > [!NOTE] 
-          > Latest Update : `${{ env.UPDATE_TIME_DASH }}`
+          > Latest Update : `${{ env.UPDATE_TIME }}`
 
           
            ### Donate
@@ -88,3 +98,11 @@ jobs:
         files: |
           ${{ env.Latest_Dash_Addresses_tsv_gz }}
           ${{ env.Latest_Rich_Dash_Addresses_txt_gz }}
+
+    - name: Update Repo
+      run: |
+        git config --global user.name 'github-actions'
+        git config --global user.email 'github-actions@github.com'
+        git add DASH/README.md
+        git commit -m 'DASH Updated : ${{ env.UPDATE_TIME }}'
+        git push origin main
