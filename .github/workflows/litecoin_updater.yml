@@ -68,7 +68,7 @@ jobs:
         git config --global user.name 'github-actions'
         git config --global user.email 'github-actions@github.com'
         git add README.md
-        git commit -m 'Updated Litecoin : ${{ env.UPDATE_TIME }}'
+        git commit -m 'Updated Litecoin : ${{ env.UPDATE_TIME_LITECOIN }}'
         git push origin main
 
     - name: Create GitHub Release
@@ -76,9 +76,9 @@ jobs:
       uses: softprops/action-gh-release@v2
       with:
         tag_name: "Litecoin"
-        name: "Latest Litecoin ${{ env.UPDATE_TIME }}"
+        name: "Latest Litecoin ${{ env.UPDATE_TIME_LITECOIN }}"
         body: |
-          ## New Release : Litecoin Address Wallet `${{ env.UPDATE_TIME }}`
+          ## New Release : Litecoin Address Wallet `${{ env.UPDATE_TIME_LITECOIN }}`
 
           Latest All Litecoin Address Wallets with Balance and Latest Rich Litecoin Addresses .
 
@@ -87,7 +87,7 @@ jobs:
           - Filter Minimum Balance for Rich File : `0.1 LTC`
           
           > [!NOTE] 
-          > Latest Update : `${{ env.UPDATE_TIME }}`
+          > Latest Update : `${{ env.UPDATE_TIME_LITECOIN }}`
 
           
            ### Donate
