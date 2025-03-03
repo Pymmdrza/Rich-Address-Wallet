@@ -60,17 +60,6 @@ jobs:
     - name: remove py file
       run: rm -r *.py
 
-    - name: Update Readme Index File
-      run: envsubst < .github/README.template.md > README.md
-
-    - name: Update Repo
-      run: |
-        git config --global user.name 'github-actions'
-        git config --global user.email 'github-actions@github.com'
-        git add README.md
-        git commit -m 'Updated Litecoin : ${{ env.UPDATE_TIME_LITECOIN }}'
-        git push origin main
-
     - name: Create GitHub Release
       id: create_release
       uses: softprops/action-gh-release@v2
