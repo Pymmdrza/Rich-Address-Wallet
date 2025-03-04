@@ -2,7 +2,7 @@ name: Litecoin Updater
 
 on:
   schedule:
-    - cron: '0 5 * * *'
+    - cron: '20 3 * * *'
   workflow_dispatch:
     inputs:
       logLevel:
