@@ -62,7 +62,7 @@ jobs:
 
     - name: readme update
       run: |
-        export COIN="Bitcoin Cash"
+        export COIN="BitcoinCash"
         export UPDATE_TIME="${{ env.UPDATE_TIME }}"
         export FILE_ALL_NAME="Latest_BitcoinCash_Addresses.tsv.gz"
         export FILE_ALL_SIZE="${{ env.Latest_BitcoinCash_Addresses_tsv_gz_size }}"      
