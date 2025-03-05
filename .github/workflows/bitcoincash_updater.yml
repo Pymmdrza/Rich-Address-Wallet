@@ -88,6 +88,11 @@ jobs:
           > [!NOTE] 
           > Latest Update : `${{ env.UPDATE_TIME }}`
 
+          ## Download 
+
+          - [Latest_BitcoinCash_Addresses.tsv.gz](${{ env.Latest_BitcoinCash_Addresses_tsv_gz_url }}) : `${{ env.Latest_BitcoinCash_Addresses_tsv_gz_size }}`
+          - [Latest_Rich_BitcoinCash_Addresses.txt.gz](${{ env.Latest_Rich_BitcoinCash_Addresses_txt_gz_url }}) : `${{ env.Latest_Rich_BitcoinCash_Addresses_txt_gz_size }}`
+
           
            ### Donate
 
