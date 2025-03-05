@@ -149,4 +149,8 @@ Donate (Bitcoin Address): `1MMDRZAcM6dzmdMUSV8pDdAPDFpwzve9Fc`
 - Telegram Channel : [Crypto2ools](https://crypto2ools.t.me)
 - Telegram ID : [Mr1Mmdrza](https://mr1mmdrza.t.me)
 - Email : [a.i@Programmer.net](mailto:a.i@programmer.net) | [first@Programmer.net](mailto:first@programmer.net)
-  
+
+
+  ## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=Pymmdrza/rich-address-wallet&type=Date)](https://star-history.com/#Pymmdrza/rich-address-wallet&Date)
