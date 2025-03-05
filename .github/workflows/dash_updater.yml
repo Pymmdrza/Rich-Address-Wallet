@@ -91,7 +91,7 @@ jobs:
           ## Download 
 
           - [Latest_Dash_Addresses.tsv.gz](${{ env.Latest_Dash_Addresses_tsv_gz_url }}) : `${{ env.Latest_Dash_Addresses_tsv_gz_size }}`
-          - [Latest_Rich_Dash_Addresses.txt.gz](${{ env.Latest_Rich_Dash_Addresses_txt_gz_url }}) : `${{ nv.Latest_Rich_Dash_Addresses_txt_gz_size }}`
+          - [Latest_Rich_Dash_Addresses.txt.gz](${{ env.Latest_Rich_Dash_Addresses_txt_gz_url }}) : `${{ env.Latest_Rich_Dash_Addresses_txt_gz_size }}`
 
           
            ### Donate
