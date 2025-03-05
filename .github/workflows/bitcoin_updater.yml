@@ -71,7 +71,21 @@ jobs:
           
           > [!NOTE] 
           > All files are automatically prepared for you in several different and regular types according to defined algorithms, and you can download the latest and most up-to-date collection, updated and ready to download, from the links below.
-           
+
+          ## Download 
+
+          - [Latest_Bitcoin_Addresses.tsv.gz](${{ env.Latest_Bitcoin_Addresses_tsv_gz_url }}) : `${{ env.Latest_Bitcoin_Addresses_tsv_gz_size }}`
+          - [Latest_Rich_Bitcoin_Address.txt.gz](${{ env.Latest_Rich_Bitcoin_Address_txt_gz_url }}) : `${{ env.Latest_Rich_Bitcoin_Address_txt_gz_size }}`
+          - [Latest_Rich_Bitcoin_P2PKH.txt.gz](${{ env.Latest_Rich_Bitcoin_P2PKH_txt_gz_url }}) : `${{ env.Latest_Rich_Bitcoin_P2PKH_txt_gz_size }}`
+          - [Latest_Rich_Bitcoin_P2SH.txt.gz](${{ env.Latest_Rich_Bitcoin_P2SH_txt_gz_url }}) : `${{ env.Latest_Rich_Bitcoin_P2SH_txt_gz_size }}`
+          - [Latest_Rich_Bitcoin_BECH32.txt.gz](${{ env.Latest_Rich_Bitcoin_BECH32_txt_gz_url }}) : `${{ env.Latest_Rich_Bitcoin_BECH32_txt_gz_size }}`
+
+           ### Donate
+
+           To support and appreciate us, you can send your gift in Bitcoin to the wallet address below. (Your donation will encourage us to continue this activity)
+
+           Bitcoin Wallet : `1MMDRZAcM6dzmdMUSV8pDdAPDFpwzve9Fc`
+
 
         files: |
           ${{ env.Latest_Bitcoin_Addresses_tsv_gz }}
