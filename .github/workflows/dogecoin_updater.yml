@@ -88,6 +88,11 @@ jobs:
           > [!NOTE] 
           > Latest Update : `${{ env.UPDATE_TIME }}`
 
+          ## Download 
+
+          - [Latest_Dash_Addresses.tsv.gz](${{ env.Latest_Dogecoin_Addresses_tsv_gz_url }}) : `${{ env.Latest_Dogecoin_Addresses_tsv_gz_size }}`
+          - [Latest_Rich_Dogecoin_Addresses.txt.gz](${{ env.Latest_Rich_Dogecoin_Addresses_txt_gz_url }}) : `${{ env.Latest_Rich_Dogecoin_Addresses_txt_gz_size }}`
+
           
            ### Donate
 
