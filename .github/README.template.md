@@ -4,6 +4,8 @@
 
 ## Update Every 24 hours
 
+![Bitcoin Diagram Rich Section](https://raw.githubusercontent.com/Pymmdrza/Rich-Address-Wallet/refs/heads/main/.github/rich-address-wallet-diagram.svg)
+
 ### Latest Update
 
 - Latest Bitcoin Addresses __(Any Type)__
