@@ -90,8 +90,8 @@ jobs:
 
           ## Download `${{ env.UPDATE_TIME }}`
 
-          - [Latest_Dash_Addresses.tsv.gz](${{ env.Latest_Dash_Addresses_tsv_gz_url }}) : `${{ env.Latest_Dash_Addresses_tsv_gz_size }}`
-          - [Latest_Rich_Dash_Addresses.txt.gz](${{ env.Latest_Rich_Dash_Addresses_txt_gz_url }}) : `${{ env.Latest_Rich_Dash_Addresses_txt_gz_size }}`
+          - [Latest_Dash_Addresses.tsv.gz](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/download/Dash/Latest_Dash_Addresses.tsv.gz) : `${{ env.Latest_Dash_Addresses_tsv_gz_size }}`
+          - [Latest_Rich_Dash_Addresses.txt.gz](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/download/Dash/Latest_Rich_Dash_Addresses.txt.gz) : `${{ env.Latest_Rich_Dash_Addresses_txt_gz_size }}`
 
           
            ### Donate
