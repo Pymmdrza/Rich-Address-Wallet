@@ -1,166 +1,160 @@
-
 # Rich Address Wallet
-All Rich Address Wallet Cryptocurrency
+
+![Rich Address Wallet](https://raw.githubusercontent.com/Pymmdrza/Rich-Address-Wallet/refs/heads/main/.github/RICH_ADDRESS_WALLET_v2.png)
+
+## Update Every 24 hours
+
+![Bitcoin Diagram Rich Section](https://raw.githubusercontent.com/Pymmdrza/Rich-Address-Wallet/refs/heads/main/.github/rich-address-wallet-diagram.svg)
 
 
-## Latest Bitcoin Address Wallet and Rich Bitcoin Address Wallet
 
+### Latest Update
 
-### Latest Rich Bitcoin Address Wallet (UPDATE 2024/10) [#bitcoin](https://github.com/Pymmdrza/Rich-Address-Wallet#bitcoin-all-address-wallet 'download Latest All Rich Bitcoin Address Wallet') [#litecoin](https://github.com/Pymmdrza/Rich-Address-Wallet#litecoin--dogecoin--dash--bitcoin-cash--zcash-all-address-wallet 'download Latest All Rich litecoin Address Wallet') [#dogecoin](https://github.com/Pymmdrza/Rich-Address-Wallet#litecoin--dogecoin--dash--bitcoin-cash--zcash-all-address-wallet 'download Latest All Rich Dogecoin Address Wallet') [#dash](https://github.com/Pymmdrza/Rich-Address-Wallet#litecoin--dogecoin--dash--bitcoin-cash--zcash-all-address-wallet 'download Latest All Rich DASH Address Wallet') [#bitcoincash](https://github.com/Pymmdrza/Rich-Address-Wallet#litecoin--dogecoin--dash--bitcoin-cash--zcash-all-address-wallet 'download Latest All Rich Bitcoin Cash Address Wallet') [#zcash](https://github.com/Pymmdrza/Rich-Address-Wallet#litecoin--dogecoin--dash--bitcoin-cash--zcash-all-address-wallet 'Download Latest All Rich ZCASH Address Wallet')
-
-If you want to download the latest and most recent files related to cryptocurrency wallets faster and with a direct link without intermediaries, I suggest you use our [Rich Address Downloader](https://github.com/Pymmdrza/Rich-Address-Wallet#rich-address-downloader) software. [#Link](https://github.com/Pymmdrza/Rich-Address-Wallet#rich-address-downloader)
-
----
-
->[!NOTE]
->🔐 Password File : `Mmdrza.Com`
-
-| File                                     | Link                                                                                                  | Update at  | 
-|------------------------------------------|-------------------------------------------------------------------------------------------------------|------------|
-| Ethereum Latest Rich Addresses           | [Latest_Rich_Ethereum.zip](https://mega.nz/file/uFMzEJjb#OHThDrc3HAKkJxudPDpmNbPsYZE8wMp5e44sCxbyveo) | 2024.12.12 |
-| Ethereum Address `0.01 ETH` to `1 ETH`   | [Ethereum_0.01-1.zip](https://mega.nz/file/PdVBVboL#i5vS6aGKep46haXsFu-b1WpeX0t0W2MJdu0_Rk4tdPE)      | 2024.12.12 |
-| Ethereum Address `1 ETH` to `10 ETH`     | [Ethereum_1-10.zip](https://mega.nz/file/zVFxGBZR#uctmb6M6eW5j0iiFk9qPkyYpcUX5H9urbUBVV4Y3e4A)        | 2024.12.12 |
-| Ethereum Address `10 ETH` to `100 ETH`   | [Ethereum_10-100.zip](https://mega.nz/file/XJExjJSR#kFYQc5ZNyUtKMZuyKYw4kzhR_XAC_edoZowoKWwCWhQ)      | 2024.12.12 |
-| Ethereum Address `100 ETH` to `1000 ETH` | [Ethereum_100-1000.zip](https://mega.nz/file/TYkG3BwR#eBxBc-AhPmo7cAnj8LYBeIdrS_Hh6U021V-_AAddFyI)    | 2024.12.12 |
-| Ethereum Address `1000 ETH` to More Than | [Ethereum_1000-More.zip](https://mega.nz/file/mIE0VZzC#H0633-2GlqiZAY0hbm0AMuIQBuU22UTmNHkipnIaWsM)   | 2024.12.12 |
-
-✅ The total number of files sorted by wallet balance in text format, compressed as a zip, you can go to [this page](https://github.com/Pymmdrza/Rich-Address-Wallet/tree/main/ETHEREUM/2024 'Ethereum Rich Addresses Files') to view them or download them from the following links:
-
----
-
-### Bitcoin All Address Wallet
+- Latest Bitcoin Addresses __(Any Type)__
+- Latest Rich Bitcoin Address Type : **P2PKH** (Start with 1)
+- Latest Rich Bitcoin Address Type : **P2SH** (Start with 3)
+- Latest Rich Bitcoin Address Type : **BECH32** (Start with bc1)
+- Latest Rich Bitcoin (Type : **P2PKH** & **P2SH** & **BECH32**)
+- Latest Litecoin Addresses Type : **All**
+- Latest Rich Litecoin Addresses Type : **Minimum `0.1 LTC`**
+- Latest Dogecoin Addresses Type : **All**
+- Latest Rich Dogecoin Addresses Type : **Minimum `0.1 DOGE`**
+- Latest DASH Addresses Type : **All**
+- Latest Rich DASH Addresses Type : **Minimum `0.1 DASH`**
+- Latest Bitcoin Cash Addresses Type : **All**
+- Latest Rich Bitcoin Cash Addresses Type : **Minimum `0.1 BCH`**
 
 >[!NOTE]
->Password File: `Mmdrza.Com`
+> Auto Update Every 24 hours.
 
-| File                                                              | Link / Type / Size                                                                                                                                                                                                      | Update at  | 
-|-------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|
-| Latest Rich Bitcoin Address Wallet and Balance (All Address Type) | [![Download](https://img.shields.io/badge/Download_.tsv.gz-685MB-37A5CC?style=plastic)](https://mega.nz/file/7dE32ZiJ#cmjTVUMSD9MDdTQAYuZcumm7Uv_yoDV2QAopXYjxqmw 'Latest All Rich Bitcoin Address Wallet and Balance') | 2024-10-22 |
-| Latest Rich Bitcoin Only Address Wallet (All Address Type)        | [![Download](https://img.shields.io/badge/Download_.zip-343MB-37A5CC?style=plastic)](https://mega.nz/file/vcNVWTrY#tN46VCqekvfDrkhohw0FOlj-aIuXsgEc6STHJzzEHms 'Latest All Rich Bitcoin Address Wallet and Balance')    | 2024-10-22 |
-| Latest Rich Bitcoin `P2PKH` Address Wallet (start with `1`)       | [![Download](https://img.shields.io/badge/Download_.zip-91MB-37A5CC?style=plastic)](https://mega.nz/file/KFtlhAjZ#hBqXf32krexEWiTExuKikvfKAyKwfbhLqeARMopfbkw 'Latest Rich Bitcoin P2PKH Address Wallet')               | 2024-10-22 |
-| Latest Rich Bitcoin `P2SH` Address Wallet (start with `3`)        | [![Download](https://img.shields.io/badge/Download_.zip-59MB-37A5CC?style=plastic)](https://mega.nz/file/WUtQwLwC#zYL3ujY4M3VGMvdr2jAnhICeCW6DpQ45T_gPsXg4qLw 'Latest Rich Bitcoin P2SH Address Wallet')                | 2024-10-22 |
-| Latest Rich Bitcoin `BECH32` Address Wallet (start with `bc1`)    | [![Download](https://img.shields.io/badge/Download_.zip-181MB-37A5CC?style=plastic)](https://mega.nz/file/2JMGVTLQ#HiOwCI_Ci18-akhIrSkrB60sIsxGXKF3Dpc5EdvvbPs 'Latest Rich Bitcoin BECH32 Address Wallet')             | 2024-10-22 |
+All files are received with high accuracy from active nodes in parallel, and some of them are created by public nodes as a dataset from Google Cloud Big Query and then in a storage space, and then in another server (specific for this task), the stored information is checked and analyzed, and the validity of each wallet address is checked and if it meets the conditions, it is placed on the list, and then this file is uploaded to a special support host, and then by automation, the action section is created, then they are placed on the repository space for you, dear friends, to download. This process is being updated and repeated every 24 hours.
 
----
 
-### Litecoin , Dogecoin , Dash , Bitcoin Cash , zCash All Address Wallet
+### Latest Updated
 
->[!NOTE]
->Password File: `Mmdrza.Com`
-
-| File                                       | Link / Type                                                                                                                                                                                              | Update at  |
-|--------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|
-| All Rich Litecoin Address Wallet `LTC`     | [![Download](https://img.shields.io/badge/Download_.zip-79MB-37A5CC?style=plastic)](https://mega.nz/file/7dE32ZiJ#cmjTVUMSD9MDdTQAYuZcumm7Uv_yoDV2QAopXYjxqmw 'Latest Rich Litecoin Address Wallet')     | 2024-10-22 |
-| All Rich Dogecoin Address Wallet `DOGE`    | [![Download](https://img.shields.io/badge/Download_.zip-54MB-37A5CC?style=plastic)](https://mega.nz/file/PU0RkQxZ#F8b9o5RW1a2OQhrF9ws5jjCBuKsnfJYHhDwU9b2wkSc 'Latest Rich Dogecoin Address Wallet')     | 2024-10-22 |
-| All Rich Dash Address Wallet `DASH`        | [![Download](https://img.shields.io/badge/Download_.zip-118KB-37A5CC?style=plastic)](https://mega.nz/file/fQsBTbYI#NB-ZWGVWZnHenuxRPvTzmpkBb15nSziITq2OnCKcViw 'Latest Rich Dash Address Wallet')        | 2024-10-22 |
-| All Rich Bitcoin Cash Address Wallet `BCH` | [![Download](https://img.shields.io/badge/Download_.zip-99MB-37A5CC?style=plastic)](https://mega.nz/file/TFdghRxJ#S_mK0q0F1cvaYIWF67VwA1X94-h-qx7o4VncNL__658 'Latest Rich Bitcoin Cash Address Wallet') | 2024-10-22 |
-| All Rich zCash Address Wallet `ZEC`        | [![Download](https://img.shields.io/badge/Download_.zip-36KB-37A5CC?style=plastic)](https://mega.nz/file/vBU1gAZS#opY3SDmp506H3Ef06oWPkhesvILZamdyo4LGMgE7dv4 'Latest Rich ZCASH Address Wallet')        | 2024-10-22 |
+| File Name                                                                             | File Type |                                                                              |
+|------------------------------------------------------------------------------------------------|-----------|------------------------------------------------------------------------------|
+| :open_file_folder: Latest Bitcoin Addresses (Any Type)                     | :pencil2: `.tsv.gz` | :link: [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Bitcoin) |
+| :open_file_folder: Rich Bitcoin Address Type : **P2PKH** (Start with 1)    | :pencil2: `.txt.gz` | :link: [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Bitcoin) |
+| :open_file_folder: Rich Bitcoin Address Type : **P2SH** (Start with 3)     | :pencil2: `.txt.gz` | :link: [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Bitcoin) |
+| :open_file_folder: Rich Bitcoin Address Type : **BECH32** (Start with bc1) | :pencil2: `.txt.gz` | :link: [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Bitcoin) |
+| :open_file_folder: Rich Bitcoin (Type : **P2PKH** & **P2SH** & **BECH32**) | :pencil2: `.txt.gz` | :link: [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Bitcoin) |
 
 
 ---
 
-## Rich Address Downloader
+### Latest Litecoin
 
-Rich Cryptocurrency Wallet Address Downloader (Auto Update) v1.0.3 [Fast Download]
+| File Name                                                          | File Type |                                                                                   |
+|--------------------------------------------------------------------|-----------|-----------------------------------------------------------------------------------|
+| :open_file_folder: Latest Litecoin Addresses (All) | :pencil2: `.tsv.gz` | :link: [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Litecoin) |
+| :open_file_folder: Latest Rich Litecoin Addresses  | :pencil2: `.txt.gz` | :link: [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Litecoin) |
 
-[ [Download (from github)](https://github.com/Pymmdrza/RichAddressDownloader 'rich address downloader software for download automatic update rich wallet cryptocurrency') ] [ [Download (from sourceforge)](https://sourceforge.net/projects/rich-address-downloader/files/ 'Download Rich Address Downloader from sourceforge') ]
-
-
-![Main screenshot from rich address downloader v1.0.3](https://raw.githubusercontent.com/Pymmdrza/RichAddressDownloader/main/img/Screenshot-main.webp 'Main screenshot from rich address downloader v1.0.3')
-
-
-
-![screenshot dl status from rich address downloader v1.0.3](https://raw.githubusercontent.com/Pymmdrza/RichAddressDownloader/main/img/Screenshot-dl-status.webp 'screenshot dl status from rich address downloader v1.0.3')
 
 ---
 
->[!NOTE]
-> Column Type in `tsv` file : `address,balance`
-> - `address` : `string`
-> - `balance`: `integer`
+### Latest Dogecoin
+
+| File Name                                                         | File Type |                                                                                   |
+|-------------------------------------------------------------------|-----------|-----------------------------------------------------------------------------------|
+| :open_file_folder: Latest Dogecoin Addresses (All) | :pencil2: `.tsv.gz` | :link: [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Dogecoin) |
+| :open_file_folder: Latest Rich Dogecoin Addresses  | :pencil2: `.txt.gz` | :link: [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Dogecoin) |
+
 
 ---
 
-| Bitcoin Rich Wallet List | [Link](https://github.com/Pymmdrza/Rich-Address-Wallet/tree/main/Bitcoin) |
-| ------------------------ | ---- |
-| Ethereum Rich Wallet List | [Link](https://github.com/Pymmdrza/Rich-Address-Wallet/tree/main/ETHEREUM 'Ethereum (ETH) Rich Wallet List Address') |
-| Polkadot Rich Wallet List | [Link](https://github.com/Pymmdrza/Rich-Address-Wallet/tree/main/DOT 'Polkadot (DOT) Rich Wallet List Address') |
-| Dogecoin Rich Wallet List | [Link](https://github.com/Pymmdrza/Rich-Address-Wallet/blob/main/7999_RichAddressDoge.txt 'Dogecoin Rich Wallet List Address') |
-| ZCASH Rich Wallet List | [Link](https://github.com/Pymmdrza/Rich-Address-Wallet/tree/main/ZCASH 'ZCASH Rich Wallet List Address') |
-| TRON (TRX) Rich Wallet List | [Link](https://github.com/Pymmdrza/Rich-Address-Wallet/tree/main/TRON 'Tron (trx) Rich Wallet List Address') |
+### Latest Dash
+
+| File Name                                                       | File Type |                                                                                   |
+|-----------------------------------------------------------------------|-----------|-----------------------------------------------------------------------------------|
+| :open_file_folder: Latest Dash Addresses (All) | :pencil2: `.tsv.gz` | :link: [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Dash) |
+| :open_file_folder: Latest Rich Dash Addresses  | :pencil2: `.txt.gz` | :link: [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Dash) |
+
 
 ---
 
-### Bitcoin Sort Address Latest (05-2023)
-All in One Zip File With Tsv Format [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/BTC_Sort 'Sort Bitcoin All Address Wallet 2023') 
-[Password File: [`Here`](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/BTC_Sort) ]
+### Latest Bitcoin Cash
+
+| File Name                                               | File Type |                                                                                   |
+|-----------------------------------------------------------------------------|-----------|-----------------------------------------------------------------------------------|
+| :open_file_folder: Latest Bitcoin Cash Addresses (All) | :pencil2: `.tsv.gz` | :link: [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/BitcoinCash) |
+| :open_file_folder: Latest Rich Bitcoin Cash Addresses  | :pencil2: `.txt.gz` | :link: [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/BitcoinCash) |
 
 ---
-## Ethereum Rich Address Wallet (UPDATE)
-- 100,000 Ethereum Rich Wallet Address List Import Balance On text file : [Link](https://github.com/Pymmdrza/Rich-Address-Wallet/blob/main/ETHEREUM/EthRich_Bal.txt)
 
-- 100,000 Ethereum Rich Wallet Address List On text file : [Link](https://github.com/Pymmdrza/Rich-Address-Wallet/blob/main/ETHEREUM/EthRich.txt)
+### Cryptocurrencies Rich Address Wallet
+|          | Symbol                                                                     | Latest                                                                      |
+|----------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------|
+| Bitcoin  | [BTC](https://github.com/Pymmdrza/Rich-Address-Wallet/tree/main/Bitcoin)   | [Release](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Bitcoin) |
+| Ethereum | [ETH](https://github.com/Pymmdrza/Rich-Address-Wallet/tree/main/ETHEREUM)  | [Release](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/latest/) |
+| Litecoin | [LTC](https://github.com/Pymmdrza/Rich-Address-Wallet/tree/main/LITECOIN)  | [Release](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Litecoin) |
+| Dogecoin | [DOGE](https://github.com/Pymmdrza/Rich-Address-Wallet/tree/main/Dogecoin) | [Release](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/latest/) |
+| Tron     | [TRX](https://github.com/Pymmdrza/Rich-Address-Wallet/tree/main/TRON)      | [Release](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/latest/) |
+| Solana   | -                                                                          | -                                                                           |
+| Polkadot | [DOT](https://github.com/Pymmdrza/Rich-Address-Wallet/tree/main/DOT)       | [Release](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/latest/) |
+| zCash    | [ZEC](https://github.com/Pymmdrza/Rich-Address-Wallet/tree/main/ZCASH)     | [Release](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/latest/) |
 
-----
-## Bitcoin Rich Address wallet With Balance
-----
+---
 
-### 30,000 Address Rich Wallet Bitcoin
+## Download Software : Rich Address Downloader V1
 
-- Bitcoin 30000 Rich Address [View List](https://github.com/Pymmdrza/Rich-Address-Wallet/blob/main/30000BTCRichWalletAdd.txt)
+![Rich Address Downloader v1](https://raw.githubusercontent.com/Pymmdrza/RichAddressDownloader/main/img/Screenshot-dl-status.webp)
 
-### 10,000 Address Rich Wallet Bitcoin
+[![](https://raw.githubusercontent.com/Pymmdrza/Rich-Address-Wallet/refs/heads/main/.github/read-btn.svg)](https://github.com/Pymmdrza/RichAddressDownloader) [![](https://raw.githubusercontent.com/Pymmdrza/Rich-Address-Wallet/refs/heads/main/.github/dl_btn.svg)](https://github.com/Pymmdrza/RichAddressDownloader/releases)
 
-- Bitcoin 10000 Rich Address [View List](https://github.com/Pymmdrza/Rich-Address-Wallet/blob/main/10000_RichAddressBitcoin.md)
+---
 
-### 6,000 Address Rich Wallet Bitcoin
+### Example Of Rich Bitcoin Address
 
-- Bitcoin 6000 Rich Address [View List](https://github.com/Pymmdrza/Rich-Address-Wallet/blob/main/6000_RichAddressBitcoin.md)
+| Address                                                          | Balance (`BTC`)    | Explorer                                                                                                       |
+|------------------------------------------------------------------|--------------------|----------------------------------------------------------------------------------------------------------------|
+| `34xp4vRoCGJym3xR7yCVPFHoCNxv4Twseo`                             | `248,597.38632561` | [Check](https://blockchair.com/bitcoin/address/34xp4vRoCGJym3xR7yCVPFHoCNxv4Twseo)                             |
+| `bc1qgdjqv0av3q56jvd82tkdjpy7gdp9ut8tlqmgrpmv24sq90ecnvqqjwvw97` | `178,010.0882228`  | [Check](https://blockchair.com/bitcoin/address/bc1qgdjqv0av3q56jvd82tkdjpy7gdp9ut8tlqmgrpmv24sq90ecnvqqjwvw97) |
+| `1LQoWist8KkaUXSPKZHNvEyfrEkPHzSsCd`                             | `119,347.40521397` | [Check](https://blockchair.com/bitcoin/address/1LQoWist8KkaUXSPKZHNvEyfrEkPHzSsCd)                             |
+| `38Xnrq8MZiKmYmwobbYdZQ5nnCbX1qvQfE`                             | `117,351.05645141` | [Check](https://blockchair.com/bitcoin/address/38Xnrq8MZiKmYmwobbYdZQ5nnCbX1qvQfE)                             |
+| `bc1qazcm763858nkj2dj986etajv6wquslv8uxwczt`                     | `94,643.30613354`  | [Check](https://blockchair.com/bitcoin/address/bc1qazcm763858nkj2dj986etajv6wquslv8uxwczt)                     |
+| `37XuVSEpWW4trkfmvWzegTHQt7BdktSKUs`                             | `94,505.3435766`   | [Check](https://blockchair.com/bitcoin/address/37XuVSEpWW4trkfmvWzegTHQt7BdktSKUs)                             |
+| `1FeexV6bAHb8ybZjqQMjJrcCrHGW9sb6uF`                             | `79,957.25311101`  | [Check](https://blockchair.com/bitcoin/address/1FeexV6bAHb8ybZjqQMjJrcCrHGW9sb6uF)                             |
+| `bc1qa5wkgaew2dkv56kfvj49j0av5nml45x9ek9hz6`                     | `69,370.17883259`  | [Check](https://blockchair.com/bitcoin/address/bc1qa5wkgaew2dkv56kfvj49j0av5nml45x9ek9hz6)                     |
+| `3LYJfcfHPXYJreMsASk2jkn69LWEYKzexb`                             | `68,200.00432924`  | [Check](https://blockchair.com/bitcoin/address/3LYJfcfHPXYJreMsASk2jkn69LWEYKzexb)                             |
+| `bc1qd4ysezhmypwty5dnw7c8nqy5h5nxg0xqsvaefd0qn5kq32vwnwqqgv4rzr` | `59,300.08307523`  | [Check](https://blockchair.com/bitcoin/address/bc1qd4ysezhmypwty5dnw7c8nqy5h5nxg0xqsvaefd0qn5kq32vwnwqqgv4rzr) |
+| `1LdRcdxfbSnmCYYNdeYpUnztiYzVfBEQeC`                             | `53,880.06275164`  | [Check](https://blockchair.com/bitcoin/address/1LdRcdxfbSnmCYYNdeYpUnztiYzVfBEQeC)                             |
+| `bc1qjasf9z3h7w3jspkhtgatgpyvvzgpa2wwd2lr0eh5tx44reyn2k7sfc27a4` | `53,492.39615503`  | [Check](https://blockchair.com/bitcoin/address/bc1qjasf9z3h7w3jspkhtgatgpyvvzgpa2wwd2lr0eh5tx44reyn2k7sfc27a4) |
+| `1AC4fMwgY8j9onSbXEWeH6Zan8QGMSdmtA`                             | `51,830.4004163`   | [Check](https://blockchair.com/bitcoin/address/1AC4fMwgY8j9onSbXEWeH6Zan8QGMSdmtA)                             |
+| `1LruNZjwamWJXThX2Y8C2d47QqhAkkc5os`                             | `44,000.08675574`  | [Check](https://blockchair.com/bitcoin/address/1LruNZjwamWJXThX2Y8C2d47QqhAkkc5os)                             |
+| `38DN2uFMZPiHLHJigfv4kWC9JWJrNnhLcn`                             | `40,041.05259302`  | [Check](https://blockchair.com/bitcoin/address/38DN2uFMZPiHLHJigfv4kWC9JWJrNnhLcn)                             |
+| `3LCGsSmfr24demGvriN4e3ft8wEcDuHFqh`                             | `39,953.51795716`  | [Check](https://blockchair.com/bitcoin/address/3LCGsSmfr24demGvriN4e3ft8wEcDuHFqh)                             |
+| `3LQUu4v9z6KNch71j7kbj8GPeAGUo1FW6a`                             | `37,926.97771319`  | [Check](https://blockchair.com/bitcoin/address/3LQUu4v9z6KNch71j7kbj8GPeAGUo1FW6a)                             |
+| `3M219KR5vEneNb47ewrPfWyb5jQ2DjxRP6`                             | `37,326.42365118`  | [Check](https://blockchair.com/bitcoin/address/3M219KR5vEneNb47ewrPfWyb5jQ2DjxRP6)                             |
+| `bc1q7ydrtdn8z62xhslqyqtyt38mm4e2c4h3mxjkug`                     | `36,000.42223604`  | [Check](https://blockchair.com/bitcoin/address/bc1q7ydrtdn8z62xhslqyqtyt38mm4e2c4h3mxjkug)                     |
+| `bc1qjh0akslml59uuczddqu0y4p3vj64hg5mc94c40`                     | `33,217.70284909`  | [Check](https://blockchair.com/bitcoin/address/bc1qjh0akslml59uuczddqu0y4p3vj64hg5mc94c40)                     |
+| `12XqeqZRVkBDgmPLVY4ZC6Y4ruUUEug8Fx`                             | `32,321.00051856`  | [Check](https://blockchair.com/bitcoin/address/12XqeqZRVkBDgmPLVY4ZC6Y4ruUUEug8Fx)                             |
+| `bc1qx9t2l3pyny2spqpqlye8svce70nppwtaxwdrp4`                     | `31,643.38388706`  | [Check](https://blockchair.com/bitcoin/address/bc1qx9t2l3pyny2spqpqlye8svce70nppwtaxwdrp4)                     |
+| `3FHNBLobJnbCTFTVakh5TXmEneyf5PT61B`                             | `31,275.3505938`   | [Check](https://blockchair.com/bitcoin/address/3FHNBLobJnbCTFTVakh5TXmEneyf5PT61B)                             |
+| `12ib7dApVFvg82TXKycWBNpN8kFyiAN1dr`                             | `31,000.0732843`   | [Check](https://blockchair.com/bitcoin/address/12ib7dApVFvg82TXKycWBNpN8kFyiAN1dr)                             |
+| `bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h`                     | `30,383.03843011`  | [Check](https://blockchair.com/bitcoin/address/bc1qm34lsc65zpw79lxes69zkqmk6ee3ewf0j77s3h)                     |
+| `bc1qf2yvj48mzkj7uf8lc2a9sa7w983qe256l5c8fs`                     | `30,174.70360176`  | [Check](https://blockchair.com/bitcoin/address/bc1qf2yvj48mzkj7uf8lc2a9sa7w983qe256l5c8fs)                     |
+| `12tkqA9xSoowkzoERHMWNKsTey55YEBqkv`                             | `28,151.05862779`  | [Check](https://blockchair.com/bitcoin/address/12tkqA9xSoowkzoERHMWNKsTey55YEBqkv)                             |
+| `38UmuUqPCrFmQo4khkomQwZ4VbY2nZMJ67`                             | `27,066.97292147`  | [Check](https://blockchair.com/bitcoin/address/38UmuUqPCrFmQo4khkomQwZ4VbY2nZMJ67)                             |
+| `3MgEAFWu1HKSnZ5ZsC8qf61ZW18xrP5pgd`                             | `26,841.3`         | [Check](https://blockchair.com/bitcoin/address/3MgEAFWu1HKSnZ5ZsC8qf61ZW18xrP5pgd)                             |
+| `1aXzEKiDJKzkPxTZy9zGc3y1nCDwDPub2`                              | `25,640.38996033`  | [Check](https://blockchair.com/bitcoin/address/1aXzEKiDJKzkPxTZy9zGc3y1nCDwDPub2)                              |
+| `bc1qjysjfd9t9aspttpjqzv68k0ydpe7pvyd5vlyn37868473lell5tqkz456m` | `25,085.7648675`   | [Check](https://blockchair.com/bitcoin/address/bc1qjysjfd9t9aspttpjqzv68k0ydpe7pvyd5vlyn37868473lell5tqkz456m) |
+| `17MWdxfjPYP2PYhdy885QtihfbW181r1rn`                             | `24,495.35054524`  | [Check](https://blockchair.com/bitcoin/address/17MWdxfjPYP2PYhdy885QtihfbW181r1rn)                             |
 
-----
+---
 
-## Ethereum Rich Address wallet waith Balance
+### Donate
 
-----
+Donate (Bitcoin Address): `1MMDRZAcM6dzmdMUSV8pDdAPDFpwzve9Fc`
 
-### 10,000 ETH Address Rich Wallet Balance
+---
 
-#### 10000 ETH Rich Address [View List](https://github.com/Pymmdrza/Rich-Address-Wallet/blob/main/10000ETHRichAddress.md)
+- Website : [Mmdrza.Com](https://mmdrza.com)
+- Telegram Channel : [Crypto2ools](https://crypto2ools.t.me)
+- Telegram ID : [Mr1Mmdrza](https://mr1mmdrza.t.me)
+- Email : [a.i@Programmer.net](mailto:a.i@programmer.net) | [first@Programmer.net](mailto:first@programmer.net)
 
-----
 
-10000 ETH Rich Address [View List](https://github.com/Pymmdrza/Rich-Address-Wallet/blob/main/10000ETHRichAddress.md)
+  ## Star History
 
-----
-
-## Dogecoin Rich Address wallet waith Balance
-
-----
-
-### 8,000 Address Rich Wallet Dogecoin
-
-Dogecoin 8000 Rich Address [View List](https://github.com/Pymmdrza/Rich-Address-Wallet/blob/main/8K_RichAddressDoge.md)
- 
-----
-
-### 💎 8K Rich Wallet Address Dogecoin
-
-| ⚠️ | 🔐 **8000** Address Rich Wallet Dogecoin | [Visit List](https://github.com/Pymmdrza/Rich-Address-Wallet/blob/main/8K_RichAddressDoge.md) | [DOWNLOAD](https://github.com/Pymmdrza/Rich-Address-Wallet/blob/main/7999_RichAddressDoge.txt) (Text File)|
-| ----- | ------ | -------- | ----------------------------- |
-
-----
-```
-# ================================================
-# DONATE (BTC) : 1MMDRZA12xdBLD1P5AfEfvEMErp588vmF9
-# Website : Mmdrza.Com
-# Email : Pymmdrza@Gmail.Com
-# Telegram Channel : @Cryptoixer
-# Github.com/Pymmdrza
-# ================================================
-```
-Programmer Telegram ID [@Mr1Mmdrza](https://t.me/mr1mmdrza)
-
-Programmer Telegram Channel [@Cryptoixer](https://t.me/Cryptoixer)
-
-> **Warning**
-> Unfortunately, due to the ignorance of some dear users, we were not informed that some profiteers and uncultured people are selling some of my scripts at a lower price. And the user does not receive anything after payment. Some of these ignorant people give malicious and viral files to users. From here, I declare that the only official source for selling my scripts is the [website](https://mmdrza.com) and [Telegram ID](https://t.me/mr1mmdrza) or [Telegram Channel](https://t.me/Cryptoixer).
+[![Star History Chart](https://api.star-history.com/svg?repos=Pymmdrza/rich-address-wallet&type=Date)](https://star-history.com/#Pymmdrza/rich-address-wallet&Date)
