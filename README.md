@@ -96,9 +96,9 @@ All files are received with high accuracy from active nodes in parallel, and som
 
 ---
 
-## Download Software : Rich Address Downloader V1
+## Download Software : Rich Address Downloader V2 🆕
 
-![Rich Address Downloader v1](https://raw.githubusercontent.com/Pymmdrza/RichAddressDownloader/main/img/Screenshot-dl-status.webp)
+![Main screenshot from rich address downloader v2.0.1](https://raw.githubusercontent.com/Pymmdrza/RichAddressDownloader/refs/heads/main/img/doge_rich_screen_downloader_widget.webp 'Main screenshot from rich address downloader v2.0.1')
 
 [![](https://raw.githubusercontent.com/Pymmdrza/Rich-Address-Wallet/refs/heads/main/.github/read-btn.svg)](https://github.com/Pymmdrza/RichAddressDownloader) [![](https://raw.githubusercontent.com/Pymmdrza/Rich-Address-Wallet/refs/heads/main/.github/dl_btn.svg)](https://github.com/Pymmdrza/RichAddressDownloader/releases)
 
