@@ -1,5 +1,7 @@
 # Tron (TRX) Rich Wallet Address List
 
+## Tether USDT (TRC20) Rich Address Wallet 
+
 | # | Address | Balance (in USDT) | Address Tag | Tronscan |
 |---|---------|------------------|-------------|----------|
 | 1 | `TWd4WrZ9wn84f5x1hZhL4DHvk738ns5jwb` | `8,857,390,747.6032` | Binance-Cold 2 | [View](https://tronscan.org//#/address/TWd4WrZ9wn84f5x1hZhL4DHvk738ns5jwb) |
