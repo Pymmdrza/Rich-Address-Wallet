@@ -206,7 +206,7 @@
 
 ---
 
-## 9618 Rich Address Wallet Tron (TRX) on Text File : [DOWNLOAD](https://github.com/Pymmdrza/Rich-Address-Wallet/blob/main/TRON/TRON-RichAddress_Balance.txt 'Tron Rich Wallet List Address (TRX)')
+## 2000 Rich Address Wallet Tether USDT (TRC20) on Text File : [DOWNLOAD](https://github.com/Pymmdrza/Rich-Address-Wallet/blob/main/TRON/TetherUSDT_TRC20_Rich_Address_Balance.txt 'Tron Rich Wallet List Address (TRX)')
 
 ---
 owner : [MMDRZA](https://mmdrza.com)
