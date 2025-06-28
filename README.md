@@ -1,14 +1,19 @@
 # Rich Address Wallet
 
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/pymmdrza/Rich-Address-Wallet?style=plastic&label=Commit%20Activity&&labelColor=25313C&color=44A833)]() [![GitHub watchers](https://img.shields.io/github/watchers/pymmdrza/Rich-address-Wallet?style=plastic&label=Watchers&labelColor=25313C&color=007FFF)]()  [![GitHub Stars](https://img.shields.io/github/stars/pymmdrza/Rich-address-Wallet?style=plastic&label=Stars&labelColor=25313C&color=007FFF)]() [![GitHub Forks](https://img.shields.io/github/forks/pymmdrza/Rich-address-Wallet?style=plastic&label=Forks&labelColor=25313C&color=007FFF)]()
+
 ![Rich Address Wallet](https://raw.githubusercontent.com/Pymmdrza/Rich-Address-Wallet/refs/heads/main/.github/RICH_ADDRESS_WALLET_v2.png)
 
 ## Update Every 24 hours
 
 ![Bitcoin Diagram Rich Section](https://raw.githubusercontent.com/Pymmdrza/Rich-Address-Wallet/refs/heads/main/.github/rich-address-wallet-diagram.svg)
 
-
+---
 
 ### Latest Update
+
+[![GitHub Release](https://img.shields.io/github/v/release/pymmdrza/Rich-Address-Wallet?sort=date&display_name=release&style=plastic&label=Release%20(BTC)&color=F58025)](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Bitcoin) [![GitHub Release](https://img.shields.io/github/v/release/pymmdrza/Rich-Address-Wallet?sort=date&filter=!&display_name=release&style=plastic&label=Release%20(LTC)&color=2E9FFF)](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Litecoin)
+
 
 - Latest Bitcoin Addresses __(Any Type)__
 - Latest Rich Bitcoin Address Type : **P2PKH** (Start with 1)
