@@ -84,6 +84,8 @@ jobs:
           - Header tsv File : `address,balance`
           - Separator : `,`
           - Filter Minimum Balance for Rich File : `0.1 LTC`
+
+          [![Coin4Hub](https://raw.githubusercontent.com/Pymmdrza/Rich-Address-Wallet/refs/heads/main/.github/Sponser_banner.svg)](https://coin4hub.com 'Latest Crypto News')
           
           > [!NOTE] 
           > Latest Update : `${{ env.UPDATE_TIME }}`
