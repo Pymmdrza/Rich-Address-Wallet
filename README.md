@@ -3,9 +3,6 @@
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/m/pymmdrza/Rich-Address-Wallet?style=plastic&label=Commit%20Activity&&labelColor=25313C&color=44A833)]() [![GitHub watchers](https://img.shields.io/github/watchers/pymmdrza/Rich-address-Wallet?style=plastic&label=Watchers&labelColor=25313C&color=007FFF)]()  [![GitHub Stars](https://img.shields.io/github/stars/pymmdrza/Rich-address-Wallet?style=plastic&label=Stars&labelColor=25313C&color=007FFF)]() [![GitHub Forks](https://img.shields.io/github/forks/pymmdrza/Rich-address-Wallet?style=plastic&label=Forks&labelColor=25313C&color=007FFF)]()
 
 
-[![Coin4Hub](https://raw.githubusercontent.com/Pymmdrza/Rich-Address-Wallet/refs/heads/main/.github/Sponser_banner.svg)](https://coin4hub.com 'Latest Crypto News')
-
-
 ![Rich Address Wallet](https://raw.githubusercontent.com/Pymmdrza/Rich-Address-Wallet/refs/heads/main/.github/RICH_ADDRESS_WALLET_v2.png)
 
 ## Update Every 24 hours
