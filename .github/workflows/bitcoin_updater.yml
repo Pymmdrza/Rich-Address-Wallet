@@ -74,8 +74,6 @@ jobs:
 
           ![Bitcoin Diagram Rich Section](https://raw.githubusercontent.com/Pymmdrza/Rich-Address-Wallet/refs/heads/main/.github/rich-address-wallet-diagram.svg)
 
-          [![Coin4Hub](https://raw.githubusercontent.com/Pymmdrza/Rich-Address-Wallet/refs/heads/main/.github/Sponser_banner.svg)](https://coin4hub.com 'Latest Crypto News')
-          
           ## Download `${{ env.UPDATE_TIME }}`
 
           - [Latest_Bitcoin_Addresses.tsv.gz](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/download/Bitcoin/Latest_Bitcoin_Addresses.tsv.gz) : `${{ env.Latest_Bitcoin_Addresses_tsv_gz_size }}`
