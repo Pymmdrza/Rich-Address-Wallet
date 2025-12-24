@@ -90,8 +90,8 @@ jobs:
 
           ## Download `${{ env.UPDATE_TIME }}`
 
-          - [Latest_Litecoin_Addresses.tsv.gz](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/download/Litecoin/Latest_Litecoin_Addresses.tsv.gz) : `${{ env.Latest_Litecoin_Addresses_tsv_gz_size }}`
-          - [Latest_Rich_Litecoin_Addresses.txt.gz](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/download/Litecoin/Latest_Rich_Litecoin_Addresses.txt.gz) : `${{ env.Latest_Rich_Litecoin_Addresses_txt_gz_size }}`
+          - [Latest_Litecoin_Addresses.tsv.gz](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/download/Litecoin/Latest_Litecoin_Addresses.tsv.gz) : `${{ env.FILE_ALL_SIZE }}`
+          - [Latest_Rich_Litecoin_Addresses.txt.gz](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/download/Litecoin/Latest_Rich_Litecoin_Addresses.txt.gz) : `${{ env.FILE_RICH_SIZE }}`
 
           
            ### Donate
