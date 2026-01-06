@@ -1,10 +1,10 @@
-# Latest Dogecoin Address Wallet Update: `2026-01-05 01:35:48`
+# Latest Dogecoin Address Wallet Update: `2026-01-06 01:34:49`
 
 Latest All Address Dogecoin Wallet and Latest Rich Dogecoin Addresses .
 
 ## All Dogecoin Addresses
 
-File Updated : `2026-01-05 01:35:48`
+File Updated : `2026-01-06 01:34:49`
 
 - Latest_Dogecoin_Addresses.tsv.gz () : [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Dogecoin)
 
