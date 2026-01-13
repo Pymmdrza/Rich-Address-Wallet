@@ -1,12 +1,12 @@
-# Latest Litecoin Address Wallet Update: `2026-01-12 02:02:32`
+# Latest Litecoin Address Wallet Update: `2026-01-13 02:02:19`
 
 Latest All Address Litecoin Wallet and Latest Rich Litecoin Addresses .
 
 ## All Litecoin Addresses
 
-File Updated : `2026-01-12 02:02:32`
+File Updated : `2026-01-13 02:02:19`
 
-- Latest_Litecoin_Addresses.tsv.gz (238.1 MB) : [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Litecoin)
+- Latest_Litecoin_Addresses.tsv.gz (238.2 MB) : [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Litecoin)
 
 ## Litecoin Rich Addresses
 
