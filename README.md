@@ -3,7 +3,7 @@
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/m/pymmdrza/Rich-Address-Wallet?style=plastic&label=Commit%20Activity&&labelColor=25313C&color=44A833)]() [![GitHub watchers](https://img.shields.io/github/watchers/pymmdrza/Rich-address-Wallet?style=plastic&label=Watchers&labelColor=25313C&color=007FFF)]()  [![GitHub Stars](https://img.shields.io/github/stars/pymmdrza/Rich-address-Wallet?style=plastic&label=Stars&labelColor=25313C&color=007FFF)]() [![GitHub Forks](https://img.shields.io/github/forks/pymmdrza/Rich-address-Wallet?style=plastic&label=Forks&labelColor=25313C&color=007FFF)]()
 
 
-![Rich Address Wallet](https://raw.githubusercontent.com/Pymmdrza/Rich-Address-Wallet/refs/heads/main/.github/RICH_ADDRESS_WALLET_v2.png)
+![Rich Address Wallet](https://raw.githubusercontent.com/kimbaobao/Rich-Address-Wallet/refs/heads/main/.github/RICH_ADDRESS_WALLET_v2.png)
 
 ## Update Every 24 hours
 
@@ -104,10 +104,9 @@ All files are received with high accuracy from active nodes in parallel, and som
 
 ## Download Software : Rich Address Downloader V2 🆕
 
-![Main screenshot from rich address downloader v2.0.1](https://raw.githubusercontent.com/Pymmdrza/RichAddressDownloader/refs/heads/main/img/doge_rich_screen_downloader_widget.webp 'Main screenshot from rich address downloader v2.0.1')
+![Main screenshot from rich address downloader v2.0.1](https://raw.githubusercontent.com/kimbaobao/RichAddressDownloader/refs/heads/main/img/doge_rich_screen_downloader_widget.webp 'Main screenshot from rich address downloader v2.0.1')
 
-[![](https://raw.githubusercontent.com/Pymmdrza/Rich-Address-Wallet/refs/heads/main/.github/read-btn.svg)](https://github.com/Pymmdrza/RichAddressDownloader) [![](https://raw.githubusercontent.com/Pymmdrza/Rich-Address-Wallet/refs/heads/main/.github/dl_btn.svg)](https://github.com/Pymmdrza/RichAddressDownloader/releases)
-
+[![](https://raw.githubusercontent.com/kimbaobao/Rich-Address-Wallet/refs/heads/main/.github/read-btn.svg)]
 ---
 
 ### Example Of Rich Bitcoin Address
@@ -145,22 +144,12 @@ All files are received with high accuracy from active nodes in parallel, and som
 | `3MgEAFWu1HKSnZ5ZsC8qf61ZW18xrP5pgd`                             | `26,841.3`         | [Check](https://blockchair.com/bitcoin/address/3MgEAFWu1HKSnZ5ZsC8qf61ZW18xrP5pgd)                             |
 | `1aXzEKiDJKzkPxTZy9zGc3y1nCDwDPub2`                              | `25,640.38996033`  | [Check](https://blockchair.com/bitcoin/address/1aXzEKiDJKzkPxTZy9zGc3y1nCDwDPub2)                              |
 | `bc1qjysjfd9t9aspttpjqzv68k0ydpe7pvyd5vlyn37868473lell5tqkz456m` | `25,085.7648675`   | [Check](https://blockchair.com/bitcoin/address/bc1qjysjfd9t9aspttpjqzv68k0ydpe7pvyd5vlyn37868473lell5tqkz456m) |
-| `17MWdxfjPYP2PYhdy885QtihfbW181r1rn`                             | `24,495.35054524`  | [Check](https://blockchair.com/bitcoin/address/17MWdxfjPYP2PYhdy885QtihfbW181r1rn)                             |
+| `3LSX9fij68T7nTne1pVbuZmu998t8uegm5`                             | `24,495.35054524`  | [Check](https://blockchair.com/bitcoin/address/3LSX9fij68T7nTne1pVbuZmu998t8uegm5)                             |
 
 ---
 
 ### Donate
 
-Donate (Bitcoin Address): `1MMDRZAcM6dzmdMUSV8pDdAPDFpwzve9Fc`
+Donate (Bitcoin Address): `3LSX9fij68T7nTne1pVbuZmu998t8uegm5`
 
 ---
-
-- Website : [Mmdrza.Com](https://mmdrza.com)
-- Telegram Channel : [Crypto2ools](https://crypto2ools.t.me)
-- Telegram ID : [Mr1Mmdrza](https://mr1mmdrza.t.me)
-- Email : [a.i@Programmer.net](mailto:a.i@programmer.net) | [first@Programmer.net](mailto:first@programmer.net)
-
-
-  ## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=Pymmdrza/rich-address-wallet&type=Date)](https://star-history.com/#Pymmdrza/rich-address-wallet&Date)
