@@ -19,7 +19,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     strategy:
-      fail-fast: false
+      fail-fast: true
 
     steps:
     - name: Checkout repository
@@ -72,21 +72,21 @@ jobs:
           > [!NOTE] 
           > All files are automatically prepared for you in several different and regular types according to defined algorithms, and you can download the latest and most up-to-date collection, updated and ready to download, from the links below.
 
-          ![Bitcoin Diagram Rich Section](https://raw.githubusercontent.com/Pymmdrza/Rich-Address-Wallet/refs/heads/main/.github/rich-address-wallet-diagram.svg)
+          ![Bitcoin Diagram Rich Section](https://raw.githubusercontent.com/kimbaobao/bitcoin-list/refs/heads/main/.github/rich-address-wallet-diagram.svg)
 
           ## Download `${{ env.UPDATE_TIME }}`
 
-          - [Latest_Bitcoin_Addresses.tsv.gz](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/download/Bitcoin/Latest_Bitcoin_Addresses.tsv.gz) : `${{ env.Latest_Bitcoin_Addresses_tsv_gz_size }}`
-          - [Latest_Rich_Bitcoin_Address.txt.gz](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/download/Bitcoin/Latest_Rich_Bitcoin_Address.txt.gz) : `${{ env.Latest_Rich_Bitcoin_Address_txt_gz_size }}`
-          - [Latest_Rich_Bitcoin_P2PKH.txt.gz](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/download/Bitcoin/Latest_Rich_Bitcoin_P2PKH.txt.gz) : `${{ env.Latest_Rich_Bitcoin_P2PKH_txt_gz_size }}`
-          - [Latest_Rich_Bitcoin_P2SH.txt.gz](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/download/Bitcoin/Latest_Rich_Bitcoin_P2SH.txt.gz) : `${{ env.Latest_Rich_Bitcoin_P2SH_txt_gz_size }}`
-          - [Latest_Rich_Bitcoin_BECH32.txt.gz](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/download/Bitcoin/Latest_Rich_Bitcoin_BECH32.txt.gz) : `${{ env.Latest_Rich_Bitcoin_BECH32_txt_gz_size }}`
+          - [Latest_Bitcoin_Addresses.tsv.gz](https://github.com/kimbaobao/bitcoin-listreleases/download/Bitcoin/Latest_Bitcoin_Addresses.tsv.gz) : `${{ env.Latest_Bitcoin_Addresses_tsv_gz_size }}`
+          - [Latest_Rich_Bitcoin_Address.txt.gz](https://github.com/kimbaobao/bitcoin-list/releases/download/Bitcoin/Latest_Rich_Bitcoin_Address.txt.gz) : `${{ env.Latest_Rich_Bitcoin_Address_txt_gz_size }}`
+          - [Latest_Rich_Bitcoin_P2PKH.txt.gz](https://github.com/kimbaobao/bitcoin-listreleases/download/Bitcoin/Latest_Rich_Bitcoin_P2PKH.txt.gz) : `${{ env.Latest_Rich_Bitcoin_P2PKH_txt_gz_size }}`
+          - [Latest_Rich_Bitcoin_P2SH.txt.gz](https://github.com/kimbaobao/bitcoin-list/releases/download/Bitcoin/Latest_Rich_Bitcoin_P2SH.txt.gz) : `${{ env.Latest_Rich_Bitcoin_P2SH_txt_gz_size }}`
+          - [Latest_Rich_Bitcoin_BECH32.txt.gz](https://github.com/kimbaobao/bitcoin-list/releases/download/Bitcoin/Latest_Rich_Bitcoin_BECH32.txt.gz) : `${{ env.Latest_Rich_Bitcoin_BECH32_txt_gz_size }}`
 
            ### Donate
 
            To support and appreciate us, you can send your gift in Bitcoin to the wallet address below. (Your donation will encourage us to continue this activity)
 
-           Bitcoin Wallet : `1MMDRZAcM6dzmdMUSV8pDdAPDFpwzve9Fc`
+           Bitcoin Wallet : `1EovEu4izSHT8i18JnxnowWD7mvDYmVrsT`
 
 
         files: |
