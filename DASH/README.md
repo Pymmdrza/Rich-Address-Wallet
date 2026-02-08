@@ -1,12 +1,12 @@
-# Latest Dash Address Wallet Update: `2026-02-07 01:54:12`
+# Latest Dash Address Wallet Update: `2026-02-08 01:55:35`
 
 Latest All Address Dash Wallet and Latest Rich Dash Addresses .
 
 ## All Dash Addresses
 
-File Updated : `2026-02-07 01:54:12`
+File Updated : `2026-02-08 01:55:35`
 
-- Latest_Dash_Addresses.tsv.gz (43.6 MB) : [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Dash)
+- Latest_Dash_Addresses.tsv.gz (43.7 MB) : [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Dash)
 
 ## Dash Rich Addresses
 
