@@ -1,10 +1,10 @@
-# Latest BitcoinCash Address Wallet Update: `2026-04-19 02:29:04`
+# Latest BitcoinCash Address Wallet Update: `2026-04-20 02:29:00`
 
 Latest All Address BitcoinCash Wallet and Latest Rich BitcoinCash Addresses .
 
 ## All BitcoinCash Addresses
 
-File Updated : `2026-04-19 02:29:04`
+File Updated : `2026-04-20 02:29:00`
 
 - Latest_BitcoinCash_Addresses.tsv.gz (406.9 MB) : [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/BitcoinCash)
 
