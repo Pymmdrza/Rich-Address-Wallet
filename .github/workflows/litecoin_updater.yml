@@ -62,12 +62,59 @@ jobs:
     - name: readme update
       run: |
         export COIN="Litecoin"
-        export UPDATE_TIME="${{ env.UPDATE_TIME }}"
+        export UPDATE_TIME="$UPDATE_TIME"
+
         export FILE_ALL_NAME="Latest_Litecoin_Addresses.tsv.gz"
-        export FILE_ALL_SIZE="${{ env.Latest_Litecoin_Addresses_tsv_gz_size }}"
+        export FILE_ALL_SIZE="$Latest_Litecoin_Addresses_tsv_gz_size"
+
         export FILE_RICH_NAME="Latest_Rich_Litecoin_Addresses.txt.gz"
-        export FILE_RICH_SIZE="${{ env.Latest_Rich_Litecoin_Addresses_txt_gz_size }}"
+        export FILE_RICH_SIZE="$Latest_Rich_Litecoin_Addresses_txt_gz_size"
+
         envsubst < .github/README.alt.template.md > LITECOIN/README.md
+
+    - name: Generate release body
+      run: |
+        export COIN="Litecoin"
+        export UPDATE_TIME="$UPDATE_TIME"
+
+        export FILE_ALL_NAME="Latest_Litecoin_Addresses.tsv.gz"
+        export FILE_ALL_SIZE="$Latest_Litecoin_Addresses_tsv_gz_size"
+        export FILE_ALL_URL="$Latest_Litecoin_Addresses_tsv_gz_url"
+
+        export FILE_RICH_NAME="Latest_Rich_Litecoin_Addresses.txt.gz"
+        export FILE_RICH_SIZE="$Latest_Rich_Litecoin_Addresses_txt_gz_size"
+        export FILE_RICH_URL="$Latest_Rich_Litecoin_Addresses_txt_gz_url"
+
+        cat > RELEASE_BODY.template.md <<'EOF'
+        ## New Release : Litecoin Address Wallet `$UPDATE_TIME`
+
+        Latest All Litecoin Address Wallets with Balance and Latest Rich Litecoin Addresses.
+
+        - Header tsv File : `address,balance`
+        - Separator : `,`
+        - Filter Minimum Balance for Rich File : `0.1 LTC`
+
+        > [!NOTE]
+        > Latest Update : `$UPDATE_TIME`
+
+        ## Download `$UPDATE_TIME`
+
+        - [$FILE_ALL_NAME]($FILE_ALL_URL) : `$FILE_ALL_SIZE`
+        - [$FILE_RICH_NAME]($FILE_RICH_URL) : `$FILE_RICH_SIZE`
+
+        ### Donate
+
+        To support and appreciate us, you can send your gift in Bitcoin to the wallet address below. (Your donation will encourage us to continue this activity)
+
+        Bitcoin Wallet : `1MMDRZAcM6dzmdMUSV8pDdAPDFpwzve9Fc`
+        EOF
+
+        sed -i 's/^        //' RELEASE_BODY.template.md
+        envsubst < RELEASE_BODY.template.md > RELEASE_BODY.md
+
+        echo "========== RELEASE BODY PREVIEW =========="
+        cat RELEASE_BODY.md
+        echo "=========================================="
 
     - name: Create GitHub Release
       id: create_release
@@ -75,32 +122,10 @@ jobs:
       with:
         tag_name: "Litecoin"
         name: "Latest Litecoin ${{ env.UPDATE_TIME }}"
-        body: |
-          ## New Release : Litecoin Address Wallet `${{ env.UPDATE_TIME }}`
-
-          Latest All Litecoin Address Wallets with Balance and Latest Rich Litecoin Addresses.
-
-          - Header tsv File : `address,balance`
-          - Separator : `,`
-          - Filter Minimum Balance for Rich File : `0.1 LTC`
-
-          > [!NOTE]
-          > Latest Update : `${{ env.UPDATE_TIME }}`
-
-          ## Download `${{ env.UPDATE_TIME }}`
-
-          - [Latest_Litecoin_Addresses.tsv.gz](${{ env.Latest_Litecoin_Addresses_tsv_gz_url }}) : `${{ env.Latest_Litecoin_Addresses_tsv_gz_size }}`
-          - [Latest_Rich_Litecoin_Addresses.txt.gz](${{ env.Latest_Rich_Litecoin_Addresses_txt_gz_url }}) : `${{ env.Latest_Rich_Litecoin_Addresses_txt_gz_size }}`
-
-          ### Donate
-
-          To support and appreciate us, you can send your gift in Bitcoin to the wallet address below. (Your donation will encourage us to continue this activity)
-
-          Bitcoin Wallet : `1MMDRZAcM6dzmdMUSV8pDdAPDFpwzve9Fc`
-
+        body_path: RELEASE_BODY.md
         files: |
-          ${{ env.Latest_Litecoin_Addresses_tsv_gz }}
-          ${{ env.Latest_Rich_Litecoin_Addresses_txt_gz }}
+          Latest_Litecoin_Addresses.tsv.gz
+          Latest_Rich_Litecoin_Addresses.txt.gz
 
     - name: Update Repo
       run: |
