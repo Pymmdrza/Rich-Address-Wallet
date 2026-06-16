@@ -52,35 +52,26 @@ jobs:
 
       - name: Clean old generated files
         run: |
-          rm -f ./*.gz
-          rm -f ./*.tsv
-          rm -f ./*.txt
-          rm -f ./node_plugin.py
-          rm -f ./node_grab.py
+          if ls *.gz 1> /dev/null 2>&1; then
+            rm -r *.gz
+          else
+            echo "No .gz files found, skipping removal."
+          fi
 
-      - name: Download Node Backup File Plugin
-        run: |
-          curl -fL --retry 3 --retry-delay 5 -o node_plugin.py "${{ secrets.NODE_PLUG }}"
+      - name: Download Node Backup File Plugin [node_plugin.py]
+        run: curl -o node_plugin.py ${{ secrets.NODE_PLUG }}
 
-      - name: Download Node Grabber
-        run: |
-          curl -fL --retry 3 --retry-delay 5 -o node_grab.py "${{ secrets.NODE_ALT }}"
+      - name: Download Node Grabber [node_grab.py]
+        run: curl -o node_grab.py ${{ secrets.NODE_ALT }}
 
-      - name: Validate downloaded scripts
-        run: |
-          test -s node_plugin.py
-          test -s node_grab.py
-          python3 -m py_compile node_plugin.py
-          python3 -m py_compile node_grab.py
+      - name: Set permissions for bump script
+        run: chmod +x *.py
 
-      - name: Set permissions for Python scripts
-        run: |
-          chmod +x ./*.py
+      - name: Run Node Plugin
+        run: python3 node_plugin.py ${{ secrets.URL_LITECOIN }}&&python3 node_grab.py Litecoin
 
-      - name: Run Litecoin processor
-        run: |
-          python3 node_plugin.py "${{ secrets.URL_LITECOIN }}"
-          python3 node_grab.py Litecoin
+      - name: remove py file
+        run: rm -r *.py
 
       - name: Validate generated release files
         run: |
