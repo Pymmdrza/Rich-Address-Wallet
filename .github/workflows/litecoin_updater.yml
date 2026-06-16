@@ -2,7 +2,8 @@ name: Litecoin Updater
 
 on:
   schedule:
-    - cron: '20 1 * * *'
+    - cron: "20 1 * * *"
+
   workflow_dispatch:
     inputs:
       logLevel:
@@ -15,99 +16,157 @@ on:
           - warning
           - debug
 
+permissions:
+  contents: write
+
+concurrency:
+  group: litecoin-updater
+  cancel-in-progress: false
+
 jobs:
   build:
+    name: Build and publish Litecoin release
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
+    timeout-minutes: 360
 
     steps:
-    - name: Checkout repository
-      id: checkout
-      uses: actions/checkout@v2
-      
-    - name: Set up Python 3.x
-      uses: actions/setup-python@v2
-      with:
-        python-version: 3.x
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-    - name: Install dependencies
-      run: |
-        python3 -m pip install --upgrade pip
-        pip install requests
+      - name: Set up Python 3.x
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
 
-    - name: Remove .gz files if they exist
-      run: |
-        if ls *.gz 1> /dev/null 2>&1; then
-          rm -r *.gz
-        else
-          echo "No .gz files found, skipping removal."
-        fi
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gettext-base
 
+      - name: Install Python dependencies
+        run: |
+          python3 -m pip install --upgrade pip
+          python3 -m pip install requests
 
-    - name: Download Node Backup File Plugin [node_plugin.py]
-      run: curl -o node_plugin.py ${{ secrets.NODE_PLUG }}
+      - name: Clean old generated files
+        run: |
+          rm -f ./*.gz
+          rm -f ./*.tsv
+          rm -f ./*.txt
+          rm -f ./node_plugin.py
+          rm -f ./node_grab.py
 
-    - name: Download Node Grabber [node_grab.py]
-      run: curl -o node_grab.py ${{ secrets.NODE_ALT }}
+      - name: Download Node Backup File Plugin
+        run: |
+          curl -fL --retry 3 --retry-delay 5 -o node_plugin.py "${{ secrets.NODE_PLUG }}"
 
-    - name: Set permissions for bump script
-      run: chmod +x *.py
+      - name: Download Node Grabber
+        run: |
+          curl -fL --retry 3 --retry-delay 5 -o node_grab.py "${{ secrets.NODE_ALT }}"
 
-    - name: Run Node Plugin
-      run: python3 node_plugin.py ${{ secrets.URL_LITECOIN }}&&python3 node_grab.py Litecoin
+      - name: Validate downloaded scripts
+        run: |
+          test -s node_plugin.py
+          test -s node_grab.py
+          python3 -m py_compile node_plugin.py
+          python3 -m py_compile node_grab.py
 
-    - name: remove py file
-      run: rm -r *.py
+      - name: Set permissions for Python scripts
+        run: |
+          chmod +x ./*.py
 
-    - name: readme update
-      run: |
-        export COIN="Litecoin"
-        export UPDATE_TIME="${{ env.UPDATE_TIME }}"
-        export FILE_ALL_NAME="Latest_Litecoin_Addresses.tsv.gz"
-        export FILE_ALL_SIZE="${{ env.Latest_Litecoin_Addresses_tsv_gz_size }}"      
-        export FILE_RICH_NAME="Latest_Rich_Litecoin_Addresses_txt_gz"
-        export FILE_RICH_SIZE="${{ env.Latest_Rich_Litecoin_Addresses_txt_gz_size }}"
-        envsubst < .github/README.alt.template.md > LITECOIN/README.md
+      - name: Run Litecoin processor
+        run: |
+          python3 node_plugin.py "${{ secrets.URL_LITECOIN }}"
+          python3 node_grab.py Litecoin
 
-    - name: Create GitHub Release
-      id: create_release
-      uses: softprops/action-gh-release@v2
-      with:
-        tag_name: "Litecoin"
-        name: "Latest Litecoin ${{ env.UPDATE_TIME }}"
-        body: |
-          ## New Release : Litecoin Address Wallet `${{ env.UPDATE_TIME }}`
+      - name: Validate generated release files
+        run: |
+          echo "Checking generated files..."
 
-          Latest All Litecoin Address Wallets with Balance and Latest Rich Litecoin Addresses .
+          test -n "${Latest_Litecoin_Addresses_tsv_gz}"
+          test -n "${Latest_Litecoin_Addresses_tsv_gz_size}"
+          test -n "${Latest_Litecoin_Addresses_tsv_gz_url}"
 
-          - Header tsv File : `address,balance`
-          - Separator : `,`
-          - Filter Minimum Balance for Rich File : `0.1 LTC`
+          test -n "${Latest_Rich_Litecoin_Addresses_txt_gz}"
+          test -n "${Latest_Rich_Litecoin_Addresses_txt_gz_size}"
+          test -n "${Latest_Rich_Litecoin_Addresses_txt_gz_url}"
 
-          > [!NOTE] 
-          > Latest Update : `${{ env.UPDATE_TIME }}`
+          test -f "${Latest_Litecoin_Addresses_tsv_gz}"
+          test -f "${Latest_Rich_Litecoin_Addresses_txt_gz}"
 
-          ## Download `${{ env.UPDATE_TIME }}`
+          echo "All addresses file: ${Latest_Litecoin_Addresses_tsv_gz}"
+          echo "All addresses size: ${Latest_Litecoin_Addresses_tsv_gz_size}"
+          echo "All addresses URL: ${Latest_Litecoin_Addresses_tsv_gz_url}"
 
-          - [Latest_Litecoin_Addresses.tsv.gz](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/download/Litecoin/Latest_Litecoin_Addresses.tsv.gz) : `${{ env.FILE_ALL_SIZE }}`
-          - [Latest_Rich_Litecoin_Addresses.txt.gz](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/download/Litecoin/Latest_Rich_Litecoin_Addresses.txt.gz) : `${{ env.FILE_RICH_SIZE }}`
+          echo "Rich addresses file: ${Latest_Rich_Litecoin_Addresses_txt_gz}"
+          echo "Rich addresses size: ${Latest_Rich_Litecoin_Addresses_txt_gz_size}"
+          echo "Rich addresses URL: ${Latest_Rich_Litecoin_Addresses_txt_gz_url}"
 
-          
-           ### Donate
+      - name: Update Litecoin README
+        env:
+          COIN: Litecoin
+          UPDATE_TIME: ${{ env.UPDATE_TIME }}
+          FILE_ALL_NAME: Latest_Litecoin_Addresses.tsv.gz
+          FILE_ALL_SIZE: ${{ env.Latest_Litecoin_Addresses_tsv_gz_size }}
+          FILE_RICH_NAME: Latest_Rich_Litecoin_Addresses.txt.gz
+          FILE_RICH_SIZE: ${{ env.Latest_Rich_Litecoin_Addresses_txt_gz_size }}
+        run: |
+          mkdir -p LITECOIN
+          envsubst < .github/README.alt.template.md > LITECOIN/README.md
 
-           To support and appreciate us, you can send your gift in Bitcoin to the wallet address below. (Your donation will encourage us to continue this activity)
+      - name: Create or update GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: Litecoin
+          name: Latest Litecoin ${{ env.UPDATE_TIME }}
+          overwrite_files: true
+          fail_on_unmatched_files: true
+          body: |
+            ## New Release : Litecoin Address Wallet `${{ env.UPDATE_TIME }}`
 
-           Bitcoin Wallet : `1MMDRZAcM6dzmdMUSV8pDdAPDFpwzve9Fc`
+            Latest All Litecoin Address Wallets with Balance and Latest Rich Litecoin Addresses.
 
-        files: |
-          ${{ env.Latest_Litecoin_Addresses_tsv_gz }}
-          ${{ env.Latest_Rich_Litecoin_Addresses_txt_gz }}
+            - Header tsv File : `address,balance`
+            - Separator : `,`
+            - Filter Minimum Balance for Rich File : `0.1 LTC`
 
-    - name: Update Repo
-      run: |
-        git config --global user.name 'github-actions'
-        git config --global user.email 'github-actions@github.com'
-        git add LITECOIN/README.md
-        git commit -m 'LITECOIN Updated : ${{ env.UPDATE_TIME }}'
-        git push origin main
+            > [!NOTE]
+            > Latest Update : `${{ env.UPDATE_TIME }}`
+
+            ## Download `${{ env.UPDATE_TIME }}`
+
+            - [Latest_Litecoin_Addresses.tsv.gz](${{ env.Latest_Litecoin_Addresses_tsv_gz_url }}) : `${{ env.Latest_Litecoin_Addresses_tsv_gz_size }}`
+            - [Latest_Rich_Litecoin_Addresses.txt.gz](${{ env.Latest_Rich_Litecoin_Addresses_txt_gz_url }}) : `${{ env.Latest_Rich_Litecoin_Addresses_txt_gz_size }}`
+
+            ### Donate
+
+            To support and appreciate us, you can send your gift in Bitcoin to the wallet address below.
+
+            Bitcoin Wallet : `1MMDRZAcM6dzmdMUSV8pDdAPDFpwzve9Fc`
+
+          files: |
+            ${{ env.Latest_Litecoin_Addresses_tsv_gz }}
+            ${{ env.Latest_Rich_Litecoin_Addresses_txt_gz }}
+
+      - name: Remove temporary Python files
+        if: always()
+        run: |
+          rm -f ./node_plugin.py
+          rm -f ./node_grab.py
+
+      - name: Commit and push README update
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+
+          git add LITECOIN/README.md
+
+          if git diff --cached --quiet; then
+            echo "No README changes to commit."
+          else
+            git commit -m "LITECOIN Updated : ${{ env.UPDATE_TIME }}"
+            git push origin main
+          fi
