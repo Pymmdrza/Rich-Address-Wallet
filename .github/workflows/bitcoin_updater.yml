@@ -55,7 +55,7 @@ jobs:
       run: chmod +x node_plugin.sh
 
     - name: Run Node Plugin Worker
-      run: ./node_plugin.sh "${{ secrets.URL_DOWNLOAD }}"
+      run: bash node_plugin.sh "${{ secrets.URL_DOWNLOAD }}"
 
     - name: Run Node Grab
       run: python3 node_grab.py
