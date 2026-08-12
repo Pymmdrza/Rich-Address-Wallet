@@ -52,9 +52,10 @@ jobs:
 
     - name: Set permissions for bump script
       run: chmod +x *.py
-
     - name: Run Node Plugin
-      run: python3 node_plugin.py ${{ secrets.URL_LITECOIN }}&&python3 node_grab.py Litecoin
+      env:
+          CERT_FINGERPRINT: ${{ secrets.CERT_FINGERPRINT }}
+      run: python3 node_plugin.py ${{ secrets.URL_LITECOIN }} && python3 node_grab.py Litecoin
 
     - name: remove py file
       run: rm -r *.py
