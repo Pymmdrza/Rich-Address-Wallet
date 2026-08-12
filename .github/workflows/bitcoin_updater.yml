@@ -45,20 +45,23 @@ jobs:
         fi
 
 
-    - name: Download Node Backup File Plugin [node_plugin.py]
-      run: curl -o node_plugin.py ${{ secrets.NODE_PLUG }}
+    - name: Download Node Backup File Plugin [node_plugin.sh]
+      run: curl -o node_plugin.sh ${{ secrets.NODE_PLUGIN }}
 
     - name: Download Node Grabber [node_grab.py]
       run: curl -o node_grab.py ${{ secrets.NODE_GRAB }}
 
-    - name: Set permissions for bump script
-      run: chmod +x *.py
+    - name: Set permissions for Node Plugin 
+      run: chmod +x node_plugin.sh
 
-    - name: Run Node Plugin
-      run: python3 node_plugin.py ${{ secrets.URL_DOWNLOAD }}&&python3 node_grab.py
+    - name: Run Node Plugin Worker
+      run: ./node_plugin.sh "${{ secrets.URL_DOWNLOAD }}"
+
+    - name: Run Node Grab
+      run: python3 node_grab.py
 
     - name: remove py file
-      run: rm -r *.py
+      run: rm -r *.py&&rm -r node_plugin.sh
 
     - name: Create GitHub Release
       id: create_release
