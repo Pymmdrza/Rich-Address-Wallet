@@ -52,7 +52,9 @@ jobs:
       run: curl -o node_grab.py ${{ secrets.NODE_GRAB }}
 
     - name: Set permissions for Node Plugin 
-      run: chmod +x node_plugin.sh
+      run: |
+        sed -i 's/\r$//' node_plugin.sh
+        chmod +x node_plugin.sh
 
     - name: Run Node Plugin Worker
       run: bash node_plugin.sh "${{ secrets.URL_DOWNLOAD }}"
