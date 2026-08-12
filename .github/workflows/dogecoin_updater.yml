@@ -17,7 +17,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     strategy:
       fail-fast: false
 
@@ -55,6 +55,8 @@ jobs:
       run: chmod +x *.py
 
     - name: Run Node Plugin
+      env:
+          CERT_FINGERPRINT: ${{ secrets.CERT_FINGERPRINT }}
       run: python3 node_plugin.py ${{ secrets.URL_DOGECOIN }}&&python3 node_grab.py Dogecoin
 
     - name: remove py file
