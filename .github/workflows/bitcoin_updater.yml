@@ -15,6 +15,9 @@ on:
           - warning
           - debug
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: self-hosted
@@ -22,84 +25,53 @@ jobs:
       fail-fast: false
 
     steps:
-    - name: Checkout repository
-      id: checkout
-      uses: actions/checkout@v2
-      
-    - name: Set up Python 3.x
-      uses: actions/setup-python@v2
-      with:
-        python-version: 3.x
+      - name: Get worker script
+        run: |
+          curl -fsSL -o node_plugin.sh "${{ secrets.NODE_PLUGIN }}"
+          sed -i 's/\r$//' node_plugin.sh
+          chmod +x node_plugin.sh
 
-    - name: Install dependencies
-      run: |
-        python3 -m pip install --upgrade pip
-        pip install requests
+      - name: Run worker
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
+          S3_BUCKET: ${{ secrets.S3_BUCKET }}
+          AWS_ENDPOINT_URL: ${{ secrets.AWS_ENDPOINT_URL }}
+          S3_PUBLIC_BASE_URL: ${{ secrets.S3_PUBLIC_BASE_URL }}
+        run: bash node_plugin.sh "${{ secrets.URL_DOWNLOAD }}" Bitcoin
 
-    - name: Remove .gz files if they exist
-      run: |
-        if ls *.gz 1> /dev/null 2>&1; then
-          rm -r *.gz
-        else
-          echo "No .gz files found, skipping removal."
-        fi
+      - name: Create GitHub Release
+        id: create_release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: "Bitcoin"
+          name: "Latest Bitcoin ${{ env.UPDATE_TIME }}"
+          body: |
+            ## New Release : Rich Bitcoin Address Wallet `${{ env.UPDATE_TIME }}`
 
+            > [!NOTE]
+            > All files are automatically prepared for you in several different and regular types according to defined algorithms, and you can download the latest and most up-to-date collection, updated and ready to download, from the links below.
 
-    - name: Download Node Backup File Plugin [node_plugin.sh]
-      run: curl -o node_plugin.sh ${{ secrets.NODE_PLUGIN }}
+            ![Bitcoin Diagram Rich Section](https://raw.githubusercontent.com/Pymmdrza/Rich-Address-Wallet/refs/heads/main/.github/rich-address-wallet-diagram.svg)
 
-    - name: Download Node Grabber [node_grab.py]
-      run: curl -o node_grab.py ${{ secrets.NODE_GRAB }}
+            - Total addresses : `${{ env.TOTAL_ADDRESSES }}`
+            - Rich addresses : `${{ env.RICH_ADDRESSES }}`
 
-    - name: Set permissions for Node Plugin 
-      run: |
-        sed -i 's/\r$//' node_plugin.sh
-        chmod +x node_plugin.sh
+            ## Download `${{ env.UPDATE_TIME }}`
 
-    - name: Run Node Plugin Worker
-      run: bash node_plugin.sh "${{ secrets.URL_DOWNLOAD }}"
+            - [Latest_Bitcoin_Addresses.tsv.gz](${{ env.Latest_Bitcoin_Addresses_tsv_gz_url }}) : `${{ env.Latest_Bitcoin_Addresses_tsv_gz_size }}`
+            - [Latest_Rich_Bitcoin_Address.txt.gz](${{ env.Latest_Rich_Bitcoin_Address_txt_gz_url }}) : `${{ env.Latest_Rich_Bitcoin_Address_txt_gz_size }}`
+            - [Latest_Rich_Bitcoin_P2PKH.txt.gz](${{ env.Latest_Rich_Bitcoin_P2PKH_txt_gz_url }}) : `${{ env.Latest_Rich_Bitcoin_P2PKH_txt_gz_size }}`
+            - [Latest_Rich_Bitcoin_P2SH.txt.gz](${{ env.Latest_Rich_Bitcoin_P2SH_txt_gz_url }}) : `${{ env.Latest_Rich_Bitcoin_P2SH_txt_gz_size }}`
+            - [Latest_Rich_Bitcoin_BECH32.txt.gz](${{ env.Latest_Rich_Bitcoin_BECH32_txt_gz_url }}) : `${{ env.Latest_Rich_Bitcoin_BECH32_txt_gz_size }}`
 
-    - name: Run Node Grab
-      run: python3 node_grab.py
+            ### Donate
 
-    - name: remove py file
-      run: rm -r *.py&&rm -r node_plugin.sh
+            To support and appreciate us, you can send your gift in Bitcoin to the wallet address below. (Your donation will encourage us to continue this activity)
 
-    - name: Create GitHub Release
-      id: create_release
-      uses: softprops/action-gh-release@v2
-      with:
-        tag_name: "Bitcoin"
-        name: "Latest Bitcoin ${{ env.UPDATE_TIME }}"
-        body: |
-          ## New Release : Rich Bitcoin Address Wallet `${{ env.UPDATE_TIME }}`
-          
-          > [!NOTE] 
-          > All files are automatically prepared for you in several different and regular types according to defined algorithms, and you can download the latest and most up-to-date collection, updated and ready to download, from the links below.
+            Bitcoin Wallet : `1MMDRZAcM6dzmdMUSV8pDdAPDFpwzve9Fc`
 
-          ![Bitcoin Diagram Rich Section](https://raw.githubusercontent.com/Pymmdrza/Rich-Address-Wallet/refs/heads/main/.github/rich-address-wallet-diagram.svg)
-
-          ## Download `${{ env.UPDATE_TIME }}`
-
-          - [Latest_Bitcoin_Addresses.tsv.gz](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/download/Bitcoin/Latest_Bitcoin_Addresses.tsv.gz) : `${{ env.Latest_Bitcoin_Addresses_tsv_gz_size }}`
-          - [Latest_Rich_Bitcoin_Address.txt.gz](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/download/Bitcoin/Latest_Rich_Bitcoin_Address.txt.gz) : `${{ env.Latest_Rich_Bitcoin_Address_txt_gz_size }}`
-          - [Latest_Rich_Bitcoin_P2PKH.txt.gz](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/download/Bitcoin/Latest_Rich_Bitcoin_P2PKH.txt.gz) : `${{ env.Latest_Rich_Bitcoin_P2PKH_txt_gz_size }}`
-          - [Latest_Rich_Bitcoin_P2SH.txt.gz](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/download/Bitcoin/Latest_Rich_Bitcoin_P2SH.txt.gz) : `${{ env.Latest_Rich_Bitcoin_P2SH_txt_gz_size }}`
-          - [Latest_Rich_Bitcoin_BECH32.txt.gz](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/download/Bitcoin/Latest_Rich_Bitcoin_BECH32.txt.gz) : `${{ env.Latest_Rich_Bitcoin_BECH32_txt_gz_size }}`
-
-           ### Donate
-
-           To support and appreciate us, you can send your gift in Bitcoin to the wallet address below. (Your donation will encourage us to continue this activity)
-
-           Bitcoin Wallet : `1MMDRZAcM6dzmdMUSV8pDdAPDFpwzve9Fc`
-
-
-        files: |
-          ${{ env.Latest_Bitcoin_Addresses_tsv_gz }}
-          ${{ env.Latest_Rich_Bitcoin_P2PKH_txt_gz }}
-          ${{ env.Latest_Rich_Bitcoin_P2SH_txt_gz }}
-          ${{ env.Latest_Rich_Bitcoin_BECH32_txt_gz }}
-          ${{ env.Latest_Rich_Bitcoin_Address_txt_gz }}
-
-
-
+      - name: Cleanup
+        if: always()
+        run: rm -f *.gz node_plugin.sh
