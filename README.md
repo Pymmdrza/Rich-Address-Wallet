@@ -161,3 +161,7 @@ Donate (Bitcoin Address): `1MMDRZAcM6dzmdMUSV8pDdAPDFpwzve9Fc`
 - Email : [a.i@Programmer.net](mailto:a.i@programmer.net) | [first@Programmer.net](mailto:first@programmer.net)
 
 
+
+  ## Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=Pymmdrza/rich-address-wallet&type=Date)](https://star-history.dera.page/#Pymmdrza/rich-address-wallet&Date)
