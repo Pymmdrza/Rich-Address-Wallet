@@ -2,7 +2,7 @@ name: Dogecoin Updater
 
 on:
   schedule:
-    - cron: '45 1 * * *'
+    - cron: '45 2 * * *'
   workflow_dispatch:
     inputs:
       logLevel:
