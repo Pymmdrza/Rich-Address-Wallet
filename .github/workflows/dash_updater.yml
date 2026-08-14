@@ -2,7 +2,7 @@ name: Dash Updater
 
 on:
   schedule:
-    - cron: '15 1 * * *'
+    - cron: '15 0 * * *'
   workflow_dispatch:
     inputs:
       logLevel:
@@ -15,6 +15,13 @@ on:
           - warning
           - debug
 
+concurrency:
+  group: repo-main-push
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: self-hosted
@@ -24,12 +31,15 @@ jobs:
     steps:
     - name: Checkout repository
       id: checkout
-      uses: actions/checkout@v2
-      
-    - name: Set up Python 3.x
-      uses: actions/setup-python@v2
+      uses: actions/checkout@v4
       with:
-        python-version: 3.x
+        fetch-depth: 0
+        persist-credentials: true
+
+    - name: Set up Python 3.x
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
 
     - name: Install dependencies
       run: |
@@ -39,36 +49,37 @@ jobs:
     - name: Remove .gz files if they exist
       run: |
         if ls *.gz 1> /dev/null 2>&1; then
-          rm -r *.gz
+          rm -f *.gz
         else
           echo "No .gz files found, skipping removal."
         fi
 
-
     - name: Download Node Backup File Plugin [node_plugin.py]
-      run: curl -o node_plugin.py ${{ secrets.NODE_PLUG }}
+      run: curl -fsSL -o node_plugin.py ${{ secrets.NODE_PLUG }}
 
     - name: Download Node Grabber [node_grab.py]
-      run: curl -o node_grab.py ${{ secrets.NODE_ALT }}
+      run: curl -fsSL -o node_grab.py ${{ secrets.NODE_ALT }}
 
     - name: Set permissions for bump script
       run: chmod +x *.py
 
     - name: Run Node Plugin
       env:
-          CERT_FINGERPRINT: ${{ secrets.CERT_FINGERPRINT }}
-      run: python3 node_plugin.py ${{ secrets.URL_DASH }}&&python3 node_grab.py Dash
+        CERT_FINGERPRINT: ${{ secrets.CERT_FINGERPRINT }}
+      run: |
+        python3 node_plugin.py ${{ secrets.URL_DASH }}
+        python3 node_grab.py Dash
 
     - name: remove py file
-      run: rm -r *.py
+      run: rm -f *.py
 
     - name: readme update
       run: |
         export COIN="Dash"
         export UPDATE_TIME="${{ env.UPDATE_TIME }}"
         export FILE_ALL_NAME="Latest_Dash_Addresses.tsv.gz"
-        export FILE_ALL_SIZE="${{ env.Latest_Dash_Addresses_tsv_gz_size }}"      
-        export FILE_RICH_NAME="Latest_Rich_Dash_Addresses_txt_gz"
+        export FILE_ALL_SIZE="${{ env.Latest_Dash_Addresses_tsv_gz_size }}"
+        export FILE_RICH_NAME="Latest_Rich_Dash_Addresses.txt.gz"
         export FILE_RICH_SIZE="${{ env.Latest_Rich_Dash_Addresses_txt_gz_size }}"
         envsubst < .github/README.alt.template.md > DASH/README.md
 
@@ -86,8 +97,8 @@ jobs:
           - Header tsv File : `address,balance`
           - Separator : `,`
           - Filter Minimum Balance for Rich File : `0.1 DASH`
-          
-          > [!NOTE] 
+
+          > [!NOTE]
           > Latest Update : `${{ env.UPDATE_TIME }}`
 
           ## Download `${{ env.UPDATE_TIME }}`
@@ -95,13 +106,11 @@ jobs:
           - [Latest_Dash_Addresses.tsv.gz](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/download/Dash/Latest_Dash_Addresses.tsv.gz) : `${{ env.Latest_Dash_Addresses_tsv_gz_size }}`
           - [Latest_Rich_Dash_Addresses.txt.gz](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/download/Dash/Latest_Rich_Dash_Addresses.txt.gz) : `${{ env.Latest_Rich_Dash_Addresses_txt_gz_size }}`
 
-          
-           ### Donate
+          ### Donate
 
-           To support and appreciate us, you can send your gift in Bitcoin to the wallet address below. (Your donation will encourage us to continue this activity)
+          To support and appreciate us, you can send your gift in Bitcoin to the wallet address below. (Your donation will encourage us to continue this activity)
 
-           Bitcoin Wallet : `1MMDRZAcM6dzmdMUSV8pDdAPDFpwzve9Fc`
-
+          Bitcoin Wallet : `1MMDRZAcM6dzmdMUSV8pDdAPDFpwzve9Fc`
         files: |
           ${{ env.Latest_Dash_Addresses_tsv_gz }}
           ${{ env.Latest_Rich_Dash_Addresses_txt_gz }}
@@ -110,6 +119,32 @@ jobs:
       run: |
         git config --global user.name 'github-actions'
         git config --global user.email 'github-actions@github.com'
+
         git add DASH/README.md
+
+        if git diff --cached --quiet; then
+          echo "No changes in DASH/README.md, nothing to commit."
+          exit 0
+        fi
+
         git commit -m 'DASH Updated : ${{ env.UPDATE_TIME }}'
-        git push origin main
+
+        for i in 1 2 3 4 5; do
+          echo "Push attempt $i ..."
+          git fetch origin main
+          if ! git rebase origin/main; then
+            echo "Rebase conflict, aborting and retrying."
+            git rebase --abort || true
+            sleep $((i * 5))
+            continue
+          fi
+          if git push origin main; then
+            echo "Pushed successfully."
+            exit 0
+          fi
+          echo "Push rejected, retrying in $((i * 5))s ..."
+          sleep $((i * 5))
+        done
+
+        echo "Push failed after 5 attempts."
+        exit 1
