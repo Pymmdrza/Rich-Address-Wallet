@@ -154,5 +154,5 @@ Donate (Bitcoin Address): `1MMDRZAcM6dzmdMUSV8pDdAPDFpwzve9Fc`
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=Pymmdrza/rich-address-wallet&type=Date)](https://star-history.com/#Pymmdrza/rich-address-wallet&Date)
+[![Star History Chart](https://star-history.dera.page/svg?repos=Pymmdrza/rich-address-wallet&type=Date)](https://star-history.dera.page/#Pymmdrza/rich-address-wallet&Date)
   
