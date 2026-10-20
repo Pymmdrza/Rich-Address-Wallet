@@ -1,3 +1,4 @@
+
 name: Ethereum Updater
 
 on:
@@ -53,37 +54,58 @@ jobs:
 
           python -u "$RUNNER_TEMP/ethereum_updater.py"
 
-      - name: Validate outputs
+      - name: Validate datasets and Markdown pages
         shell: bash
         run: |
           set -euo pipefail
+          python - <<'PY'
+          import gzip
+          import os
+          import re
+          from pathlib import Path
 
-          files=(
-            ethereum_release_assets/Latest_Rich_Ethereum_Addresses.txt.gz
-            ethereum_release_assets/Latest_Rich_Ethereum_Balances.txt.gz
-          )
+          root = Path('ETHEREUM')
+          readme = root / 'README.md'
+          pages = sorted((root / 'balance-ranges').glob('*/part-*.md'))
+          expected = int(os.environ['TOTAL_ADDRESSES'])
+          max_bytes = 400 * 1024
+          rows = 0
+          addresses = set()
+          pattern = re.compile(r'^\| `(0x[a-fA-F0-9]{40})` \| (\d+(?:\.\d+)?) \| \[view\]\(https://etherscan\.io/address/\1\) \|$')
 
-          for file in "${files[@]}"; do
-            if [[ ! -s "$file" ]]; then
-              echo "::error::Missing or empty release file: $file"
-              exit 1
-            fi
+          assert expected == 10000, f'Expected 10000 source addresses, got {expected}'
+          assert readme.is_file() and readme.stat().st_size <= max_bytes
+          assert len(pages) == int(os.environ['MARKDOWN_PAGES']) > 0
+          assert readme.read_text(encoding='utf-8').count('[Part ') == len(pages)
 
-            size=$(stat -c%s "$file")
-            if (( size >= 2147483648 )); then
-              echo "::error::Release asset exceeds 2 GiB: $file"
-              exit 1
-            fi
-            gzip -t "$file"
-          done
+          for page in pages:
+              assert 0 < page.stat().st_size <= max_bytes, f'Invalid page size: {page}'
+              for line in page.read_text(encoding='utf-8').splitlines():
+                  if not line.startswith('| `0x'):
+                      continue
+                  match = pattern.fullmatch(line)
+                  assert match, f'Invalid table row: {page}'
+                  address = match.group(1).lower()
+                  assert address not in addresses, f'Duplicate address: {address}'
+                  addresses.add(address)
+                  rows += 1
 
-          test -s ETHEREUM/README.md
-          grep -Fxq '| Address | Balance | Link |' ETHEREUM/README.md
-          rows=$(grep -c '^| `0x' ETHEREUM/README.md || true)
-          if [[ "$rows" != '10000' ]]; then
-            echo "::error::README contains $rows rows, expected 10000"
-            exit 1
-          fi
+          assert rows == expected, f'Markdown rows: {rows}, expected {expected}'
+
+          output = Path('ethereum_release_assets')
+          for name in ('Latest_Rich_Ethereum_Addresses.txt.gz',
+                       'Latest_Rich_Ethereum_Balances.txt.gz'):
+              file = output / name
+              assert file.is_file() and 0 < file.stat().st_size < 2147483648
+              with gzip.open(file, 'rt', encoding='utf-8') as stream:
+                  data = [line.rstrip('\n') for line in stream]
+              assert len(data) == expected, f'GZIP row count invalid: {file}'
+              if 'Balances' in name:
+                  assert {row.split('\t', 1)[0].lower() for row in data} == addresses
+              else:
+                  assert {row.lower() for row in data} == addresses
+          print(f'Validated {expected} addresses across {len(pages)} Markdown files')
+          PY
 
       - name: Create or update Ethereum release
         uses: softprops/action-gh-release@v3
@@ -102,20 +124,22 @@ jobs:
             ## New Release : Rich Ethereum Address Wallet `${{ env.UPDATE_TIME }}`
 
             > [!NOTE]
-            > The latest Ethereum top accounts have been collected from Etherscan. Full addresses and available ETH balances are provided in compressed text files.
+            > The latest Ethereum top accounts and full ETH balances are available below.
 
-            - Total addresses : `${{ env.TOTAL_ADDRESSES }}`
-            - Rich addresses : `${{ env.RICH_ADDRESSES }}`
-            - Pages processed : `${{ env.SOURCE_PAGES }}`
+            - Total addresses: `${{ env.TOTAL_ADDRESSES }}`
+            - Rich addresses: `${{ env.RICH_ADDRESSES }}`
+            - Source pages: `${{ env.SOURCE_PAGES }}`
+            - Balance ranges: `${{ env.BALANCE_RANGES }}`
+            - Markdown table files: `${{ env.MARKDOWN_PAGES }}`
 
             ## Download `${{ env.UPDATE_TIME }}`
 
             - [Latest_Rich_Ethereum_Addresses.txt.gz](${{ env.Latest_Rich_Ethereum_Addresses_txt_gz_url }}) : `${{ env.Latest_Rich_Ethereum_Addresses_txt_gz_size }}`
             - [Latest_Rich_Ethereum_Balances.txt.gz](${{ env.Latest_Rich_Ethereum_Balances_txt_gz_url }}) : `${{ env.Latest_Rich_Ethereum_Balances_txt_gz_size }}`
 
-            ## Address Table
+            ## Browse by Balance
 
-            The full address and balance table is maintained in [ETHEREUM/README.md](https://github.com/Pymmdrza/Rich-Address-Wallet/blob/main/ETHEREUM/README.md).
+            [Browse all balance ranges and Markdown tables](https://github.com/Pymmdrza/Rich-Address-Wallet/blob/main/ETHEREUM/README.md).
 
             ### Donate
 
@@ -123,24 +147,24 @@ jobs:
 
             Bitcoin Wallet : `1MMDRZAcM6dzmdMUSV8pDdAPDFpwzve9Fc`
 
-      - name: Commit Ethereum README only
+      - name: Commit Ethereum Markdown files
         shell: bash
         run: |
           set -euo pipefail
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -- ETHEREUM/README.md
+          git add -A -- ETHEREUM/README.md ETHEREUM/balance-ranges/
 
           if git diff --cached --quiet; then
-            echo "README is unchanged"
+            echo "Ethereum Markdown files are unchanged"
           else
-            git commit -m "docs(ethereum): update top ETH addresses and balances"
+            git commit -m "docs(ethereum): refresh grouped balance tables"
             git pull --rebase origin main
             git push origin HEAD:main
           fi
 
-      - name: Cleanup generated files
+      - name: Cleanup generated assets
         if: always()
         shell: bash
         run: |
