@@ -1,52 +1,83 @@
+
 name: Bitcoin Updater
 
 on:
   schedule:
     - cron: '0 0 * * *'
   workflow_dispatch:
-    inputs:
-      logLevel:
-        description: Log level
-        required: true
-        default: info
-        type: choice
-        options:
-          - info
-          - warning
-          - debug
 
 permissions:
   contents: write
 
+concurrency:
+  group: bitcoin-updater-release
+  cancel-in-progress: false
+
 jobs:
-  build:
+  update:
     runs-on: self-hosted
-    strategy:
-      fail-fast: false
 
     steps:
-      - name: Get worker script
-        run: |
-          curl -fsSL -o node_plugin.sh "${{ secrets.NODE_PLUGIN }}"
-          sed -i 's/\r$//' node_plugin.sh
-          chmod +x node_plugin.sh
-
-      - name: Run worker
+      - name: Download and run Bitcoin updater
+        shell: bash
         env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
-          S3_BUCKET: ${{ secrets.S3_BUCKET }}
-          AWS_ENDPOINT_URL: ${{ secrets.AWS_ENDPOINT_URL }}
-          S3_PUBLIC_BASE_URL: ${{ secrets.S3_PUBLIC_BASE_URL }}
-        run: bash node_plugin.sh "${{ secrets.URL_DOWNLOAD }}" Bitcoin
+          NODE_PLUGIN_URL: ${{ secrets.NEW_BTC_NODE_PLUGIN_URL }}
+        run: |
+          set -euo pipefail
 
-      - name: Create GitHub Release
-        id: create_release
-        uses: softprops/action-gh-release@v2
+          if [[ -z "${NODE_PLUGIN_URL:-}" ]]; then
+            echo "::error::Missing secret NEW_BTC_NODE_PLUGIN_URL"
+            exit 1
+          fi
+
+          curl --fail --silent --show-error --location \
+            --retry 3 --connect-timeout 30 \
+            --output bitcoin_updater.py "$NODE_PLUGIN_URL"
+
+          python3 -u bitcoin_updater.py
+
+      - name: Validate release files
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          files=(
+            Latest_Bitcoin_Addresses.tsv.gz
+            Latest_Rich_Bitcoin_Address.txt.gz
+            Latest_Rich_Bitcoin_P2PKH.txt.gz
+            Latest_Rich_Bitcoin_P2SH.txt.gz
+            Latest_Rich_Bitcoin_BECH32.txt.gz
+          )
+
+          for file in "${files[@]}"; do
+            if [[ ! -s "$file" ]]; then
+              echo "::error::Missing or empty release file: $file"
+              exit 1
+            fi
+
+            size=$(stat -c%s "$file")
+            if (( size >= 2147483648 )); then
+              echo "::error::Release asset exceeds the 2 GiB limit: $file"
+              exit 1
+            fi
+          done
+
+      - name: Create or update Bitcoin release
+        uses: softprops/action-gh-release@v3
         with:
-          tag_name: "Bitcoin"
-          name: "Latest Bitcoin ${{ env.UPDATE_TIME }}"
+          tag_name: Bitcoin
+          name: Latest Bitcoin ${{ env.UPDATE_TIME }}
+          overwrite_files: true
+          fail_on_unmatched_files: true
+          draft: false
+          prerelease: false
+          make_latest: true
+          files: |
+            Latest_Bitcoin_Addresses.tsv.gz
+            Latest_Rich_Bitcoin_Address.txt.gz
+            Latest_Rich_Bitcoin_P2PKH.txt.gz
+            Latest_Rich_Bitcoin_P2SH.txt.gz
+            Latest_Rich_Bitcoin_BECH32.txt.gz
           body: |
             ## New Release : Rich Bitcoin Address Wallet `${{ env.UPDATE_TIME }}`
 
@@ -72,6 +103,11 @@ jobs:
 
             Bitcoin Wallet : `1MMDRZAcM6dzmdMUSV8pDdAPDFpwzve9Fc`
 
-      - name: Cleanup
+      - name: Cleanup generated files
         if: always()
-        run: rm -f *.gz node_plugin.sh
+        shell: bash
+        run: |
+          rm -f -- bitcoin_updater.py \
+            bitcoin_source.tsv.gz* \
+            Latest_Bitcoin_Addresses.tsv.gz* \
+            Latest_Rich_Bitcoin_*.txt.gz*
