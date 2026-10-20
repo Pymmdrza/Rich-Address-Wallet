@@ -1,0 +1,149 @@
+
+name: Ethereum Updater
+
+on:
+  schedule:
+    - cron: '15 1 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ethereum-updater
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: self-hosted
+    timeout-minutes: 60
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          ref: main
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        shell: bash
+        run: python -m pip install --disable-pip-version-check requests lxml real_useragent
+
+      - name: Download and run Ethereum updater
+        shell: bash
+        env:
+          NODE_PLUGIN_URL: ${{ secrets.NEW_ETH_NODE_PLUGIN_URL }}
+        run: |
+          set -euo pipefail
+
+          if [[ -z "${NODE_PLUGIN_URL:-}" ]]; then
+            echo "::error::Missing secret NEW_ETH_NODE_PLUGIN_URL"
+            exit 1
+          fi
+
+          curl --fail --silent --show-error --location \
+            --retry 3 --connect-timeout 30 \
+            --output "$RUNNER_TEMP/ethereum_updater.py" "$NODE_PLUGIN_URL"
+
+          python -u "$RUNNER_TEMP/ethereum_updater.py"
+
+      - name: Validate outputs
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          files=(
+            ethereum_release_assets/Latest_Rich_Ethereum_Addresses.txt.gz
+            ethereum_release_assets/Latest_Rich_Ethereum_Balances.txt.gz
+          )
+
+          for file in "${files[@]}"; do
+            if [[ ! -s "$file" ]]; then
+              echo "::error::Missing or empty release file: $file"
+              exit 1
+            fi
+
+            size=$(stat -c%s "$file")
+            if (( size >= 2147483648 )); then
+              echo "::error::Release asset exceeds the 2 GiB limit: $file"
+              exit 1
+            fi
+
+            gzip -t "$file"
+          done
+
+          test -s ETHEREUM/README.md
+          grep -Fxq '| Address | Balance | Link |' ETHEREUM/README.md
+          rows=$(grep -c '^| `0x' ETHEREUM/README.md || true)
+
+          if [[ "$rows" != '10000' ]]; then
+            echo "::error::README contains $rows addresses instead of 10000"
+            exit 1
+          fi
+
+      - name: Create or update Ethereum release
+        uses: softprops/action-gh-release@v3
+        with:
+          tag_name: Ethereum
+          name: Latest Ethereum ${{ env.UPDATE_TIME }}
+          overwrite_files: true
+          fail_on_unmatched_files: true
+          draft: false
+          prerelease: false
+          make_latest: true
+          files: |
+            ethereum_release_assets/Latest_Rich_Ethereum_Addresses.txt.gz
+            ethereum_release_assets/Latest_Rich_Ethereum_Balances.txt.gz
+          body: |
+            ## New Release : Rich Ethereum Address Wallet `${{ env.UPDATE_TIME }}`
+
+            > [!NOTE]
+            > The latest Ethereum top accounts have been collected from Etherscan. Full addresses and available ETH balances are provided in compressed text files.
+
+            - Total addresses : `${{ env.TOTAL_ADDRESSES }}`
+            - Rich addresses : `${{ env.RICH_ADDRESSES }}`
+            - Pages processed : `${{ env.SOURCE_PAGES }}`
+
+            ## Download `${{ env.UPDATE_TIME }}`
+
+            - [Latest_Rich_Ethereum_Addresses.txt.gz](${{ env.Latest_Rich_Ethereum_Addresses_txt_gz_url }}) : `${{ env.Latest_Rich_Ethereum_Addresses_txt_gz_size }}`
+            - [Latest_Rich_Ethereum_Balances.txt.gz](${{ env.Latest_Rich_Ethereum_Balances_txt_gz_url }}) : `${{ env.Latest_Rich_Ethereum_Balances_txt_gz_size }}`
+
+            ## Address Table
+
+            The full address and balance table is maintained in [ETHEREUM/README.md](https://github.com/Pymmdrza/Rich-Address-Wallet/blob/main/ETHEREUM/README.md).
+
+            ### Donate
+
+            To support and appreciate us, you can send your gift in Bitcoin to the wallet address below. (Your donation will encourage us to continue this activity)
+
+            Bitcoin Wallet : `1MMDRZAcM6dzmdMUSV8pDdAPDFpwzve9Fc`
+
+      - name: Commit Ethereum README only
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -- ETHEREUM/README.md
+
+          if git diff --cached --quiet; then
+            echo "README is unchanged"
+          else
+            git commit -m "docs(ethereum): update top ETH addresses and balances"
+            git push origin HEAD:main
+          fi
+
+      - name: Cleanup generated files
+        if: always()
+        shell: bash
+        run: |
+          rm -f -- "$RUNNER_TEMP/ethereum_updater.py"
+          rm -rf -- ethereum_release_assets
