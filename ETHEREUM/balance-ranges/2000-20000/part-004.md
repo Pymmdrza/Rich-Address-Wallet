@@ -1,13 +1,17 @@
 # Ethereum addresses: 2,000 to <20,000 ETH (Part 4/4)
 
-**Updated:** `2026-10-24 05:56:11 UTC`  
-**Addresses in this page:** `102`  
-**Addresses in this range:** `3,102`
+**Updated:** `2026-10-25 06:09:24 UTC`  
+**Addresses in this page:** `106`  
+**Addresses in this range:** `3,106`
 
 [Balance ranges](../../README.md) | [Previous](part-003.md)
 
 | Address | Balance (ETH) | Link |
 | :--- | ---: | :--- |
+| `0x9DBEf9824FE5373EC2E588DF79B2157F2DeBe6CD` | 2000.000013323856482 | [view](https://etherscan.io/address/0x9DBEf9824FE5373EC2E588DF79B2157F2DeBe6CD) |
+| `0xFFDAE98e78079eF4cB7a47aF292d26A694606f69` | 2000.000012225 | [view](https://etherscan.io/address/0xFFDAE98e78079eF4cB7a47aF292d26A694606f69) |
+| `0xb94ac071dc2f000EdBFcD0C531078eCC10f50aC8` | 2000.000012 | [view](https://etherscan.io/address/0xb94ac071dc2f000EdBFcD0C531078eCC10f50aC8) |
+| `0xEEAF2142E75711f608619f30AAE7e265cab4e4A5` | 2000.000012 | [view](https://etherscan.io/address/0xEEAF2142E75711f608619f30AAE7e265cab4e4A5) |
 | `0xD98575a5534219Ac3126A10De7493641f8707887` | 2000.000011360205444 | [view](https://etherscan.io/address/0xD98575a5534219Ac3126A10De7493641f8707887) |
 | `0x905b0b56F2Dc62711d0BBFe0D8B3a6D2F1a242c9` | 2000.000011350007338 | [view](https://etherscan.io/address/0x905b0b56F2Dc62711d0BBFe0D8B3a6D2F1a242c9) |
 | `0xb02d062873334545cEA29218e4057760590F7423` | 2000.000011 | [view](https://etherscan.io/address/0xb02d062873334545cEA29218e4057760590F7423) |
