@@ -1,6 +1,6 @@
 # Ethereum Rich Address Wallets
 
-**Last updated:** `2026-11-08 07:23:00 UTC`  
+**Last updated:** `2026-11-09 07:59:48 UTC`  
 **Total addresses:** `10,000`  
 **Source:** [Etherscan Top Accounts](https://etherscan.io/accounts/1?ps=100)
 
@@ -16,10 +16,10 @@ Balances are in ETH. Each range includes its lower bound and excludes its upper 
 | Balance range | Addresses | Markdown tables |
 | :--- | ---: | :--- |
 | 1,000,000 ETH and above | 4 | [Part 1](balance-ranges/1000000-plus/part-001.md) |
-| 100,000 to <1,000,000 ETH | 47 | [Part 1](balance-ranges/100000-1000000/part-001.md) |
-| 20,000 to <100,000 ETH | 455 | [Part 1](balance-ranges/20000-100000/part-001.md) |
-| 2,000 to <20,000 ETH | 3,086 | [Part 1](balance-ranges/2000-20000/part-001.md) / [Part 2](balance-ranges/2000-20000/part-002.md) / [Part 3](balance-ranges/2000-20000/part-003.md) / [Part 4](balance-ranges/2000-20000/part-004.md) |
-| 1,000 to <2,000 ETH | 2,542 | [Part 1](balance-ranges/1000-2000/part-001.md) / [Part 2](balance-ranges/1000-2000/part-002.md) / [Part 3](balance-ranges/1000-2000/part-003.md) |
-| 100 to <1,000 ETH | 3,866 | [Part 1](balance-ranges/100-1000/part-001.md) / [Part 2](balance-ranges/100-1000/part-002.md) / [Part 3](balance-ranges/100-1000/part-003.md) / [Part 4](balance-ranges/100-1000/part-004.md) |
+| 100,000 to <1,000,000 ETH | 46 | [Part 1](balance-ranges/100000-1000000/part-001.md) |
+| 20,000 to <100,000 ETH | 456 | [Part 1](balance-ranges/20000-100000/part-001.md) |
+| 2,000 to <20,000 ETH | 3,094 | [Part 1](balance-ranges/2000-20000/part-001.md) / [Part 2](balance-ranges/2000-20000/part-002.md) / [Part 3](balance-ranges/2000-20000/part-003.md) / [Part 4](balance-ranges/2000-20000/part-004.md) |
+| 1,000 to <2,000 ETH | 2,537 | [Part 1](balance-ranges/1000-2000/part-001.md) / [Part 2](balance-ranges/1000-2000/part-002.md) / [Part 3](balance-ranges/1000-2000/part-003.md) |
+| 100 to <1,000 ETH | 3,863 | [Part 1](balance-ranges/100-1000/part-001.md) / [Part 2](balance-ranges/100-1000/part-002.md) / [Part 3](balance-ranges/100-1000/part-003.md) / [Part 4](balance-ranges/100-1000/part-004.md) |
 
 All account tables are available via the links above. The downloadable datasets contain every collected address.
