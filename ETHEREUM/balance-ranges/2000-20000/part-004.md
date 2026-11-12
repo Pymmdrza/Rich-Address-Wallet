@@ -1,34 +1,13 @@
 # Ethereum addresses: 2,000 to <20,000 ETH (Part 4/4)
 
-**Updated:** `2026-11-10 08:26:35 UTC`  
-**Addresses in this page:** `87`  
-**Addresses in this range:** `3,087`
+**Updated:** `2026-11-12 08:21:39 UTC`  
+**Addresses in this page:** `66`  
+**Addresses in this range:** `3,066`
 
 [Balance ranges](../../README.md) | [Previous](part-003.md)
 
 | Address | Balance (ETH) | Link |
 | :--- | ---: | :--- |
-| `0xf9ffB10165F90A60540f6d40b94A41e3be8075cf` | 2000 | [view](https://etherscan.io/address/0xf9ffB10165F90A60540f6d40b94A41e3be8075cf) |
-| `0x424d2E8Df3d8E0cBf57487d3B12764b78c2EF70f` | 2000 | [view](https://etherscan.io/address/0x424d2E8Df3d8E0cBf57487d3B12764b78c2EF70f) |
-| `0x1FC8204b1fECa704eF93273620ad1212FEA43E80` | 2000 | [view](https://etherscan.io/address/0x1FC8204b1fECa704eF93273620ad1212FEA43E80) |
-| `0xCA3b2d35F86e0FB801CA435Ab2d0b4A97A1C63FB` | 2000 | [view](https://etherscan.io/address/0xCA3b2d35F86e0FB801CA435Ab2d0b4A97A1C63FB) |
-| `0xA844A5629c7b30340d4722f6977117a2FefCce29` | 2000 | [view](https://etherscan.io/address/0xA844A5629c7b30340d4722f6977117a2FefCce29) |
-| `0x857336c6B4308F73c055C10462557264C00d4D50` | 2000 | [view](https://etherscan.io/address/0x857336c6B4308F73c055C10462557264C00d4D50) |
-| `0x3cd4A522b3890B25A349A7e1E70A3c8012055656` | 2000 | [view](https://etherscan.io/address/0x3cd4A522b3890B25A349A7e1E70A3c8012055656) |
-| `0x8410a70EAf1f75ed651d8CBcbACC7BE9FC1906BA` | 2000 | [view](https://etherscan.io/address/0x8410a70EAf1f75ed651d8CBcbACC7BE9FC1906BA) |
-| `0x364a583041D5e4C36b94b2B2A359d3a310f243FF` | 2000 | [view](https://etherscan.io/address/0x364a583041D5e4C36b94b2B2A359d3a310f243FF) |
-| `0x115e93909Cd8b6FF71dDFB795C57f944AdCEF99d` | 2000 | [view](https://etherscan.io/address/0x115e93909Cd8b6FF71dDFB795C57f944AdCEF99d) |
-| `0x1318b894c2D6A3b74c6ed20aa2604f8329857bC1` | 2000 | [view](https://etherscan.io/address/0x1318b894c2D6A3b74c6ed20aa2604f8329857bC1) |
-| `0xad80b458a9eC40b4591d984ef39097120C154413` | 2000 | [view](https://etherscan.io/address/0xad80b458a9eC40b4591d984ef39097120C154413) |
-| `0x570808ba7cF505887CaED646694610882708F0e6` | 2000 | [view](https://etherscan.io/address/0x570808ba7cF505887CaED646694610882708F0e6) |
-| `0x8bae64C2030e3E69c7E07Ce2EEfA9B53e79cAE6a` | 2000 | [view](https://etherscan.io/address/0x8bae64C2030e3E69c7E07Ce2EEfA9B53e79cAE6a) |
-| `0xa58Dd9D86f0D5fd553A4a9F819E864e2d0733F1C` | 2000 | [view](https://etherscan.io/address/0xa58Dd9D86f0D5fd553A4a9F819E864e2d0733F1C) |
-| `0xCA5C65CF07ee529e1c6dD0D100033023a0Ac9aF6` | 2000 | [view](https://etherscan.io/address/0xCA5C65CF07ee529e1c6dD0D100033023a0Ac9aF6) |
-| `0x81a3bC76D53eaee7037579b823592F07000C4629` | 2000 | [view](https://etherscan.io/address/0x81a3bC76D53eaee7037579b823592F07000C4629) |
-| `0x3804aED71B99a6C07C9396bF8BbD3a84E5e0c1bE` | 2000 | [view](https://etherscan.io/address/0x3804aED71B99a6C07C9396bF8BbD3a84E5e0c1bE) |
-| `0xbDCE3675961Fa31C1bCa64F31da8C6aa487964B5` | 2000 | [view](https://etherscan.io/address/0xbDCE3675961Fa31C1bCa64F31da8C6aa487964B5) |
-| `0x377840f973c919D01e7EeAA09632DD9B45Ff9d94` | 2000 | [view](https://etherscan.io/address/0x377840f973c919D01e7EeAA09632DD9B45Ff9d94) |
-| `0x0A1EeEeE307894e9f9463cB660fB40416f23Cf4e` | 2000 | [view](https://etherscan.io/address/0x0A1EeEeE307894e9f9463cB660fB40416f23Cf4e) |
 | `0x19986fcFbC5ef9b9e377fA8429C5A8D215cbE814` | 2000 | [view](https://etherscan.io/address/0x19986fcFbC5ef9b9e377fA8429C5A8D215cbE814) |
 | `0xE421E188b2af0416bf97Ade129E4cECBEC26D52C` | 2000 | [view](https://etherscan.io/address/0xE421E188b2af0416bf97Ade129E4cECBEC26D52C) |
 | `0xBEDe4B1B3F2beEC34AfDC53fa7Af60c229aA6C2f` | 2000 | [view](https://etherscan.io/address/0xBEDe4B1B3F2beEC34AfDC53fa7Af60c229aA6C2f) |
