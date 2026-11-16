@@ -1,6 +1,6 @@
 # Ethereum addresses: 2,000 to <20,000 ETH (Part 4/4)
 
-**Updated:** `2026-11-15 07:53:22 UTC`  
+**Updated:** `2026-11-16 08:00:11 UTC`  
 **Addresses in this page:** `39`  
 **Addresses in this range:** `3,039`
 
