@@ -1,0 +1,63 @@
+name: Anti-Phishing Issue Guard
+
+on:
+  issues:
+    types: [opened, edited]
+
+permissions:
+  issues: write
+
+jobs:
+  check-phishing:
+    # جلوگیری از اجرای مجدد روی ویرایشِ خودِ بات
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Inspect Issue Author & Links
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const issue = context.payload.issue;
+            const author = issue.user.login;
+            const association = issue.author_association;
+
+            // نادیده گرفتن مالک، همکاران و مشارکت‌کنندگان قدیمی
+            if (['OWNER', 'MEMBER', 'COLLABORATOR', 'CONTRIBUTOR'].includes(association)) {
+              return;
+            }
+
+            // دریافت اطلاعات اکانت برای بررسی سن اکانت
+            const { data: user } = await github.rest.users.getByUsername({
+              username: author
+            });
+
+            const accountAgeDays = (Date.now() - new Date(user.created_at).getTime()) / (1000 * 60 * 60 * 24);
+            const body = issue.body || '';
+
+            // تشخیص لینک‌های خارجی (غیر از github.com)
+            const urls = body.match(/https?:\/\/[^\s)>\]]+/gi) || [];
+            const externalUrls = urls.filter(url => !/^https?:\/\/(www\.)?github\.com/i.test(url));
+
+            // شرط مشکوک: اکانت زیر 7 روز سن + وجود لینک خارجی
+            if (accountAgeDays < 7 && externalUrls.length > 0) {
+              core.warning(`Suspicious issue #${issue.number} by new account @${author} (${accountAgeDays.toFixed(1)} days old).`);
+
+              // ۱. پاک کردن لینک‌ها از متن Issue برای محافظت فوری از کاربران
+              const sanitizedBody = body.replace(/https?:\/\/[^\s)>\]]+/gi, '[EXTERNAL LINK REMOVED]');
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                body: `> ⚠️ **Security Notice:** External links in this issue were automatically redacted pending maintainer review.\n\n${sanitizedBody}`,
+                state: 'closed',
+                state_reason: 'not_planned'
+              });
+
+              // ۲. قفل کردن گفتگو با برچسب Spam
+              await github.rest.issues.lock({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                lock_reason: 'spam'
+              });
+            }
