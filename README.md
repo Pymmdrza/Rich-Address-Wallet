@@ -1,19 +1,18 @@
 # Rich Address Wallet
 
-[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/pymmdrza/Rich-Address-Wallet?style=plastic&label=Commit%20Activity&&labelColor=25313C&color=44A833)]() [![GitHub watchers](https://img.shields.io/github/watchers/pymmdrza/Rich-address-Wallet?style=plastic&label=Watchers&labelColor=25313C&color=007FFF)]()  [![GitHub Stars](https://img.shields.io/github/stars/pymmdrza/Rich-address-Wallet?style=plastic&label=Stars&labelColor=25313C&color=007FFF)]() [![GitHub Forks](https://img.shields.io/github/forks/pymmdrza/Rich-address-Wallet?style=plastic&label=Forks&labelColor=25313C&color=007FFF)]()
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/pymmdrza/Rich-Address-Wallet?style=plastic&label=Commit%20Activity&&labelColor=25313C&color=44A833)]() [![GitHub watchers](https://img.shields.io/github/watchers/pymmdrza/Rich-address-Wallet?style=plastic&label=Watchers&labelColor=25313C&color=007FFF)]()  [![GitHub Stars](https://img.shields.io/github/stars/pymmdrza/Rich-address-Wallet?style=plastic&label=Stars&labelColor=25313C&color=007FFF)]() [![GitHub Forks](https://img.shields.io/github/forks/pymmdrza/Rich-address-Wallet?style=plastic&label=Forks&labelColor=25313C&color=007FFF)]() [![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/Pymmdrza/Rich-Address-Wallet/total?style=plastic)
+]()
 
 
 ![Rich Address Wallet](https://raw.githubusercontent.com/Pymmdrza/Rich-Address-Wallet/refs/heads/main/.github/RICH_ADDRESS_WALLET_v2.png)
-
-## Update Every 24 hours
-
-![Bitcoin Diagram Rich Section](https://raw.githubusercontent.com/Pymmdrza/Rich-Address-Wallet/refs/heads/main/.github/rich-address-wallet-diagram.svg)
 
 ---
 
 ### Latest Update
 
-[![GitHub Release](https://img.shields.io/github/v/release/pymmdrza/Rich-Address-Wallet?sort=date&display_name=release&style=plastic&label=Release%20(BTC)&color=F58025)](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Bitcoin) [![GitHub Release](https://img.shields.io/github/v/release/pymmdrza/Rich-Address-Wallet?sort=date&filter=!&display_name=release&style=plastic&label=Release%20(LTC)&color=2E9FFF)](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Litecoin)
+[![GitHub Release](https://img.shields.io/github/v/release/pymmdrza/Rich-Address-Wallet?sort=date&display_name=release&style=plastic&label=Release%20(BTC)&color=F58025)](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/bitcoin-rich-list)
+![GitHub Release](https://img.shields.io/github/v/release/Pymmdrza/Rich-Address-Wallet)
+
 
 
 - Latest Bitcoin Addresses __(Any Type)__
@@ -30,61 +29,138 @@
 - Latest Bitcoin Cash Addresses Type : **All**
 - Latest Rich Bitcoin Cash Addresses Type : **Minimum `0.1 BCH`**
 
->[!NOTE]
-> Auto Update Every 24 hours.
 
-All files are received with high accuracy from active nodes in parallel, and some of them are created by public nodes as a dataset from Google Cloud Big Query and then in a storage space, and then in another server (specific for this task), the stored information is checked and analyzed, and the validity of each wallet address is checked and if it meets the conditions, it is placed on the list, and then this file is uploaded to a special support host, and then by automation, the action section is created, then they are placed on the repository space for you, dear friends, to download. This process is being updated and repeated every 24 hours.
+## Dataset Overview
 
+This repository provides an automatically generated, up-to-date snapshot of **funded and high-balance (rich) Bitcoin addresses**, organized by script type and **sorted in descending order by balance** (richest addresses first). Ideal for blockchain analytics, UTXO distribution research, wallet indexing, and data science.
 
-### Latest Updated
-
-| File Name                                                                             | File Type |                                                                              |
-|------------------------------------------------------------------------------------------------|-----------|------------------------------------------------------------------------------|
-| :open_file_folder: Latest Bitcoin Addresses (Any Type)                     | :pencil2: `.tsv.gz` | :link: [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Bitcoin) |
-| :open_file_folder: Rich Bitcoin Address Type : **P2PKH** (Start with 1)    | :pencil2: `.txt.gz` | :link: [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Bitcoin) |
-| :open_file_folder: Rich Bitcoin Address Type : **P2SH** (Start with 3)     | :pencil2: `.txt.gz` | :link: [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Bitcoin) |
-| :open_file_folder: Rich Bitcoin Address Type : **BECH32** (Start with bc1) | :pencil2: `.txt.gz` | :link: [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Bitcoin) |
-| :open_file_folder: Rich Bitcoin (Type : **P2PKH** & **P2SH** & **BECH32**) | :pencil2: `.txt.gz` | :link: [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Bitcoin) |
-
+> [!NOTE]
+> All dataset archives and direct mirror links (**GitHub Releases** and **MegaS4 Direct S3 Mirror**) are hosted on the [**`bitcoin-rich-list` Release Page**](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/bitcoin-rich-list).
+> Each dataset across standard spendable address types (`1...`, `3...`, `bc1q...`, `bc1p...`) is available in two formats:
+> - **With Balances (`.txt.gz`)**: Compressed in standard **Gzip (`.gz`)** format following the `address,balance` CSV schema with balances denominated in **BTC (8 decimal places)**.
+> - **Only Address (`.txt` / `.txt.gz`)**: Contains **only Bitcoin addresses** (one address per line, without headers or balances), preserving the descending balance order (available as `.txt` on GitHub and `.txt.gz` on MegaS4 S3).
 
 ---
 
-### Latest Litecoin
+ All files, latest snapshot updates, exact file sizes, and direct download mirrors (**GitHub** & **MegaS4 S3**) are available in the [**Latest Release (`bitcoin-rich-list`)**](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/bitcoin-rich-list).
 
-| File Name                                                          | File Type |                                                                                   |
-|--------------------------------------------------------------------|-----------|-----------------------------------------------------------------------------------|
-| :open_file_folder: Latest Litecoin Addresses (All) | :pencil2: `.tsv.gz` | :link: [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Litecoin) |
-| :open_file_folder: Latest Rich Litecoin Addresses  | :pencil2: `.txt.gz` | :link: [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Litecoin) |
-
+<table>
+  <thead>
+    <tr>
+      <th align="left">Available Datasets &mdash; Sorted by Balance (DESC) &bull; Hosted on GitHub Releases &amp; MegaS4 S3 Mirror</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <strong>Master Dataset &mdash; All Standard Rich Bitcoin Addresses</strong> &nbsp; <kbd>1...</kbd> <kbd>3...</kbd> <kbd>bc1q...</kbd> <kbd>bc1p...</kbd><br>
+        <sub>Complete combined dataset across every standard spendable Bitcoin address format. &bull; Unit: <a href="https://en.wikipedia.org/wiki/Bitcoin"><strong>BTC</strong></a> (8 decimals) &bull; Order: <a href="https://en.wikipedia.org/wiki/Unspent_transaction_output"><strong>Balance DESC</strong></a> &bull; Schema: <code>address,balance</code> / Only Address</sub><br>
+        <sub>Included Files: <code>Latest_Rich_Bitcoin_Addresses.txt.gz</code> &bull; <code>Latest_Rich_Bitcoin_Addresses_Only.txt</code> (<code>.gz</code> on S3)</sub><br><br>
+        <a href="https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/bitcoin-rich-list"><img src="https://img.shields.io/badge/Release_Page-Download_Master_Dataset-2EA44F?style=plastic-square&labelColor=1F2328&logo=github&logoColor=white" alt="Go to Release - Master Dataset"></a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>Legacy Addresses (P2PKH)</strong> &nbsp; <kbd>1...</kbd><br>
+        <sub>Original Pay-to-PubKey-Hash Bitcoin addresses commonly found in early wallets and historical cold storage. &bull; Type: <a href="https://en.wikipedia.org/wiki/Cryptocurrency_wallet"><strong>P2PKH</strong></a> &bull; Encoding: <a href="https://en.wikipedia.org/wiki/Binary-to-text_encoding#Base58"><strong>Base58Check</strong></a> &bull; Unit: <strong>BTC</strong> (DESC)</sub><br>
+        <sub>Included Files: <code>Latest_Rich_Bitcoin_P2PKH_Addresses.txt.gz</code> &bull; <code>Latest_Rich_Bitcoin_P2PKH_Addresses_Only.txt</code> (<code>.gz</code> on S3)</sub><br><br>
+        <a href="https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/bitcoin-rich-list"><img src="https://img.shields.io/badge/Release_Page-Download_P2PKH_Files-F7931A?style=plastic-square&labelColor=1F2328&logo=github&logoColor=white" alt="Go to Release - P2PKH"></a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>Script &amp; Multi-Sig Addresses (P2SH)</strong> &nbsp; <kbd>3...</kbd><br>
+        <sub>Pay-to-Script-Hash addresses widely used for institutional multi-signature vaults, exchanges, and Wrapped SegWit wallets. &bull; Type: <a href="https://github.com/bitcoin/bips/blob/master/bip-0013.mediawiki"><strong>P2SH</strong></a> &bull; Standard: <a href="https://github.com/bitcoin/bips/blob/master/bip-0016.mediawiki"><strong>BIP-16</strong></a> &bull; Unit: <strong>BTC</strong> (DESC)</sub><br>
+        <sub>Included Files: <code>Latest_Rich_Bitcoin_P2SH_Addresses.txt.gz</code> &bull; <code>Latest_Rich_Bitcoin_P2SH_Addresses_Only.txt</code> (<code>.gz</code> on S3)</sub><br><br>
+        <a href="https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/bitcoin-rich-list"><img src="https://img.shields.io/badge/Release_Page-Download_P2SH_Files-F7931A?style=plastic-square&labelColor=1F2328&logo=github&logoColor=white" alt="Go to Release - P2SH"></a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>Native SegWit v0 Addresses (P2WPKH / P2WSH)</strong> &nbsp; <kbd>bc1q...</kbd><br>
+        <sub>Modern Bech32 addresses engineered for lower transaction fees, covering single-sig and SegWit script wallets. &bull; Type: <a href="https://en.wikipedia.org/wiki/SegWit"><strong>P2WPKH / P2WSH</strong></a> &bull; Encoding: <a href="https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki"><strong>Bech32 (BIP-173)</strong></a> &bull; Unit: <strong>BTC</strong> (DESC)</sub><br>
+        <sub>Included Files: <code>Latest_Rich_Bitcoin_P2WPKH_P2WSH_Addresses.txt.gz</code> &bull; <code>Latest_Rich_Bitcoin_P2WPKH_P2WSH_Addresses_Only.txt</code> (<code>.gz</code> on S3)</sub><br><br>
+        <a href="https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/bitcoin-rich-list"><img src="https://img.shields.io/badge/Release_Page-Download_SegWit_Files-F7931A?style=plastic-square&labelColor=1F2328&logo=github&logoColor=white" alt="Go to Release - SegWit"></a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>Taproot / SegWit v1 Addresses (P2TR)</strong> &nbsp; <kbd>bc1p...</kbd><br>
+        <sub>Latest-generation Taproot addresses featuring Schnorr signature efficiency, improved privacy, and smart-contract capabilities. &bull; Type: <a href="https://bitcoinops.org/en/topics/taproot/"><strong>P2TR</strong></a> &bull; Encoding: <a href="https://github.com/bitcoin/bips/blob/master/bip-0341.mediawiki"><strong>Bech32m (BIP-341)</strong></a> &bull; Unit: <strong>BTC</strong> (DESC)</sub><br>
+        <sub>Included Files: <code>Latest_Rich_Bitcoin_P2TR_Addresses.txt.gz</code> &bull; <code>Latest_Rich_Bitcoin_P2TR_Addresses_Only.txt</code> (<code>.gz</code> on S3)</sub><br><br>
+        <a href="https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/bitcoin-rich-list"><img src="https://img.shields.io/badge/Release_Page-Download_Taproot_Files-F7931A?style=plastic-square&labelColor=1F2328&logo=github&logoColor=white" alt="Go to Release - Taproot"></a>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
-### Latest Dogecoin
+## Quick Usage & Schema
 
-| File Name                                                         | File Type |                                                                                   |
-|-------------------------------------------------------------------|-----------|-----------------------------------------------------------------------------------|
-| :open_file_folder: Latest Dogecoin Addresses (All) | :pencil2: `.tsv.gz` | :link: [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Dogecoin) |
-| :open_file_folder: Latest Rich Dogecoin Addresses  | :pencil2: `.txt.gz` | :link: [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Dogecoin) |
+<details>
+<summary><strong>Schema Preview &amp; Quick Start (CLI / Python)</strong></summary>
+
+### 1. With Balances (`Latest_Rich_Bitcoin_*.txt.gz`)
+Each `Latest_Rich_Bitcoin_*.txt.gz` file uses the following CSV structure with balances in **BTC** (exact 8 decimal places, sorted highest to lowest):
+
+```csv
+address,balance
+34xp4vRoCGJym3xR7yCVPFHoCNxv4Twseo,248597.59296803
+3M219KR5vEneNb47ewrPfWyb5jQ2DjxRP6,160491.13444231
+bc1qgdjqv0av3q56jvd82tkdjpy7gdp9ut8tlqmgrpmv24sq90ecnvqqjwvw97,157010.08337263
+```
+
+### 2. Only Address (`Latest_Rich_Bitcoin_*_Only.txt` / `.txt.gz`)
+Each `*_Only` file contains one address per line (without header or balance), sorted in the same descending balance order:
+
+```text
+34xp4vRoCGJym3xR7yCVPFHoCNxv4Twseo
+3M219KR5vEneNb47ewrPfWyb5jQ2DjxRP6
+bc1qgdjqv0av3q56jvd82tkdjpy7gdp9ut8tlqmgrpmv24sq90ecnvqqjwvw97
+```
+
+## Download & Decompress via CLI:
+
+> All file links and mirror URLs can be found on the [**`bitcoin-rich-list` Release Page**](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/bitcoin-rich-list).
+
+```shell
+# With balances (.txt.gz) — GitHub or MegaS4 S3 direct mirror
+curl -LO https://github.com/Pymmdrza/Rich-Address-Wallet/releases/download/bitcoin-rich-list/Latest_Rich_Bitcoin_Addresses.txt.gz
+# or via MegaS4 S3 mirror:
+# curl -LO https://s3.g.megas4.com/bkbacispjefgmcy4vd4zung44locwlpvrij7w/release/bitcoin/Latest_Rich_Bitcoin_Addresses.txt.gz
+gunzip -k Latest_Rich_Bitcoin_Addresses.txt.gz
+
+# Only addresses — GitHub (.txt) or MegaS4 S3 (.txt.gz)
+curl -LO https://github.com/Pymmdrza/Rich-Address-Wallet/releases/download/bitcoin-rich-list/Latest_Rich_Bitcoin_Addresses_Only.txt
+# or compressed via MegaS4 S3 mirror:
+# curl -LO https://s3.g.megas4.com/bkbacispjefgmcy4vd4zung44locwlpvrij7w/release/bitcoin/Latest_Rich_Bitcoin_Addresses_Only.txt.gz
+# gunzip -k Latest_Rich_Bitcoin_Addresses_Only.txt.gz
+```
+
+## Load directly in Python:
+
+```python
+import gzip
+import pandas as pd
+
+# Load compressed CSV with balances
+df = pd.read_csv("Latest_Rich_Bitcoin_Addresses.txt.gz", compression="gzip")
+print(df.head(10))
+
+# Read Only-Address plain text file (.txt)
+with open("Latest_Rich_Bitcoin_Addresses_Only.txt", "r", encoding="utf-8") as f:
+    top_addresses = [next(f).strip() for _ in range(10)]
+print(top_addresses)
+
+# Or read compressed Only-Address file (.txt.gz) directly without extracting
+with gzip.open("Latest_Rich_Bitcoin_Addresses_Only.txt.gz", "rt", encoding="utf-8") as f:
+    top_addresses_gz = [next(f).strip() for _ in range(10)]
+print(top_addresses_gz)
+```
+</details>
 
 
----
-
-### Latest Dash
-
-| File Name                                                       | File Type |                                                                                   |
-|-----------------------------------------------------------------------|-----------|-----------------------------------------------------------------------------------|
-| :open_file_folder: Latest Dash Addresses (All) | :pencil2: `.tsv.gz` | :link: [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Dash) |
-| :open_file_folder: Latest Rich Dash Addresses  | :pencil2: `.txt.gz` | :link: [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/Dash) |
-
-
----
-
-### Latest Bitcoin Cash
-
-| File Name                                               | File Type |                                                                                   |
-|-----------------------------------------------------------------------------|-----------|-----------------------------------------------------------------------------------|
-| :open_file_folder: Latest Bitcoin Cash Addresses (All) | :pencil2: `.tsv.gz` | :link: [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/BitcoinCash) |
-| :open_file_folder: Latest Rich Bitcoin Cash Addresses  | :pencil2: `.txt.gz` | :link: [Download](https://github.com/Pymmdrza/Rich-Address-Wallet/releases/tag/BitcoinCash) |
 
 ---
 
@@ -149,9 +225,15 @@ All files are received with high accuracy from active nodes in parallel, and som
 
 ---
 
-### Donate
+## Support & Donate
 
-Donate (Bitcoin Address): `1MMDRZAcM6dzmdMUSV8pDdAPDFpwzve9Fc`
+If this dataset helps your research, analytics, or project, please consider starring the repository or sending a donation to help keep the automated updates running:
+
+![Image](https://img.shields.io/github/stars/Pymmdrza/Rich-Address-Wallet?style=social)
+
+Bitcoin (BTC) Donation Address:
+
+[![](https://shields.io/badge/Bitcoin-1MMDRZAcM6dzmdMUSV8pDdAPDFpwzve9Fc-454545?style=plastic&labelColor=050505&logo=bitcoin)](#support--donate 'Bitcoin Wallet Address')
 
 ---
 
